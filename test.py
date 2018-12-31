@@ -7,6 +7,9 @@ from bok_choy.promise import BrokenPromise
 from ddt import ddt,data,unpack
 from bok_choy.web_app_test import WebAppTest
 from tests.demo.page import LoginPage,HomePage,UserPage,ResultUserPage
+from tests.demo.make_data import make_user_data
+from ddt import ddt,unpack
+@ddt
 class Test(WebAppTest):
     def setUp(self):
         '''
@@ -16,18 +19,11 @@ class Test(WebAppTest):
         super(Test,self).setUp()
         self.login_page=LoginPage(self.browser)
         self.login_page.visit().login('','')
-    # def test_link(self):
-    #     self.page=HomePage(self.browser)
-    #     self.page.jump('用户管理')
-    # def test_jump_others(self):
-    #     self.page=UserPage(self.browser)
-    #     self.page.jump_others('收货地址')
-    def test_birthday(self):
-        self.page=UserPage(self.browser)
-        self.page.visit().select_birthday('1995-08-08')
-
-
-
+    @data(['cxiao123', '13839387456', '#@AZAfwy5d', '女', '普通用户', '可用', '1988-07-25'])
+    @unpack
+    def test_add_user(self,name,phone,passwd,gender_key,level_key,state_key,birthday):
+        self.page = UserPage(self.browser)
+        self.page.visit().add_user(name,phone,passwd,gender_key,level_key,state_key,birthday)
     # @unittest.skip
     # def test_list(self):
     #     self.page1=ResultUserPage(self.browser)

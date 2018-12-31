@@ -1,4 +1,5 @@
 # -*- coding: UTF-8 -*-
+import time
 from bok_choy.page_object import PageObject
 from tests.demo.UpLoad import upload
 class LoginPage(PageObject):
@@ -74,7 +75,6 @@ class UserPage(PageObject):
         ResultUserPage(self.browser).wait_for_page()
     #input元素做的伪下拉框，无法使用select定位
     def select_gender(self,gender_key):
-        #self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/button[2]').click()
         self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[4]/div/div[2]/form/div[4]/div/div').click()
         gender_keys={
             '未知':1,
@@ -85,10 +85,10 @@ class UserPage(PageObject):
         #随机进行下拉彩单点击
         self.q(xpath='/html/body/div[3]/div[1]/div[1]/ul/li[{}]'.format(i)).click()
     def select_birthday(self,birthday):
-        self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/button[2]').click()
         self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[4]/div/div[2]/form/div[5]/div/div/input').fill(birthday)
+        self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[4]/div/div[2]/form/div[5]/label').click()
     def select_user_level(self,level_key):
-        self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[4]/div/div[2]/form/div[6]/div/div').click()
+        self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[4]/div/div[2]/form/div[6]/div/div/div').click()
         level_keys={
             '普通用户':1,
             'VIP用户':2,
@@ -96,26 +96,33 @@ class UserPage(PageObject):
         }
         i=level_keys.get(level_key)
         self.q(xpath='/html/body/div[6]/div[1]/div[1]/ul/li[{}]'.format(i)).click()
+        self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[4]/div/div[2]/form/div[6]/label').click()
     def select_state(self,state_key):
-        self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[4]/div/div[2]/form/div[7]/div/div').click()
+        self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[4]/div/div[2]/form/div[7]/div/div/div').click()
         state_keys={
             '可用':1,
             '禁用':2,
             '注销':3
         }
+
         i=state_keys.get(state_key)
         self.q(xpath='/html/body/div[5]/div[1]/div[1]/ul/li[{}]'.format(i)).click()
+        self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[4]/div/div[2]/form/div[7]/label').click()
     def add_user(self,name,phone,passwd,gender_key,level_key,state_key,birthday):
+        self.q(xpath='//*[@id="app"]/div/div[2]/div[1]/div[3]/div[1]').click()
+        self.wait_for_element_visibility('#app > div > div.main-container > section > div > div.filter-container > button:nth-child(4)','kejian',timeout=5)
         self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/button[2]').click()
+        self.wait_for_element_visibility('#app > div > div.main-container > section > div > div.el-dialog__wrapper > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input','visible',timeout=5)
         self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[4]/div/div[2]/form/div[1]/div/div/input').fill(name)
         self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[4]/div/div[2]/form/div[2]/div/div/input').fill(phone)
-        self.q(xpath='//*[@id="app"]/div/div[3]/section/div/div[4]/div/div[2]/form/div[2]/div/div/input').fill(passwd)
+        self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[4]/div/div[2]/form/div[3]/div/div/input').fill(passwd)
         self.select_gender(gender_key)
         self.select_birthday(birthday)
         self.select_user_level(level_key)
         self.select_state(state_key)
+        time.sleep(5)
         self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[4]/div/div[3]/div/button[2]').click()
-        return UserPage(self.browser)
+        self.wait_for_element_visibility('#app > div > div.main-container > section > div > div.filter-container > button:nth-child(3)','visible',timeout=10)
     def jump_others(self,option):
         options={
             '收货地址':2,
@@ -157,7 +164,7 @@ class ResultUserPage(PageObject):
         return self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/div[1]/input').is_present
     def is_intable(self,name):
         self.wait_for_element_visibility(
-            '#app > div > div.main-container > section > div > div.el-table.el-table--fit.el-table--border.el-table--enable-row-hover.el-table--enable-row-transition.el-table--small > div.el-table__body-wrapper.is-scrolling-none > table > tbody > tr:nth-child(1) > td.el-table_1_column_1.is-center',
+            '#app > div > div.main-container > section > div > div.el-table.el-table--fit.el-table--border.el-table--enable-row-hover.el-table--enable-row-transition.el-table--small > div.el-table__body-wrapper.is-scrolling-none > table > tbody > tr:nth-child(1) > td.el-table_1_column_1.is-center','present'
             'present', timeout=10)
         n = len(self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[2]/div[3]/table/tbody/tr'))
         print(n)
