@@ -6,7 +6,7 @@ import unittest
 from bok_choy.promise import BrokenPromise
 from ddt import ddt,data,unpack
 from bok_choy.web_app_test import WebAppTest
-from tests.demo.page import LoginPage,HomePage,UserPage,ResultUserPage
+from tests.demo.pagev1 import LoginPage,UserPage,OrderPage
 from tests.demo.make_data import make_user_data
 from ddt import ddt,unpack
 @ddt
@@ -19,11 +19,21 @@ class Test(WebAppTest):
         super(Test,self).setUp()
         self.login_page=LoginPage(self.browser)
         self.login_page.visit().login('','')
-    @data(['cxiao123', '13839387456', '#@AZAfwy5d', '女', '普通用户', '可用', '1988-07-25'])
+    # @data(['cxiao123', '13839387456', '#@AZAfwy5d', '女', '普通用户', '可用', '1988-07-25'])
+    # @unpack
+    # def test_add_user(self,name,phone,passwd,gender_key,level_key,state_key,birthday):
+    #     self.page = UserPage(self.browser)
+    #     self.page.visit().add_user(name,phone,passwd,gender_key,level_key,state_key,birthday)
+    @data(['cxiao123', '13839387456'])
     @unpack
-    def test_add_user(self,name,phone,passwd,gender_key,level_key,state_key,birthday):
-        self.page = UserPage(self.browser)
-        self.page.visit().add_user(name,phone,passwd,gender_key,level_key,state_key,birthday)
+    def test_change_search(self,name,phone):
+        self.page=UserPage(self.browser)
+        self.page.visit().search(name,phone)
+    @data(['12345667', '13839387456','可用'])
+    @unpack
+    def test_order_search(self,user_id,order_num,order_state):
+        self.page = OrderPage(self.browser)
+        self.page.visit().search(user_id,order_num,order_state)
     # @unittest.skip
     # def test_list(self):
     #     self.page1=ResultUserPage(self.browser)

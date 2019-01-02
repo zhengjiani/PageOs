@@ -2,6 +2,27 @@
 import time
 from bok_choy.page_object import PageObject
 from tests.demo.UpLoad import upload
+class BasePage(PageObject):
+    @property
+    def url(self):
+        return "http://localhost:9527/#/{0}".format(self.name)
+    def search(self,*args):
+        if len(args)==1:
+            time.sleep(5)
+            self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/div[1]/input').fill(args[0])
+            self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/button[1]').click()
+        elif len(args)==2:
+            time.sleep(5)
+            self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/div[1]/input').fill(args[0])
+            self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/div[2]/input').fill(args[1])
+            self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/button[1]').click()
+        else :
+            time.sleep(5)
+            self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/div[1]/input').fill(args[0])
+            self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/div[2]/input').fill(args[1])
+            self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/div[3]/div[2]/input').fill(args[2])
+            self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/button[1]').click()
+        ResultUserPage(self.browser).wait_for_page()
 class LoginPage(PageObject):
     '''
     管理员登录页
@@ -60,21 +81,13 @@ class HomePage(PageObject):
         method=options.get(option)
         if method:
             method()
-class UserPage(PageObject):
+class UserPage(BasePage):
     '''
     用户管理页测试
     '''
-    url='http://localhost:9527/#/user/user'
-    name='UserPage'
+    name='user/user'
     def is_browser_on_page(self):
         return self.q(xpath='//*[@id="app"]/div/div[2]/div[2]/div/div[1]/div/span[2]').is_present
-    def search_user(self,name,phone):
-        time.sleep(5)
-        self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/div[1]/input').fill(name)
-        time.sleep(5)
-        self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/div[2]/input').fill(phone)
-        self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/button[1]').click()
-        ResultUserPage(self.browser).wait_for_page()
     #input元素做的伪下拉框，无法使用select定位
     def select_gender(self,gender_key):
         self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[4]/div/div[2]/form/div[4]/div/div').click()
@@ -143,69 +156,43 @@ class UserPage(PageObject):
         elif i==5:
             HistoryPage(self.browser).wait_for_page()
         elif i==6:
+
             FeedbackPage(self.browser).wait_for_page()
         else:
             raise ValueError('Not in right page')
-
-
-class ResultAddressPage(PageObject):
-    pass
-
-
-class AddressPage(PageObject):
+class AddressPage(BasePage):
     '''
     收货地址管理
     '''
-    name='AddressPage'
-    url='http://localhost:9527/#/user/address'
+    name='user/address'
     def is_browser_on_page(self):
         return self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/button[1]').is_present
-    def search_address(self,user_id,shou_name):
-        self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/div[1]/input').fill(user_id)
-        self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/div[2]/input').fill(shou_name)
-        self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/button[1]').click()
-        return ResultAddressPage(self.browser)
-
-
-class ResultCollectPage(PageObject):
-    pass
-
-
-class CollectPage(PageObject):
+class CollectPage(BasePage):
     '''
     会员收藏
     '''
-    name='CollectPage'
-    url='http://localhost:9527/#/user/collect'
+    name='user/collect'
     def is_browser_on_page(self):
         return self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/button[1]').is_present
-    def search_collect(self,user_id,good_id):
-        self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/div[1]/input').fill(user_id)
-        self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/div[2]/input').fill(good_id)
-        self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/button[1]').click()
-        return ResultCollectPage(self.browser)
-class FootprintPage(PageObject):
+class FootprintPage(BasePage):
     '''
     会员足迹
     '''
-    name='FootprintPage'
-    url='http://localhost:9527/#/user/footprint'
+    name='user/footprint'
     def is_browser_on_page(self):
         return self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/button[1]').is_present
-class HistoryPage(PageObject):
+class HistoryPage(BasePage):
     '''
     搜索历史
     '''
-    name='HistoryPage'
-    url='http://localhost:9527/#/user/history'
+    name='user/history'
     def is_browser_on_page(self):
         return self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/button[1]').is_present
-class FeedbackPage(PageObject):
+class FeedbackPage(BasePage):
     '''
     意见反馈
     '''
-    name='FeedbackPage'
-    url='http://localhost:9527/#/user/feedback'
+    name='user/feedback'
     def is_browser_on_page(self):
         return self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/button[1]').is_present
 class ResultUserPage(PageObject):
@@ -241,19 +228,15 @@ class ResultUserPage(PageObject):
         for i in range(1,n+1):
             tr=self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[2]/div[3]/table/tbody/tr[{}]'.format(i)).text
             print(tr)
-
-
-
-
-
-class MallPage(PageObject):
+class MallPage(BasePage):
     '''
     行政区域页测试：商场管理
     '''
-    url='http://localhost:9527/#/mall/region'
-    name = 'MallPage'
+    name = 'mall/region'
     def is_browser_on_page(self):
         return self.q(xpath='//*[@id="app"]/div/div[2]/div[2]/div/div[1]/div/span[2]').is_present
+    def search(self,region_name,region_num):
+        ResultUserPage(self.browser).wait_for_page()
     def jump_others(self,option):
         options={
             '品牌制造商':2,
@@ -276,14 +259,15 @@ class MallPage(PageObject):
             KeywordPage(self.browser).wait_for_page()
         else:
             raise ValueError('Not in right page')
-class BrandPage(PageObject):
+class BrandPage(BasePage):
     '''
     品牌制造商页测试
     '''
-    url='http://localhost:9527/#/mall/brand'
-    name = 'BrandPage'
+    name = 'mall/brand'
     def is_browser_on_page(self):
         return self.q(xpath='//*[@id="app"]/div/div[2]/div[2]/div/div[1]/div/span[3]').is_present
+    def search(self,brand_id,brand_name):
+        ResultUserPage(self.browser).wait_for_page()
     def add_brand(self):
         self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/button[2]').click()
     def upgrate_brand(self,bname,bcontent,bprice,imgpath):
@@ -294,40 +278,52 @@ class BrandPage(PageObject):
         self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[4]/div/div[2]/form/div[4]/div/div/input').fill(bprice)
         self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[4]/div/div[3]/div/button[2]').click()
         #return ResultaddPage(self.browser)
-class CategoryPage(PageObject):
-    pass
-class OrderPage(PageObject):
+class CategoryPage(BasePage):
+    '''
+    商品类目
+    '''
+    name='mall/category'
+    def search(self,category_id,category_name):
+        ResultUserPage(self.browser).wait_for_page()
+    def add(self):
+        pass
+class OrderPage(BasePage):
     '''
     订单页测试
     '''
-    url='http://localhost:9527/#/mall/order'
-    name = 'OrderPage'
+    name = 'mall/order'
     def is_browser_on_page(self):
         return self.q(xpath='//*[@id="app"]/div/div[2]/div[2]/div/div[1]/div/span[3]').is_present
-class IssuePage(PageObject):
+class IssuePage(BasePage):
     '''
     问题页测试
     '''
-    url='http://localhost:9527/#/mall/issue'
-    name = 'IssuePage'
+    name = 'mall/issue'
     def is_browser_on_page(self):
         return self.q(xpath='//*[@id="app"]/div/div[2]/div[2]/div/div[1]/div/span[4]').is_present
-class KeywordPage(PageObject):
+    def search(self,issuse):
+        ResultUserPage(self.browser).wait_for_page()
+    def add(self):
+        pass
+class KeywordPage(BasePage):
     '''
     关键词页测试
     '''
-    url='http://localhost:9527/#/mall/keyword'
-    name = 'KeywordPage'
+    name = 'mall/keyword'
     def is_browser_on_page(self):
         return self.q(xpath='//*[@id="app"]/div/div[2]/div[2]/div/div[1]/div/span[7]').is_present
-class GoodPage(PageObject):
+    def add(self):
+        pass
+
+class GoodPage(BasePage):
     '''
     商品列表详情页测试
     '''
-    url = 'http://localhost:9527/#/goods/list'
-    name = 'ProductPage'
+    name = 'goods/list'
     def is_browser_on_page(self):
         return self.q(xpath='//*[@id="app"]/div/div[2]/div[2]/div/div[1]/div/span[5]').is_present
+    def search(self,good_num,good_name):
+        ResultUserPage(self.browser).wait_for_page()
     def jump_others(self,option):
         options={
             '商品上架':2,
@@ -362,22 +358,22 @@ class CreatePage(PageObject):
         #上架
         self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[5]/button[2]').click()
         return GoodPage(self.browser).wait_for_page()
-class CommentPage(PageObject):
+class CommentPage(BasePage):
     '''
     商品评论页
     '''
-    name='CommentPage'
-    url='http://localhost:9527/#/goods/comment'
+    name='goods/comment'
     def is_browser_on_page(self):
         return self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/button[1]').is_present
-class PromotionPage(PageObject):
+class PromotionPage(BasePage):
     '''
     推广管理：广告列表
     '''
-    name='PromotionPage'
-    url='http://localhost:9527/#/promotion/ad'
+    name='promotion/ad'
     def is_browser_on_page(self):
         return self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/button[1]').is_present
+    def search(self,ad_title,ad_content):
+        ResultUserPage(self.browser).wait_for_page()
     def jump_others(self,option):
         options={
             '专题管理':2,
@@ -394,38 +390,36 @@ class PromotionPage(PageObject):
             Groupon_activityPage(self.browser).wait_for_page()
         else:
             raise ValueError('Not in right page')
-class TopicPage(PageObject):
+class TopicPage(BasePage):
     '''
     专题管理页
     '''
-    name='TopicPage'
-    url='http://localhost:9527/#/promotion/topic'
+    name='promotion/topic'
     def is_browser_on_page(self):
         return self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/button[1]').is_present
-class Groupon_rulePage(PageObject):
+class Groupon_rulePage(BasePage):
     '''
     团购规则
     '''
-    name = 'Groupon_rulePage'
-    url='http://localhost:9527/#/promotion/groupon-rule'
+    name = 'promotion/groupon-rule'
     def is_browser_on_page(self):
         return self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/button[1]').is_present
-class Groupon_activityPage(PageObject):
+class Groupon_activityPage(BasePage):
     '''
     团购活动
     '''
-    name='Groupon_activityPage'
-    url='http://localhost:9527/#/promotion/groupon-activity'
+    name='promotion/groupon-activity'
     def is_browser_on_page(self):
         return self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/button[1]').is_present
-class SysPage(PageObject):
+class SysPage(BasePage):
     '''
     用户管理页测试
     '''
-    url='http://localhost:9527/#/sys/admin'
-    name = 'AdminPage'
+    name = 'sys/admin'
     def is_browser_on_page(self):
         return self.q(xpath='//*[@id="app"]/div/div[2]/div[2]/div/div[1]/div/span[15]').is_present
+    def search(self,admin_name):
+        ResultUserPage(self.browser).wait_for_page()
     def add_admin(self):
         self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/button[2]').click()
     def upgrate_admin(self,aname,apasswd,emojpath):
@@ -437,12 +431,11 @@ class SysPage(PageObject):
     def jump_other(self):
         self.q(xpath='//*[@id="app"]/div/div[1]/div[1]/div/ul/div[6]/li/ul/a[2]').click()
         return OsPage(self.browser).wait_for_page()
-class OsPage(PageObject):
+class OsPage(BasePage):
     '''
     对象存储
     '''
-    name='OsPage'
-    url='http://localhost:9527/#/sys/os'
+    name='sys/os'
     def is_browser_on_page(self):
         return self.q(xpath='//*[@id="app"]/div/div[2]/section/div/div[1]/button[1]').is_present
 class StatPage(PageObject):
