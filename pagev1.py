@@ -2,10 +2,12 @@
 import time
 from bok_choy.page_object import PageObject
 from tests.demo.UpLoad import upload
+from tests.demo.decorator import getpr
 class BasePage(PageObject):
     @property
     def url(self):
         return "http://localhost:9527/#/{0}".format(self.name)
+    @getpr
     def search(self,*args):
         if len(args)==1:
             time.sleep(5)
