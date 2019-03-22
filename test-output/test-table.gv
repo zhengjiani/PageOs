@@ -1,0 +1,29 @@
+// first draw
+digraph navgarph {
+	1 [label=LoginPage]
+	2 [label=HomePage]
+	3 [label=ProductPage]
+	4 [label=HomePage]
+	5 [label=ProductPage]
+	6 [label=BackendPage]
+	7 [label=BrandPage]
+	8 [label=LogoutPage]
+	9 [label=SuccessfulPage]
+	A [label=ResultPage]
+	B [label=RegionPage]
+	C [label=CreatePage]
+	D [label=NonePage]
+	E [label=OrderPage]
+	F [label=IssuePage]
+	G [label=AdminPage]
+	H [label=KeywordPage]
+	1 -> 2
+	4 -> B
+	4 -> 7
+	4 -> E
+	4 -> F
+	4 -> H
+	4 -> G
+	4 -> C
+	B -> A
+}
