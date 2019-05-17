@@ -1,9 +1,5 @@
 import re
-from pro_one.util import DirectWeightGraph
-from pro_one import litemll_page
-from pro_one.litemll_page import LoginPage,HomePage,ModifyPasswordPage,UserPage,AddressPage,CollectPage,FootprintPage,HistoryPage,\
-                                FeedbackPage,RegionPage,BrandPage,CategoryPage,OrderPage,IssuePage,KeywordPage,GoodPage,CreatePage,\
-                                CommentPage,PromotionPage,TopicPage,Groupon_rulePage,Groupon_activityPage,SysPage,OsPage,StatPage
+from pages import litemll_page
 import collections
 import json
 #python动态创建图
@@ -43,33 +39,58 @@ def get_navgraph(dic):
     tree = lambda: collections.defaultdict(tree)
     dic_po = tree()
     dic_next = {
-            'login': 'HomePage',
-            'other': 'ErrorPage',
-            'goto_good':'GoodPage',
-            'goto_other':'OtherPage'
+        'login' : 'HomePage',
+        'goto_good' : 'GoodPage',
+        'goto_promotion' : 'PromotionPage',
+        'goto_stat' : 'StatPage',
+        'goto_region' : 'RegionPage',
+        'goto_user' : 'UserPage',
+        'goto_sys' : 'SysPage',
+        'logout': 'HomePage',
+        'modify_password' : 'ModifyPasswordPage',
+        'search_user': 'UserPage',
+        'add_user' : 'UserPage',
+        'get_user_data' : 'UserPage',
+        'search_address' : 'AddressPage',
+        'search_collect' : 'CollectPage',
+        'search_footprint' : 'FootprintPage',
+        'search_history' : 'HistoryPage',
+        'search_feedback' : 'FeedbackPage',
+        'search_region' : 'RegionPage',
+        'add_brand' : 'BrandPage',
+        'search_brand' : 'BrandPage',
+        'search_category' : 'CategoryPage',
+        'search_order' : 'OrderPage',
+        'search_issue' : 'IssuePage',
+        'search_keyword' : 'KeywordPage',
+        'add_keyword' : 'KeywordPage',
+        'add_good' : 'GoodPage',
+        'search_good' : 'GoodPage',
+        'search_comment' : 'CommentPage',
+        'search_promotion' : 'PromotionPage',
+        'add_ad' : 'AdPage',
+        'add_topic' : 'TopicPage',
+        'add_rule' : 'Groupon_rulePage',
+        'search_rule': 'Groupon_rulePage',
+        'search_activity' : 'Groupon_activityPage',
+        'add_admin' : 'SysPage',
+        'add_object' : 'OsPage'
+
     }
+    dic_nav = {}
     for key,value_list in dic.items():
         for value in value_list:
             next_po = dic_next[value]
-            print(next_po)
             dic_po[key][value]=next_po
+            dic_nav[key]=next_po
+    print(dic_nav)
     return json.dumps(dic_po)
 # g=DirectedGraph(dict1)
 # print(g.edges)
-#广度优先遍历
-def bfs_traverse(graph, start):
-    visited, queue = set(), [start]
-    while queue:
-        node = queue.pop(0)
-        if node not in visited:
-            visited.add(node)
-            for nextNode in graph[node]:
-                if nextNode not in visited:
-                    queue.append(nextNode)
-    return visited
-
+def get_graph():
+    dic = get_page_methods(get_navgraph_nodes())
+    return get_navgraph(dic)
 if __name__ == '__main__':
-     nodes = get_navgraph_nodes()
-     print(get_page_methods(nodes))
-     dic = get_page_methods(get_navgraph_nodes())
-     print(get_navgraph({'LoginPage': ['login','other'],'HomePage':['goto_good','goto_other']}))
+    dic = get_page_methods(get_navgraph_nodes())
+    get_navgraph(dic)
+
