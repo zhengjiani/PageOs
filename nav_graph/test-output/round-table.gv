@@ -1,0 +1,21 @@
+// Page Object Graph
+digraph {
+	LoginPage
+	HomePage
+	LoginPage -> HomePage [label=login]
+	HomePage
+	UserPage
+	HomePage -> UserPage [label=goto_user]
+	HomePage
+	LoginPage
+	HomePage -> LoginPage [label=logout]
+	UserPage
+	UserListPage
+	UserPage -> UserListPage [label=add_user]
+	UserPage
+	UserListPage
+	UserPage -> UserListPage [label=remove_user]
+	UserPage
+	UserPage
+	UserPage -> UserPage [label=search_user]
+}
