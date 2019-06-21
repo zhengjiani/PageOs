@@ -4,10 +4,10 @@
 # @Software: PyCharm
 # @Blog    ：https://zhengjiani.github.io/
 import re
-# from projects import litemll_page
-# from projects.litemll_page import LoginPage,HomePage,ModifyPasswordPage,UserPage,AddressPage,CollectPage,FootprintPage,HistoryPage,\
-#                                 FeedbackPage,RegionPage,BrandPage,CategoryPage,OrderPage,IssuePage,KeywordPage,GoodPage,CreatePage,\
-#                                 CommentPage,PromotionPage,TopicPage,Groupon_rulePage,Groupon_activityPage,SysPage,OsPage,StatPage
+from pages import litemll_page
+from pages.litemll_page import LoginPage,HomePage,ModifyPasswordPage,UserPage,AddressPage,CollectPage,FootprintPage,HistoryPage,\
+                                FeedbackPage,RegionPage,BrandPage,CategoryPage,OrderPage,IssuePage,KeywordPage,GoodPage,CreatePage,\
+                                CommentPage,PromotionPage,TopicPage,Groupon_rulePage,Groupon_activityPage,SysPage,OsPage,StatPage
 import collections
 import json
 #python动态创建图
@@ -100,4 +100,5 @@ def get_graph():
     return get_navgraph(dic)
 if __name__ == '__main__':
     dic = get_page_methods(get_navgraph_nodes())
-    get_navgraph(dic)
+    print(get_navgraph(dic))
+# {"LoginPage": {"login": "HomePage"}, "HomePage": {"goto_good": "GoodPage", "goto_promotion": "PromotionPage", "goto_user": "UserPage", "goto_sys": "SysPage", "logout": "HomePage", "goto_stat": "StatPage", "goto_region": "RegionPage"}, "ModifyPasswordPage": {"modify_password": "ModifyPasswordPage"}, "UserPage": {"add_user": "UserPage", "get_user_data": "UserPage", "search_user": "UserPage"}, "AddressPage": {"search_address": "AddressPage"}, "CollectPage": {"search_collect": "CollectPage"}, "FootprintPage": {"search_footprint": "FootprintPage"}, "HistoryPage": {"search_history": "HistoryPage"}, "FeedbackPage": {"search_feedback": "FeedbackPage"}, "RegionPage": {"search_region": "RegionPage"}, "BrandPage": {"add_brand": "BrandPage", "search_brand": "BrandPage"}, "CategoryPage": {"search_category": "CategoryPage"}, "OrderPage": {"search_order": "OrderPage"}, "IssuePage": {"search_issue": "IssuePage"}, "KeywordPage": {"add_keyword": "KeywordPage", "search_keyword": "KeywordPage"}, "GoodPage": {"add_good": "GoodPage", "search_good": "GoodPage"}, "CreatePage": {"add_good": "GoodPage"}, "CommentPage": {"search_comment": "CommentPage"}, "PromotionPage": {"add_ad": "AdPage", "search_promotion": "PromotionPage"}, "TopicPage": {"add_topic": "TopicPage"}, "Groupon_rulePage": {"add_rule": "Groupon_rulePage", "search_rule": "Groupon_rulePage"}, "Groupon_activityPage": {"search_activity": "Groupon_activityPage"}, "SysPage": {"add_admin": "SysPage"}, "OsPage": {"add_object": "OsPage"}}

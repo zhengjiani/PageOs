@@ -5,6 +5,9 @@
 # @Blog    ：https://zhengjiani.github.io/
 import inspect
 import sys
+
+from attr import attr
+
 from petclinic.locators import Locators
 import time
 class FindOwnersPage():
@@ -118,13 +121,27 @@ if __name__ == '__main__':
             # print(class_name[0])
             nodes.append(class_name[0])
     # print(nodes)
+    dic = {}
+    dic_param = {}
     for page in nodes:
         funmembers = inspect.getmembers(eval(page),inspect.isfunction)
         # print(funmembers)
-        dic = {}
         edges = []
         for func in funmembers:
             if func[0] != '__init__':
                 edges.append(func[0])
-            dic[page]=edges
-        print(dic)
+                # print(edges)
+                params = inspect.getfullargspec(getattr(eval(page),func[0]))
+                # print(params[0][1:])
+                list = params[0][1:]
+                dic_param[func[0]]=list
+                dic[page]=edges
+    print(dic_param)
+    print(dic)
+        # for func in edges:
+        #     params = AddOwnerPage.add_owner()eval(func).__code__.co_varnames
+        #     print(params)
+        # print(dic)
+
+    # params = inspect.getfullargspec(AddOwnerPage.add_owner)
+    # print(params[0])

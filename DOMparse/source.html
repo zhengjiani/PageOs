@@ -1,0 +1,843 @@
+<p>Python+Selenium学习总结(一)</p>
+<p>实现测试文件上传、数据驱动、以及装饰器动态获取方法中的参数、DiGraph使用以及dot作图</p>
+<a id="more"></a>
+<ul>
+<li>Selenium实现插件文件上传：</li>
+</ul>
+<p><a href="https://blog.csdn.net/huilan_same/article/details/52439546" target="_blank" rel="noopener">实例博客</a></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">import</span> win32gui</span><br><span class="line"><span class="keyword">import</span> win32con</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line">dr=webdriver.Chrome()</span><br><span class="line">dr.get(<span class="string">'http://localhost:9527/#/login?redirect=%2Fdashboard'</span>)</span><br><span class="line">dr.find_element_by_xpath(<span class="string">'//*[@id="app"]/div/form/button'</span>).click()</span><br><span class="line">dr.get(<span class="string">'http://localhost:9527/#/mall/brand'</span>)</span><br><span class="line">dr.implicitly_wait(<span class="number">10</span>)</span><br><span class="line">dr.find_element_by_css_selector(<span class="string">'#app &gt; div &gt; div.main-container &gt; section &gt; div &gt; div.filter-container &gt; button:nth-child(4)'</span>).click()</span><br><span class="line">upload=dr.find_element_by_xpath(<span class="string">'//*[@id="app"]/div/div[2]/section/div/div[4]/div/div[2]/form/div[3]/div/div/div'</span>)</span><br><span class="line">upload.click()</span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line"><span class="comment"># win32gui</span></span><br><span class="line">dialog = win32gui.FindWindow(<span class="string">'#32770'</span>, <span class="string">u'打开'</span>)  <span class="comment"># 对话框</span></span><br><span class="line">ComboBoxEx32 = win32gui.FindWindowEx(dialog, <span class="number">0</span>, <span class="string">'ComboBoxEx32'</span>, <span class="literal">None</span>)</span><br><span class="line">ComboBox = win32gui.FindWindowEx(ComboBoxEx32, <span class="number">0</span>, <span class="string">'ComboBox'</span>, <span class="literal">None</span>)</span><br><span class="line">Edit = win32gui.FindWindowEx(ComboBox, <span class="number">0</span>, <span class="string">'Edit'</span>, <span class="literal">None</span>)  <span class="comment"># 上面三句依次寻找对象，直到找到输入框Edit对象的句柄</span></span><br><span class="line">button = win32gui.FindWindowEx(dialog, <span class="number">0</span>, <span class="string">'Button'</span>, <span class="literal">None</span>)  <span class="comment"># 确定按钮Button</span></span><br><span class="line">abspath=<span class="string">'C:\\Users\\zjn\\Desktop\\working\\img\\brand.jpg'</span></span><br><span class="line">win32gui.SendMessage(Edit, win32con.WM_SETTEXT, <span class="literal">None</span>,abspath )  <span class="comment"># 往输入框输入绝对地址</span></span><br><span class="line">win32gui.SendMessage(dialog, win32con.WM_COMMAND, <span class="number">1</span>, button)  <span class="comment"># 按button</span></span><br></pre></td></tr></table></figure>
+<p>Spy++<a href="https://www.cnblogs.com/cynthiahuo/p/3144185.html" target="_blank" rel="noopener">使用教程</a></p>
+<ul>
+<li>数据驱动</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: UTF-8 -*-</span></span><br><span class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> absolute_import</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> unittest</span><br><span class="line"><span class="keyword">from</span> ddt <span class="keyword">import</span> ddt,data,unpack</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> bok_choy.web_app_test <span class="keyword">import</span> WebAppTest</span><br><span class="line"><span class="meta">@ddt</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span><span class="params">(WebAppTest)</span>:</span></span><br><span class="line"><span class="meta">    @data(&#123;'username':'admin123','password':'admin123'&#125;)</span></span><br><span class="line"><span class="meta">    @unpack</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_login</span><span class="params">(self,username,password)</span>:</span></span><br><span class="line">        page=LoginPage(self.browser)</span><br><span class="line">        page1=page.login(username,password)</span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">'__main__'</span>:</span><br><span class="line">    <span class="comment"># runner = unittest.TextTestRunner()</span></span><br><span class="line">    <span class="comment"># runner.run(suite())</span></span><br><span class="line">    unittest.main()</span><br></pre></td></tr></table></figure>
+<p><a href="https://ddt.readthedocs.io/en/latest/example.html" target="_blank" rel="noopener">python的ddt模块官方文档</a></p>
+<p><a href="https://blog.csdn.net/DDQ_DQ/article/details/79668517" target="_blank" rel="noopener">别人的博客简介</a></p>
+<ul>
+<li>装饰器动态获取方法中的参数</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getpr</span><span class="params">(func)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">(*args)</span>:</span></span><br><span class="line">        args_name = func.__code__.co_varnames</span><br><span class="line">        args_dict = dict(itertools.zip_longest(args_name[<span class="number">1</span>:], args))</span><br><span class="line">        args_values = args_dict.values()</span><br><span class="line">        <span class="keyword">return</span> args_dict<span class="comment">#以参数字典形式打印</span></span><br><span class="line">    <span class="keyword">return</span> wrapper</span><br></pre></td></tr></table></figure>
+<ul>
+<li>DiGraph使用以及dot作图</li>
+</ul>
+<p>DiGraph作图：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> graphviz <span class="keyword">import</span> Digraph</span><br><span class="line"><span class="keyword">import</span> networkx <span class="keyword">as</span> nx</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">graph</span>:</span></span><br><span class="line">        G = nx.DiGraph()</span><br><span class="line">        nodes=[LoginPage.name,HomePage.name,ProductPage.name,BackendPage.name,BrandPage.name,LogoutPage.name,SuccessfulPage.name,</span><br><span class="line">               ResultPage.name,RegionPage.name,CreatePage.name,NonePage.name,OrderPage.name,IssuePage.name,AdminPage.name,KeywordPage.name]</span><br><span class="line">        G.add_nodes_from(nodes)</span><br><span class="line">        edges=(</span><br><span class="line">            [</span><br><span class="line">                (LoginPage.name,HomePage.name),</span><br><span class="line">                (HomePage.name,RegionPage.name),</span><br><span class="line">                ()</span><br><span class="line">            ]</span><br><span class="line">        )</span><br><span class="line">        G.add_edges_from(edges)</span><br><span class="line">        nx.draw(G)</span><br><span class="line">        plt.show()</span><br></pre></td></tr></table></figure>
+<p>dot作图：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">dot = Digraph(name=<span class="string">'navgarph'</span>,comment=<span class="string">'first draw'</span>)</span><br><span class="line">dot.node(<span class="string">'A'</span>,<span class="string">'LoginPage'</span>)</span><br><span class="line">dot.node(<span class="string">'B'</span>,<span class="string">'HomePage'</span>)</span><br><span class="line">dot.node(<span class="string">'C'</span>,<span class="string">'LogoutPage'</span>)</span><br><span class="line">dot.edges([<span class="string">'AB'</span>,<span class="string">'AC'</span>])</span><br><span class="line">dot.edge(<span class="string">'B'</span>,<span class="string">'A'</span>,<span class="string">'back'</span>)</span><br><span class="line">print(dot.source)</span><br><span class="line">dot.render(<span class="string">'test-output/test-table.gv'</span>, view=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+<p>仅此记录。</p>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+	<div>
+
+		<div>
+
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+
+</div>
+
+	</div>
+
+
+
+
+    <footer class="post-footer">
+
+        <div class="post-tags">
+
+            <a href="/tags/web-test/" rel="tag"><i class="fa fa-tag"></i> web-test</a>
+
+        </div>
+
+
+
+
+
+
+
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+
+              <a href="/2018/12/09/Vim配置/" rel="next" title="Vim配置">
+                <i class="fa fa-chevron-left"></i> Vim配置
+              </a>
+
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+
+              <a href="/2019/01/07/判断页面相似度/" rel="prev" title="判断页面相似度">
+                判断页面相似度 <i class="fa fa-chevron-right"></i>
+              </a>
+
+          </div>
+        </div>
+
+
+
+
+    </footer>
+  </div>
+
+
+
+  </article>
+
+
+  </div>
+
+
+          </div>
+
+
+
+
+
+
+        </div>
+
+
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+
+    <div class="sidebar-inner">
+
+
+
+
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+
+              <img class="site-author-image" itemprop="image" src="/images/header.jpg" alt="Jiani Zheng">
+
+              <p class="site-author-name" itemprop="name">Jiani Zheng</p>
+              <p class="site-description motion-element" itemprop="description">Web Tester</p>
+          </div>
+
+
+            <nav class="site-state motion-element">
+
+                <div class="site-state-item site-state-posts">
+
+                  <a href="/archives/">
+
+                    <span class="site-state-item-count">23</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+
+
+
+
+
+                <div class="site-state-item site-state-categories">
+
+
+
+
+
+
+
+
+
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">分类</span>
+
+                </div>
+
+
+
+
+
+                <div class="site-state-item site-state-tags">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <span class="site-state-item-count">18</span>
+                    <span class="site-state-item-name">标签</span>
+
+                </div>
+
+            </nav>
+
+
+
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+
+
+
+            <div class="links-of-author motion-element">
+
+                <span class="links-of-author-item">
+
+
+
+
+
+
+
+                  <a href="https://github.com/zhengjiani" title="GitHub &rarr; https://github.com/zhengjiani" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+
+                <span class="links-of-author-item">
+
+
+
+
+
+
+
+                  <a href="/nicezheng@foxmail" title="E-Mail &rarr; nicezheng@foxmail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+
+                <span class="links-of-author-item">
+
+
+
+
+
+
+
+                  <a href="https://me.csdn.net/nicezheng_1995" title="CSDN &rarr; https://me.csdn.net/nicezheng_1995" rel="noopener" target="_blank"><i class="fa fa-fw fa-globe"></i>CSDN</a>
+                </span>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </section>
+
+
+
+
+
+    </div>
+  </aside>
+
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-zhengjiani"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jiani Zheng</span>
+
+
+
+
+</div>
+
+
+ <div class="powered-by">
+    <i class="fa fa-user-md"></i>
+    <span id="busuanzi_container_site_uv">
+      本站访问用户:<span id="busuanzi_value_site_uv"></span>
+    </span>
+</div>
+<span class="post-meta-divider">|</span>
+<div class="powered-by">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_container_site_uv">
+      本站访问总量:<span id="busuanzi_value_site_pv"></span>
+    </span>
+</div>
+<span class="post-meta-divider">|</span>
+
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v6.5.0</div>
+
+
+
+
+
+
+
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+
+
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+
+          <span id="scrollpercent"><span>0</span>%</span>
+
+      </div>
+
+
+
+
+
+
+
+  </div>
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+
+
+
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+
+
+
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+
+
+    <script id="ribbon" type="text/javascript" size="300" alpha="0.6" zindex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
+
+
+
+
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.5.0"></script>
+
+
+
+
+
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.5.0"></script>
+
+
+
+
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.5.0"></script>
+
+
+
+
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.5.0"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
+	<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+	<script type="text/javascript" src="/js/src/fireworks.js"></script>
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?a84a10965b0e13b3bf2d22960408192c"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"live2d-widget-model-wanko"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"tagMode":false});</script></body>
+</html>

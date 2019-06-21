@@ -1,17 +1,8 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2019/6/12 17:20
+# @Time    : 2019/6/12 22:14
 # @Author  : zhengjiani
 # @Software: PyCharm
 # @Blog    ：https://zhengjiani.github.io/
-"""
-自动生成testcase的模板
-"""
-from jinja2 import Template
-from jinja2 import Environment,PackageLoader
-
-env = Environment(loader=PackageLoader('petclinic'))
-template = env.get_template('testcase.j2')
-
 dic_graph = {'AddOwnerPage': ['add_owner'],
                'AddPetPage': ['add_pet'],
                'AddVisitPage': ['add_date'],
@@ -31,7 +22,9 @@ dic_params = {'add_owner': ['firstName', 'lastName', 'address', 'city', 'telepho
               'edit_pet_name': ['name'], 'check_invalid_lastname_message': [],
               'find_lastname': ['lastname'], 'find_list': [], 'list_detail': []
               }
-
+# 合并字典
+# z_dic = dic_graph.update(dic_params)
+# print(dic_graph)
 for k,val in dic_graph.items():
     current_page = k
     for v in val:
@@ -39,16 +32,4 @@ for k,val in dic_graph.items():
         for kk,vv in dic_params.items():
             if kk == v:
                 params = vv
-                dic = {
-                    'cls_name':'PetTest',
-                    'tc_name': 'add_owner',
-                    'url': 'http://localhost:8080/owners/new',
-                    'current_page': current_page,
-                    'func_name':func_name,
-                    'params': tuple(params)
-                }
-                content = template.render(dic)
-                print(content)
-# with open('./test_add_owner.py','w') as fp:
-#     fp.write(content)
-
+                print(current_page,func_name,params)

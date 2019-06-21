@@ -11,6 +11,7 @@ from collections import Counter
 def find_all_path(graph,paths=[]):
     lis = list(graph.keys())
     visited = []
+
     for k, v in dic.items():
         visited.append(k)
         for k_val, v_val in v.items():
@@ -18,14 +19,20 @@ def find_all_path(graph,paths=[]):
             if v_val not in lis:
                 path=find_shortest_path(graph, lis[0], v_val)
                 paths.append(path)
+
             # UserPage 叶子节点
             elif v_val == k:
-                path=find_shortest_path(graph, lis[0], v_val) + [v_val]
+                if find_shortest_path(graph, lis[0], v_val) is not None:
+                    path=find_shortest_path(graph, lis[0], v_val) + [v_val]
+                else:
+                    path=[v_val]
                 paths.append(path)
+
             # LoginPage 叶子节点，去环情况
             elif v_val in visited:
                 path=[lis[0], k, v_val]
                 paths.append(path)
+
     return paths
 # print(nodes)
 def bfs(graph,start):
@@ -58,6 +65,7 @@ def find_shortest_path(graph, start, end, path=[]):
         return None
     shortest = None
     for k_val,node in graph[start].items():
+
         if node not in path:
             newpath = find_shortest_path(graph, node, end, path)
             if newpath:
@@ -65,9 +73,22 @@ def find_shortest_path(graph, start, end, path=[]):
                     shortest = newpath
     return shortest
 if __name__ == "__main__":
-    dic = {'LoginPage': {'login': 'HomePage'},
-           'HomePage': {'goto_user': 'UserPage', 'logout': 'LoginPage'},
-           'UserPage': {'add_user': 'UserListPage', 'remove_user': 'UserListPage', 'search_user': 'UserPage'}
+    # dic = {'LoginPage':{'login':'HomePage'},
+    #    'HomePage':{'goto_user':'UserPage','logout':'LoginPage'},
+    #    'UserPage':{'add_user':'UserListPage','remove_user':'UserListPage','search_user':'UserPage'}
+    #    }
+    dic = {'LoginPage':{'login':'HomePage'},
+           'HomePage':{'goto_user':'UserPage','goto_good':'GoodPage','goto_passwd':'ModifyPasswdPage','goto_admin':'AdminPage','goto_brand':'BrandPage','logout':'LoginPage'},
+           'UserPage':{'add_user':'UserPage','search_user':'UserPage'},
+           'UserListPage':{'search_user':'UserListPage'},
+           'GoodPage':{'add_good':'CreatePage'},
+           'CreatePage':{'search_good':'GoodListPage'},
+           'GoodListPage':{'edit_good':'GoodListPage','delete_good':'GoodListPage'},
+           'ModifyPasswdPage':{'back_login':'HomePage'},
+           'AdminPage':{'back_login':'HomePage','add_admin':'AdminPage'},
+           'BrandPage':{'add_brand':'BrandPage','search_brand':'BrandListPage'},
+
+
            }
     # print(find_all_path(dic))
     paths = find_all_path(dic)

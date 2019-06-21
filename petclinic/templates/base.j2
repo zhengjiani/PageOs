@@ -1,0 +1,24 @@
+import HtmlTestRunner
+from selenium import webdriver
+import time
+import unittest
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__),".","."))
+from petclinic.page import {{ pages }}
+class {{ cls_name }}(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.driver = webdriver.Chrome()
+        cls.driver.implicitly_wait(10)
+        cls.driver.maximize_window()
+    {%  block testcase %}
+    {%- endblock %}
+    @classmethod
+    def tearDownClass(cls):
+        cls.driver.close()
+        cls.driver.quit()
+        print('Test completed')
+
+if __name__ == '__main__':
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output="D:/code/python/PageOs/petclinic/reports"))

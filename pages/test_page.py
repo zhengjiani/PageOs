@@ -3,11 +3,10 @@
 # @Author  : zhengjiani
 # @Software: PyCharm
 # @Blog    ：https://zhengjiani.github.io/
+
 import unittest
 from bok_choy.web_app_test import WebAppTest
-import unittest
-from bok_choy.web_app_test import WebAppTest
-from .litemll_page import LoginPage,HomePage,UserPage,UserListPage
+from .litemll_page import LoginPage,HomePage,UserPage
 class TestLitemall(WebAppTest):
     def setUp(self):
         super(TestLitemall,self).setUp()
@@ -17,7 +16,6 @@ class TestLitemall(WebAppTest):
         """测试添加用户"""
         self.home_page = HomePage(self.browser)
         self.user_page = UserPage(self.browser)
-        self.list_page = UserListPage(self.browser)
         self.home_page.goto_user()
         self.user_page.add_user("zhengjiani","11111111")
         results = self.list_page_search_user("zhengjiani","11111111")

@@ -39,5 +39,6 @@ print(tree.depth())
 node = tree.get_node("bill")
 tree.depth(node)
 
+
 #保存树
 #tree.save2file('tree.txt')

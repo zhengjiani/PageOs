@@ -83,7 +83,6 @@ class PetTest(unittest.TestCase):
         find_page = FindOwnersPage(driver)
         list_page = find_page.find_list()
         list = list_page.list_detail()
-        print(list)
         assert 'Betty Davis' in list
 
 
