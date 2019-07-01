@@ -8,7 +8,8 @@ from jinja2 import Template
 from jinja2 import Environment,PackageLoader
 
 env = Environment(loader=PackageLoader('POparse'))
-template = env.get_template('locators.j2')
+template1 = env.get_template('locators.j2')
+template2 = env.get_template('page.j2')
 html_doc = open('D:\code\python\PageOs\POparse\doms\index.html').read()
 
 soup = BeautifulSoup(html_doc,'html.parser')
@@ -19,12 +20,16 @@ for a_tag in soup.find_all("a"):
     for span in a_tag.find_all("span"):
         if span.string is not None:
             # print(a_tag.get("href"),span.string)
-            dic_link[a_tag.get("href")]=span.string
+            # dic_link[a_tag.get("href")]=span.string
+            dic_link[span.string.upper()] = span.string
 print(dic_link)
-for value in dic_link.values():
-    dic={
-        'loc_name':value.upper(),
-        'link_name':value
-    }
-    content = template.render(dic)
-    print(content)
+dic={
+    'dic_link':dic_link
+}
+btn_list=dic_link.keys()
+dic1={
+    'btn_list':btn_list
+}
+content1 = template1.render(dic)
+content2 = template2.render(dic1)
+print(content2)

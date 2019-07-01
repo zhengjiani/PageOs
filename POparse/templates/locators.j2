@@ -1,1 +1,7 @@
+{% extends 'base.j2' %}
+{%  block locators -%}
+    {{ super() }}
+    {%- for loc_name,link_name in dic_link.items()  -%}
     {{ loc_name }} = (By.LINK_TEXT,'{{ link_name }}')
+    {% endfor %}
+{%-  endblock %}

@@ -1,0 +1,14 @@
+class AddOwnerPage():
+
+    def __init__(self,driver):
+        self.driver = driver
+
+    def add_owner(self,{{ params }}):
+{#        {% for loc_fill,params in mydict.items() %}#}
+{#            {% if loc_fill.startwiths('INPUT') %}#}
+{#                self.driver.find_element(*Locators.{{ loc_fill }}).send_keys({{ params }})#}
+{#            {% endif %}#}
+{#        {% endfor %}#}
+        {% for button in btn_list %}
+            self.driver.find_element(*Locators.{{ button }}).click()
+        {% endfor %}
