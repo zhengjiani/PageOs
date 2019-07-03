@@ -3,3 +3,78 @@ TF——Tag List 获取标签列表，统计每一个标签出现的频率<br>
 python保留两位小数
     
     a_tf = Decimal(len(a_list)/tag_total).quantize(Decimal('0.00'))
+去除停用词的方法参考——https://www.geeksforgeeks.org/removing-stop-words-nltk-python/
+
+    # simple的例子
+    from nltk.corpus import stopwords 
+    from nltk.tokenize import word_tokenize 
+    example_sent = "This is a sample sentence, showing off the stop words filtration."
+    stop_words = set(stopwords.words('english')) 
+    word_tokens = word_tokenize(example_sent) 
+    filtered_sentence = [w for w in word_tokens if not w in stop_words] 
+    filtered_sentence = [] 
+    for w in word_tokens: 
+        if w not in stop_words: 
+            filtered_sentence.append(w) 
+    print(word_tokens) 
+    print(filtered_sentence) 
+项目中使用的是从文件中读取的方式<br>
+分割字符串https://blog.csdn.net/doiido/article/details/43204675<br>
+
+    #使用默认分隔符
+    >>> print u.split()
+    ['www.doiido.com.cn']
+ 
+    #以"."为分隔符
+    >>> print u.split('.')
+    ['www', 'doiido', 'com', 'cn']
+ 
+    #分割0次
+    >>> print u.split('.',0)
+    ['www.doiido.com.cn']
+ 
+    #分割一次
+    >>> print u.split('.',1)
+    ['www', 'doiido.com.cn']
+ 
+    #分割两次
+    >>> print u.split('.',2)
+    ['www', 'doiido', 'com.cn']
+ 
+    #分割两次，并取序列为1的项
+    >>> print u.split('.',2)[1]
+    doiido
+ 
+    #分割最多次（实际与不加num参数相同）
+    >>> print u.split('.',-1)
+    ['www', 'doiido', 'com', 'cn']
+ 
+    #分割两次，并把分割后的三个部分保存到三个文件
+    >>> u1,u2,u3 = u.split('.',2)
+    >>> print u1
+    www
+    >>> print u2
+    doiido
+    >>> print u3
+    com.cn
+
+    2、去掉换行符
+    >>> c = '''say
+    hello
+    baby'''
+ 
+    >>> print c
+    say
+    hello
+    baby
+ 
+    >>> print c.split('\n')
+    ['say', 'hello', 'baby']
+获取所有文本
+
+    if soup.a.get_text() is not None:
+    a_texts=soup.a.get_text(",",strip=True).split(',')
+    print(a_texts)
+git 统计代码行数
+
+    find . "(" -name "*.java" ")" -print | xargs wc -l

@@ -32,23 +32,25 @@ dic_params = {'add_owner': ['firstName', 'lastName', 'address', 'city', 'telepho
               'find_lastname': ['lastname'], 'find_list': [], 'list_detail': []
               }
 
-for k,val in dic_graph.items():
-    current_page = k
-    for v in val:
-        func_name = v
-        for kk,vv in dic_params.items():
-            if kk == v:
-                params = vv
-                dic = {
-                    'cls_name':'PetTest',
-                    'tc_name': 'add_owner',
-                    'url': 'http://localhost:8080/owners/new',
-                    'current_page': current_page,
-                    'func_name':func_name,
-                    'params': tuple(params)
-                }
-                content = template.render(dic)
-                print(content)
+# for k,val in dic_graph.items():
+#     current_page = k
+#     for v in val:
+#         func_name = v
+#         for kk,vv in dic_params.items():
+#             if kk == v:
+#                 params = vv
+dic = {
+        # 'cls_name':'PetTest',
+        # 'tc_name': 'add_owner',
+        # 'url': 'http://localhost:8080/owners/new',
+        # 'current_page': current_page,
+        # 'func_name':func_name,
+        # 'params': tuple(params)
+        'dic_graph':dic_graph,
+        'dic_params':dic_params
+        }
+content = template.render(dic)
+print(content)
 # with open('./test_add_owner.py','w') as fp:
 #     fp.write(content)
 

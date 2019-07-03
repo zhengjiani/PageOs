@@ -1,5 +1,5 @@
 import re
-from pages import litemll_page
+from bokchoy_pages import litemll_page
 import collections
 import json
 #python动态创建图

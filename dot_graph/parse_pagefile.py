@@ -4,8 +4,8 @@
 # @Software: PyCharm
 # @Blog    ：https://zhengjiani.github.io/
 import re
-from pages import litemll_page
-from pages.litemll_page import LoginPage,HomePage,ModifyPasswordPage,UserPage,AddressPage,CollectPage,FootprintPage,HistoryPage,\
+from bokchoy_pages import litemll_page
+from bokchoy_pages.litemll_page import LoginPage,HomePage,ModifyPasswordPage,UserPage,AddressPage,CollectPage,FootprintPage,HistoryPage,\
                                 FeedbackPage,RegionPage,BrandPage,CategoryPage,OrderPage,IssuePage,KeywordPage,GoodPage,CreatePage,\
                                 CommentPage,PromotionPage,TopicPage,Groupon_rulePage,Groupon_activityPage,SysPage,OsPage,StatPage
 import collections
