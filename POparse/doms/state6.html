@@ -48,14 +48,14 @@
                       </a>
                   </li>
   
-                  <li>
+                  <li class="active">
                       <a href="/owners/find" title="find owners">
                         <span class="glyphicon  glyphicon-search" aria-hidden="true"></span>
                         <span>Find owners</span>
                       </a>
                   </li>
   
-                  <li class="active">
+                  <li>
                       <a href="/vets.html" title="veterinarians">
                         <span class="glyphicon  glyphicon-th-list" aria-hidden="true"></span>
                         <span>Veterinarians</span>
@@ -78,42 +78,81 @@
   
           
 
-  <h2>Veterinarians</h2>
-
-  <table id="vets" class="table table-striped">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Specialties</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>James Carter</td>
-        <td> <span>none</span></td>
-      </tr>
-      <tr>
-        <td>Helen Leary</td>
-        <td><span>radiology </span> </td>
-      </tr>
-      <tr>
-        <td>Linda Douglas</td>
-        <td><span>dentistry </span><span>surgery </span> </td>
-      </tr>
-      <tr>
-        <td>Rafael Ortega</td>
-        <td><span>surgery </span> </td>
-      </tr>
-      <tr>
-        <td>Henry Stevens</td>
-        <td><span>radiology </span> </td>
-      </tr>
-      <tr>
-        <td>Sharon Jenkins</td>
-        <td> <span>none</span></td>
-      </tr>
-    </tbody>
-  </table>
+  <h2>Owner</h2>
+  <form class="form-horizontal" id="add-owner-form" method="post">
+    <div class="form-group has-feedback">
+      
+      <div class="form-group">
+        <label class="col-sm-2 control-label">First Name</label>
+        <div class="col-sm-10">
+            <div>
+                <input class="form-control" type="text" id="firstName" name="firstName" value="">
+                
+            </div>
+          <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+          
+        </div>
+      </div>
+    
+      
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Last Name</label>
+        <div class="col-sm-10">
+            <div>
+                <input class="form-control" type="text" id="lastName" name="lastName" value="">
+                
+            </div>
+          <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+          
+        </div>
+      </div>
+    
+      
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Address</label>
+        <div class="col-sm-10">
+            <div>
+                <input class="form-control" type="text" id="address" name="address" value="">
+                
+            </div>
+          <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+          
+        </div>
+      </div>
+    
+      
+      <div class="form-group">
+        <label class="col-sm-2 control-label">City</label>
+        <div class="col-sm-10">
+            <div>
+                <input class="form-control" type="text" id="city" name="city" value="">
+                
+            </div>
+          <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+          
+        </div>
+      </div>
+    
+      
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Telephone</label>
+        <div class="col-sm-10">
+            <div>
+                <input class="form-control" type="text" id="telephone" name="telephone" value="">
+                
+            </div>
+          <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+          
+        </div>
+      </div>
+    
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button class="btn btn-default" type="submit">Add Owner</button>
+      </div>
+    </div>
+  </form>
 
 
         <br>

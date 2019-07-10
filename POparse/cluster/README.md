@@ -78,3 +78,37 @@ python保留两位小数
 git 统计代码行数
 
     find . "(" -name "*.java" ")" -print | xargs wc -l
+    
+计算字串相似度（字符串编辑距离）`pip install python-Levenshtein`
+https://www.cnblogs.com/kaituorensheng/archive/2013/05/18/3085653.html<br>
+在下面网址下载.whl文件https://www.lfd.uci.edu/~gohlke/pythonlibs/#python-levenshtein<br>
+使用命令——pip install python_Levenshtein-0.12.0-cp37-cp37m-win_amd64.whl<br>
+
+移除标签tag的内容<br>
+
+    markup = '<a href="http://example.com/">I linked to <i>example.com</i></a>'
+    soup = BeautifulSoup(markup,'html.parser')
+    markup=soup.i.clear()
+    print(soup.a)
+    
+计算树编辑距离`pip install zss`
+### Python数据类型转换（str跟int的转换）
+字符串str转换为int: int_value = int(str_value)</br>
+python运行命令行命令，我用来调用jar包</br>
+
+    import os
+    os.chdir("D:\\code\\python\\PageOs")
+    print(os.system('java -jar RTED_v1.2.jar -t {a{b}{c}} {a{b{d}}} -o -v'))
+输出结果：
+    
+    distance:             2.0
+    runtime:              0.0
+    relevant subproblems: 12
+    recurence steps:      2
+    left paths:           2
+    right paths:          0
+    heavy paths:          0
+    
+python按行读取文件：<br>
+
+    https://www.cnblogs.com/xuxn/archive/2011/07/27/read-a-file-with-python.html

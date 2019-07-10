@@ -78,30 +78,73 @@
   
           
 
-  <h2>Find Owners</h2>
-
-  <form action="/owners" method="get" class="form-horizontal" id="search-owner-form">
-    <div class="form-group">
-      <div class="control-group" id="lastNameGroup">
-        <label class="col-sm-2 control-label">Last name </label>
+  <h2>
+    New 
+    Pet
+  </h2>
+  <form class="form-horizontal" method="post">
+    <input type="hidden" name="id" value="">
+    <div class="form-group has-feedback">
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Owner</label>
         <div class="col-sm-10">
-          <input class="form-control" size="30" maxlength="80" id="lastName" name="lastName" value="BEsCuGLY"> <span class="help-inline"><div>
-              <p>has not been found</p>
-            </div></span>
+          <span>George Franklin</span>
         </div>
       </div>
+      
+      <div class="form-group has-error">
+        <label class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-10">
+            <div>
+                <input class="form-control" type="text" id="name" name="name" value="">
+                
+            </div>
+          
+          
+            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+            <span class="help-inline">is required</span>
+          
+        </div>
+      </div>
+    
+      
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Birth Date</label>
+        <div class="col-sm-10">
+            <div>
+                
+                <input class="form-control" type="text" placeholder="YYYY-MM-DD" title="Enter a date in this format: YYYY-MM-DD" pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))" id="birthDate" name="birthDate" value="1995-08-08">
+            </div>
+          <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+          
+        </div>
+      </div>
+    
+      
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Type</label>
+
+        <div class="col-sm-10">
+          <select id="type" name="type">
+            <option value="bird" selected="selected">bird</option>
+            <option value="cat">cat</option>
+            <option value="dog">dog</option>
+            <option value="hamster">hamster</option>
+            <option value="lizard">lizard</option>
+            <option value="snake">snake</option>
+          </select>
+          <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+          
+        </div>
+      </div>
+    
     </div>
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default">Find
-          Owner</button>
+        <button class="btn btn-default" type="submit">Add Pet</button>
       </div>
     </div>
-
   </form>
-
-  <br>
-  <a class="btn btn-default" href="/owners/new">Add Owner</a>
 
 
 
@@ -119,7 +162,6 @@
   <script src="/webjars/jquery/2.2.4/jquery.min.js"></script>
   <script src="/webjars/jquery-ui/1.11.4/jquery-ui.min.js"></script>
   <script src="/webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
 
 
 

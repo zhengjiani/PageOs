@@ -1,0 +1,1808 @@
+{
+  "states" : {
+    "state92" : {
+      "name" : "state92",
+      "url" : "http://localhost:8080/owners/8/pets/10/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 92,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948376492,
+      "nearestState" : "state90"
+    },
+    "state90" : {
+      "name" : "state90",
+      "url" : "http://localhost:8080/owners/9/pets/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 90,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948371430,
+      "nearestState" : "state88"
+    },
+    "state52" : {
+      "name" : "state52",
+      "url" : "http://localhost:8080/owners/4/pets/5/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 52,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948277400,
+      "nearestState" : "state50"
+    },
+    "state9" : {
+      "name" : "state9",
+      "url" : "http://localhost:8080/vets.html",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 9,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948177553,
+      "nearestState" : "state7"
+    },
+    "state96" : {
+      "name" : "state96",
+      "url" : "http://localhost:8080/owners/6/pets/7/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 96,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948387071,
+      "nearestState" : "state94"
+    },
+    "state50" : {
+      "name" : "state50",
+      "url" : "http://localhost:8080/owners/5/pets/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 50,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948272488,
+      "nearestState" : "state48"
+    },
+    "state94" : {
+      "name" : "state94",
+      "url" : "http://localhost:8080/owners/7/pets/9/visits/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 94,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948381558,
+      "nearestState" : "state92"
+    },
+    "state6" : {
+      "name" : "state6",
+      "url" : "http://localhost:8080/owners/new",
+      "candidateElements" : [ {
+        "top" : 414,
+        "left" : 301,
+        "xpath" : "//FORM[@id = 'add-owner-form']/DIV[2]/DIV[1]/BUTTON[1]",
+        "width" : 103,
+        "height" : 36
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 1,
+      "id" : 6,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948172556,
+      "nearestState" : "state5"
+    },
+    "state5" : {
+      "name" : "state5",
+      "url" : "http://localhost:8080/owners/find",
+      "candidateElements" : [ {
+        "top" : 274,
+        "left" : 103,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 103,
+        "height" : 36
+      }, {
+        "top" : 203,
+        "left" : 301,
+        "xpath" : "//FORM[@id = 'search-owner-form']/DIV[2]/DIV[1]/BUTTON[1]",
+        "width" : 105,
+        "height" : 36
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 2,
+      "id" : 5,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948170775,
+      "nearestState" : "index"
+    },
+    "state7" : {
+      "name" : "state7",
+      "url" : "http://localhost:8080/owners/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 7,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948174352,
+      "nearestState" : "state6"
+    },
+    "state19" : {
+      "name" : "state19",
+      "url" : "http://localhost:8080/owners/1/pets/new",
+      "candidateElements" : [ {
+        "top" : 351,
+        "left" : 301,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[1]",
+        "width" : 81,
+        "height" : 36
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 1,
+      "id" : 19,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948198384,
+      "nearestState" : "state17"
+    },
+    "state57" : {
+      "name" : "state57",
+      "url" : "http://localhost:8080/owners/7/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 57,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948289975,
+      "nearestState" : "state56"
+    },
+    "state13" : {
+      "name" : "state13",
+      "url" : "http://localhost:8080/owners/1/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 13,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948186114,
+      "nearestState" : "state12"
+    },
+    "state56" : {
+      "name" : "state56",
+      "url" : "http://localhost:8080/owners/7",
+      "candidateElements" : [ {
+        "top" : 322,
+        "left" : 94,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 102,
+        "height" : 36
+      }, {
+        "top" : 322,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+        "width" : 115,
+        "height" : 36
+      }, {
+        "top" : 478,
+        "left" : 808,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+        "width" : 52,
+        "height" : 16
+      }, {
+        "top" : 478,
+        "left" : 884,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+        "width" : 59,
+        "height" : 16
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 4,
+      "id" : 56,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948287455,
+      "nearestState" : "state54"
+    },
+    "state12" : {
+      "name" : "state12",
+      "url" : "http://localhost:8080/owners/1",
+      "candidateElements" : [ {
+        "top" : 322,
+        "left" : 94,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 102,
+        "height" : 36
+      }, {
+        "top" : 322,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+        "width" : 115,
+        "height" : 36
+      }, {
+        "top" : 478,
+        "left" : 808,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+        "width" : 52,
+        "height" : 16
+      }, {
+        "top" : 478,
+        "left" : 884,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+        "width" : 59,
+        "height" : 16
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 4,
+      "id" : 12,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948183638,
+      "nearestState" : "state11"
+    },
+    "state11" : {
+      "name" : "state11",
+      "url" : "http://localhost:8080/owners?lastName=",
+      "candidateElements" : [ {
+        "top" : 202,
+        "left" : 102,
+        "xpath" : "//TABLE[@id = 'owners']/TBODY[1]/TR[1]/TD[1]/A[1]",
+        "width" : 106,
+        "height" : 16
+      }, {
+        "top" : 239,
+        "left" : 102,
+        "xpath" : "//TABLE[@id = 'owners']/TBODY[1]/TR[2]/TD[1]/A[1]",
+        "width" : 75,
+        "height" : 16
+      }, {
+        "top" : 276,
+        "left" : 102,
+        "xpath" : "//TABLE[@id = 'owners']/TBODY[1]/TR[3]/TD[1]/A[1]",
+        "width" : 128,
+        "height" : 16
+      }, {
+        "top" : 313,
+        "left" : 102,
+        "xpath" : "//TABLE[@id = 'owners']/TBODY[1]/TR[4]/TD[1]/A[1]",
+        "width" : 84,
+        "height" : 16
+      }, {
+        "top" : 350,
+        "left" : 102,
+        "xpath" : "//TABLE[@id = 'owners']/TBODY[1]/TR[5]/TD[1]/A[1]",
+        "width" : 100,
+        "height" : 16
+      }, {
+        "top" : 387,
+        "left" : 102,
+        "xpath" : "//TABLE[@id = 'owners']/TBODY[1]/TR[6]/TD[1]/A[1]",
+        "width" : 93,
+        "height" : 16
+      }, {
+        "top" : 424,
+        "left" : 102,
+        "xpath" : "//TABLE[@id = 'owners']/TBODY[1]/TR[7]/TD[1]/A[1]",
+        "width" : 65,
+        "height" : 16
+      }, {
+        "top" : 461,
+        "left" : 102,
+        "xpath" : "//TABLE[@id = 'owners']/TBODY[1]/TR[8]/TD[1]/A[1]",
+        "width" : 99,
+        "height" : 16
+      }, {
+        "top" : 498,
+        "left" : 102,
+        "xpath" : "//TABLE[@id = 'owners']/TBODY[1]/TR[9]/TD[1]/A[1]",
+        "width" : 110,
+        "height" : 16
+      }, {
+        "top" : 535,
+        "left" : 102,
+        "xpath" : "//TABLE[@id = 'owners']/TBODY[1]/TR[10]/TD[1]/A[1]",
+        "width" : 99,
+        "height" : 16
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 10,
+      "id" : 11,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948180911,
+      "nearestState" : "state9"
+    },
+    "state54" : {
+      "name" : "state54",
+      "url" : "http://localhost:8080/owners/3/pets/4/visits/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 54,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948282166,
+      "nearestState" : "state52"
+    },
+    "state98" : {
+      "name" : "state98",
+      "url" : "http://localhost:8080/owners/10/pets/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 98,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948392118,
+      "nearestState" : "state96"
+    },
+    "state17" : {
+      "name" : "state17",
+      "url" : "http://localhost:8080/owners/2/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 17,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948193483,
+      "nearestState" : "state16"
+    },
+    "state16" : {
+      "name" : "state16",
+      "url" : "http://localhost:8080/owners/2",
+      "candidateElements" : [ {
+        "top" : 322,
+        "left" : 94,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 102,
+        "height" : 36
+      }, {
+        "top" : 322,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+        "width" : 115,
+        "height" : 36
+      }, {
+        "top" : 478,
+        "left" : 808,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+        "width" : 52,
+        "height" : 16
+      }, {
+        "top" : 478,
+        "left" : 884,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+        "width" : 59,
+        "height" : 16
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 4,
+      "id" : 16,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948191038,
+      "nearestState" : "state13"
+    },
+    "state59" : {
+      "name" : "state59",
+      "url" : "http://localhost:8080/owners/6/pets/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 59,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948294990,
+      "nearestState" : "state57"
+    },
+    "state81" : {
+      "name" : "state81",
+      "url" : "http://localhost:8080/owners/8/pets/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 81,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948349337,
+      "nearestState" : "state79"
+    },
+    "state41" : {
+      "name" : "state41",
+      "url" : "http://localhost:8080/owners/4/pets/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 41,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948250282,
+      "nearestState" : "state39"
+    },
+    "state85" : {
+      "name" : "state85",
+      "url" : "http://localhost:8080/owners/6/pets/8/visits/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 85,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948359116,
+      "nearestState" : "state83"
+    },
+    "state83" : {
+      "name" : "state83",
+      "url" : "http://localhost:8080/owners/7/pets/9/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 83,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948354256,
+      "nearestState" : "state81"
+    },
+    "index" : {
+      "name" : "index",
+      "url" : "http://localhost:8080/",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 98,
+        "xpath" : "/HTML[1]/BODY[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 660,
+        "xpath" : "//DIV[@id = 'main-navbar']/UL[1]/LI[1]/A[1]",
+        "width" : 40,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 700,
+        "xpath" : "//DIV[@id = 'main-navbar']/UL[1]/LI[2]/A[1]",
+        "width" : 103,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 803,
+        "xpath" : "//DIV[@id = 'main-navbar']/UL[1]/LI[3]/A[1]",
+        "width" : 163,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 967,
+        "xpath" : "//DIV[@id = 'main-navbar']/UL[1]/LI[4]/A[1]",
+        "width" : 176,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/NAV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      } ],
+      "fanIn" : 0,
+      "fanOut" : 2,
+      "id" : 0,
+      "failedEvents" : [ "xpath /HTML[1]/BODY[1]/NAV[1]/DIV[1]/DIV[1]/BUTTON[1]" ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948165267,
+      "nearestState" : "null"
+    },
+    "state45" : {
+      "name" : "state45",
+      "url" : "http://localhost:8080/owners/2/pets/2/visits/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 45,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948260080,
+      "nearestState" : "state43"
+    },
+    "state88" : {
+      "name" : "state88",
+      "url" : "http://localhost:8080/owners/10/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 88,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948366516,
+      "nearestState" : "state87"
+    },
+    "state43" : {
+      "name" : "state43",
+      "url" : "http://localhost:8080/owners/3/pets/4/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 43,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948255230,
+      "nearestState" : "state41"
+    },
+    "state87" : {
+      "name" : "state87",
+      "url" : "http://localhost:8080/owners/10",
+      "candidateElements" : [ {
+        "top" : 322,
+        "left" : 94,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 102,
+        "height" : 36
+      }, {
+        "top" : 322,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+        "width" : 115,
+        "height" : 36
+      }, {
+        "top" : 478,
+        "left" : 808,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+        "width" : 52,
+        "height" : 16
+      }, {
+        "top" : 478,
+        "left" : 884,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+        "width" : 59,
+        "height" : 16
+      }, {
+        "top" : 575,
+        "left" : 808,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[2]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+        "width" : 52,
+        "height" : 16
+      }, {
+        "top" : 575,
+        "left" : 884,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[2]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+        "width" : 59,
+        "height" : 16
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 6,
+      "id" : 87,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948363835,
+      "nearestState" : "state85"
+    },
+    "state48" : {
+      "name" : "state48",
+      "url" : "http://localhost:8080/owners/6/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 48,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948267538,
+      "nearestState" : "state47"
+    },
+    "state47" : {
+      "name" : "state47",
+      "url" : "http://localhost:8080/owners/6",
+      "candidateElements" : [ {
+        "top" : 322,
+        "left" : 94,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 102,
+        "height" : 36
+      }, {
+        "top" : 322,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+        "width" : 115,
+        "height" : 36
+      }, {
+        "top" : 538,
+        "left" : 785,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+        "width" : 52,
+        "height" : 16
+      }, {
+        "top" : 538,
+        "left" : 877,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[3]/TD[2]/A[1]",
+        "width" : 59,
+        "height" : 16
+      }, {
+        "top" : 675,
+        "left" : 785,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[2]/TD[2]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+        "width" : 52,
+        "height" : 16
+      }, {
+        "top" : 675,
+        "left" : 877,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[2]/TD[2]/TABLE[1]/TBODY[1]/TR[3]/TD[2]/A[1]",
+        "width" : 59,
+        "height" : 16
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 6,
+      "id" : 47,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948264895,
+      "nearestState" : "state45"
+    },
+    "state70" : {
+      "name" : "state70",
+      "url" : "http://localhost:8080/owners/7/pets/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 70,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948321971,
+      "nearestState" : "state68"
+    },
+    "state30" : {
+      "name" : "state30",
+      "url" : "http://localhost:8080/owners/4/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 30,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948223481,
+      "nearestState" : "state29"
+    },
+    "state74" : {
+      "name" : "state74",
+      "url" : "http://localhost:8080/owners/5/pets/6/visits/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 74,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948331806,
+      "nearestState" : "state72"
+    },
+    "state72" : {
+      "name" : "state72",
+      "url" : "http://localhost:8080/owners/6/pets/8/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 72,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948326928,
+      "nearestState" : "state70"
+    },
+    "state110" : {
+      "name" : "state110",
+      "url" : "http://localhost:8080/owners/10/pets/12/visits/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 110,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948425416,
+      "nearestState" : "state108"
+    },
+    "state100" : {
+      "name" : "state100",
+      "url" : "http://localhost:8080/owners/9/pets/11/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 100,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948397130,
+      "nearestState" : "state98"
+    },
+    "state102" : {
+      "name" : "state102",
+      "url" : "http://localhost:8080/owners/8/pets/10/visits/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 102,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948402012,
+      "nearestState" : "state100"
+    },
+    "state104" : {
+      "name" : "state104",
+      "url" : "http://localhost:8080/owners/6/pets/7/visits/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 104,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948408188,
+      "nearestState" : "state102"
+    },
+    "state106" : {
+      "name" : "state106",
+      "url" : "http://localhost:8080/owners/10/pets/12/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 106,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948414191,
+      "nearestState" : "state104"
+    },
+    "state79" : {
+      "name" : "state79",
+      "url" : "http://localhost:8080/owners/9/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 79,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948344399,
+      "nearestState" : "state78"
+    },
+    "state34" : {
+      "name" : "state34",
+      "url" : "http://localhost:8080/owners/2/pets/2/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 34,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948233266,
+      "nearestState" : "state32"
+    },
+    "state78" : {
+      "name" : "state78",
+      "url" : "http://localhost:8080/owners/9",
+      "candidateElements" : [ {
+        "top" : 322,
+        "left" : 94,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 102,
+        "height" : 36
+      }, {
+        "top" : 322,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+        "width" : 115,
+        "height" : 36
+      }, {
+        "top" : 478,
+        "left" : 808,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+        "width" : 52,
+        "height" : 16
+      }, {
+        "top" : 478,
+        "left" : 884,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+        "width" : 59,
+        "height" : 16
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 4,
+      "id" : 78,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948341984,
+      "nearestState" : "state76"
+    },
+    "state108" : {
+      "name" : "state108",
+      "url" : "http://localhost:8080/owners/9/pets/11/visits/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 108,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948419118,
+      "nearestState" : "state106"
+    },
+    "state32" : {
+      "name" : "state32",
+      "url" : "http://localhost:8080/owners/3/pets/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 32,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948228467,
+      "nearestState" : "state30"
+    },
+    "state76" : {
+      "name" : "state76",
+      "url" : "http://localhost:8080/owners/3/pets/3/visits/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 76,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948337419,
+      "nearestState" : "state74"
+    },
+    "state39" : {
+      "name" : "state39",
+      "url" : "http://localhost:8080/owners/5/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 39,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948245337,
+      "nearestState" : "state38"
+    },
+    "state38" : {
+      "name" : "state38",
+      "url" : "http://localhost:8080/owners/5",
+      "candidateElements" : [ {
+        "top" : 322,
+        "left" : 94,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 102,
+        "height" : 36
+      }, {
+        "top" : 322,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+        "width" : 115,
+        "height" : 36
+      }, {
+        "top" : 478,
+        "left" : 808,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+        "width" : 52,
+        "height" : 16
+      }, {
+        "top" : 478,
+        "left" : 884,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+        "width" : 59,
+        "height" : 16
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 4,
+      "id" : 38,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948242920,
+      "nearestState" : "state36"
+    },
+    "state36" : {
+      "name" : "state36",
+      "url" : "http://localhost:8080/owners/1/pets/1/visits/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 36,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948238207,
+      "nearestState" : "state34"
+    },
+    "state20" : {
+      "name" : "state20",
+      "url" : "http://localhost:8080/owners/1/pets/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 20,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948200161,
+      "nearestState" : "state19"
+    },
+    "state63" : {
+      "name" : "state63",
+      "url" : "http://localhost:8080/owners/4/pets/5/visits/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 63,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948304938,
+      "nearestState" : "state61"
+    },
+    "state61" : {
+      "name" : "state61",
+      "url" : "http://localhost:8080/owners/5/pets/6/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 61,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948299972,
+      "nearestState" : "state59"
+    },
+    "state112" : {
+      "name" : "state112",
+      "url" : "http://localhost:8080/owners/10/pets/13/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 112,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948430974,
+      "nearestState" : "state110"
+    },
+    "state114" : {
+      "name" : "state114",
+      "url" : "http://localhost:8080/owners/10/pets/13/visits/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 114,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948435875,
+      "nearestState" : "state112"
+    },
+    "state29" : {
+      "name" : "state29",
+      "url" : "http://localhost:8080/owners/4",
+      "candidateElements" : [ {
+        "top" : 322,
+        "left" : 94,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 102,
+        "height" : 36
+      }, {
+        "top" : 322,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+        "width" : 115,
+        "height" : 36
+      }, {
+        "top" : 478,
+        "left" : 808,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+        "width" : 52,
+        "height" : 16
+      }, {
+        "top" : 478,
+        "left" : 884,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+        "width" : 59,
+        "height" : 16
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 4,
+      "id" : 29,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948221035,
+      "nearestState" : "state27"
+    },
+    "state68" : {
+      "name" : "state68",
+      "url" : "http://localhost:8080/owners/8/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 68,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948317064,
+      "nearestState" : "state67"
+    },
+    "state23" : {
+      "name" : "state23",
+      "url" : "http://localhost:8080/owners/3/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 23,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948206860,
+      "nearestState" : "state22"
+    },
+    "state67" : {
+      "name" : "state67",
+      "url" : "http://localhost:8080/owners/8",
+      "candidateElements" : [ {
+        "top" : 322,
+        "left" : 94,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 102,
+        "height" : 36
+      }, {
+        "top" : 322,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+        "width" : 115,
+        "height" : 36
+      }, {
+        "top" : 478,
+        "left" : 808,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+        "width" : 52,
+        "height" : 16
+      }, {
+        "top" : 478,
+        "left" : 884,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+        "width" : 59,
+        "height" : 16
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 4,
+      "id" : 67,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948314667,
+      "nearestState" : "state65"
+    },
+    "state22" : {
+      "name" : "state22",
+      "url" : "http://localhost:8080/owners/3",
+      "candidateElements" : [ {
+        "top" : 322,
+        "left" : 94,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 102,
+        "height" : 36
+      }, {
+        "top" : 322,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+        "width" : 115,
+        "height" : 36
+      }, {
+        "top" : 478,
+        "left" : 808,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+        "width" : 52,
+        "height" : 16
+      }, {
+        "top" : 478,
+        "left" : 884,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+        "width" : 59,
+        "height" : 16
+      }, {
+        "top" : 575,
+        "left" : 808,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[2]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+        "width" : 52,
+        "height" : 16
+      }, {
+        "top" : 575,
+        "left" : 884,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[2]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+        "width" : 59,
+        "height" : 16
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 6,
+      "id" : 22,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948204352,
+      "nearestState" : "state20"
+    },
+    "state65" : {
+      "name" : "state65",
+      "url" : "http://localhost:8080/owners/3/pets/3/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 65,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948310601,
+      "nearestState" : "state63"
+    },
+    "state27" : {
+      "name" : "state27",
+      "url" : "http://localhost:8080/owners/1/pets/1/edit",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 27,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948216925,
+      "nearestState" : "state25"
+    },
+    "state25" : {
+      "name" : "state25",
+      "url" : "http://localhost:8080/owners/2/pets/new",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 25,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : -1,
+      "timeAdded" : 1561948211852,
+      "nearestState" : "state23"
+    }
+  },
+  "edges" : [ {
+    "from" : "index",
+    "to" : "state5",
+    "text" : "Find owners",
+    "id" : "xpath //DIV[@id = 'main-navbar']/UL[1]/LI[3]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Find owners, attributes={href=/owners/find, title=find owners}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state5",
+    "to" : "state6",
+    "text" : "Add Owner",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add Owner, attributes={class=btn btn-default, href=/owners/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state6",
+    "to" : "state7",
+    "text" : "Add Owner",
+    "id" : "xpath //FORM[@id = 'add-owner-form']/DIV[2]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Add Owner, attributes={class=btn btn-default, type=submit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "index",
+    "to" : "state9",
+    "text" : "Veterinarians",
+    "id" : "xpath //DIV[@id = 'main-navbar']/UL[1]/LI[4]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Veterinarians, attributes={href=/vets.html, title=veterinarians}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state5",
+    "to" : "state11",
+    "text" : "Find          Owner",
+    "id" : "xpath //FORM[@id = 'search-owner-form']/DIV[2]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Find          Owner, attributes={class=btn btn-default, type=submit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state11",
+    "to" : "state12",
+    "text" : "George Franklin",
+    "id" : "xpath //TABLE[@id = 'owners']/TBODY[1]/TR[1]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=George Franklin, attributes={href=/owners/1}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state12",
+    "to" : "state13",
+    "text" : "Edit      Owner",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit      Owner, attributes={class=btn btn-default, href=1/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state11",
+    "to" : "state16",
+    "text" : "Betty Davis",
+    "id" : "xpath //TABLE[@id = 'owners']/TBODY[1]/TR[2]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Betty Davis, attributes={href=/owners/2}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state16",
+    "to" : "state17",
+    "text" : "Edit      Owner",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit      Owner, attributes={class=btn btn-default, href=2/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state12",
+    "to" : "state19",
+    "text" : "Add      New Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+    "element" : "Element{node=[A: null], tag=A, text=Add      New Pet, attributes={class=btn btn-default, href=1/pets/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state19",
+    "to" : "state20",
+    "text" : "Add Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Add Pet, attributes={class=btn btn-default, type=submit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state11",
+    "to" : "state22",
+    "text" : "Eduardo Rodriquez",
+    "id" : "xpath //TABLE[@id = 'owners']/TBODY[1]/TR[3]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Eduardo Rodriquez, attributes={href=/owners/3}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state22",
+    "to" : "state23",
+    "text" : "Edit      Owner",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit      Owner, attributes={class=btn btn-default, href=3/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state16",
+    "to" : "state25",
+    "text" : "Add      New Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+    "element" : "Element{node=[A: null], tag=A, text=Add      New Pet, attributes={class=btn btn-default, href=2/pets/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state12",
+    "to" : "state27",
+    "text" : "Edit                  Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit                  Pet, attributes={href=1/pets/1/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state11",
+    "to" : "state29",
+    "text" : "Harold Davis",
+    "id" : "xpath //TABLE[@id = 'owners']/TBODY[1]/TR[4]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Harold Davis, attributes={href=/owners/4}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state29",
+    "to" : "state30",
+    "text" : "Edit      Owner",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit      Owner, attributes={class=btn btn-default, href=4/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state22",
+    "to" : "state32",
+    "text" : "Add      New Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+    "element" : "Element{node=[A: null], tag=A, text=Add      New Pet, attributes={class=btn btn-default, href=3/pets/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state16",
+    "to" : "state34",
+    "text" : "Edit                  Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit                  Pet, attributes={href=2/pets/2/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state12",
+    "to" : "state36",
+    "text" : "Add                  Visit",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add                  Visit, attributes={href=1/pets/1/visits/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state11",
+    "to" : "state38",
+    "text" : "Peter McTavish",
+    "id" : "xpath //TABLE[@id = 'owners']/TBODY[1]/TR[5]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Peter McTavish, attributes={href=/owners/5}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state38",
+    "to" : "state39",
+    "text" : "Edit      Owner",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit      Owner, attributes={class=btn btn-default, href=5/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state29",
+    "to" : "state41",
+    "text" : "Add      New Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+    "element" : "Element{node=[A: null], tag=A, text=Add      New Pet, attributes={class=btn btn-default, href=4/pets/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state22",
+    "to" : "state43",
+    "text" : "Edit                  Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit                  Pet, attributes={href=3/pets/4/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state16",
+    "to" : "state45",
+    "text" : "Add                  Visit",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add                  Visit, attributes={href=2/pets/2/visits/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state11",
+    "to" : "state47",
+    "text" : "Jean Coleman",
+    "id" : "xpath //TABLE[@id = 'owners']/TBODY[1]/TR[6]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Jean Coleman, attributes={href=/owners/6}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state47",
+    "to" : "state48",
+    "text" : "Edit      Owner",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit      Owner, attributes={class=btn btn-default, href=6/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state38",
+    "to" : "state50",
+    "text" : "Add      New Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+    "element" : "Element{node=[A: null], tag=A, text=Add      New Pet, attributes={class=btn btn-default, href=5/pets/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state29",
+    "to" : "state52",
+    "text" : "Edit                  Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit                  Pet, attributes={href=4/pets/5/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state22",
+    "to" : "state54",
+    "text" : "Add                  Visit",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add                  Visit, attributes={href=3/pets/4/visits/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state11",
+    "to" : "state56",
+    "text" : "Jeff Black",
+    "id" : "xpath //TABLE[@id = 'owners']/TBODY[1]/TR[7]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Jeff Black, attributes={href=/owners/7}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state56",
+    "to" : "state57",
+    "text" : "Edit      Owner",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit      Owner, attributes={class=btn btn-default, href=7/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state47",
+    "to" : "state59",
+    "text" : "Add      New Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+    "element" : "Element{node=[A: null], tag=A, text=Add      New Pet, attributes={class=btn btn-default, href=6/pets/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state38",
+    "to" : "state61",
+    "text" : "Edit                  Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit                  Pet, attributes={href=5/pets/6/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state29",
+    "to" : "state63",
+    "text" : "Add                  Visit",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add                  Visit, attributes={href=4/pets/5/visits/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state22",
+    "to" : "state65",
+    "text" : "Edit                  Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[2]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit                  Pet, attributes={href=3/pets/3/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state11",
+    "to" : "state67",
+    "text" : "Maria Escobito",
+    "id" : "xpath //TABLE[@id = 'owners']/TBODY[1]/TR[8]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Maria Escobito, attributes={href=/owners/8}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state67",
+    "to" : "state68",
+    "text" : "Edit      Owner",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit      Owner, attributes={class=btn btn-default, href=8/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state56",
+    "to" : "state70",
+    "text" : "Add      New Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+    "element" : "Element{node=[A: null], tag=A, text=Add      New Pet, attributes={class=btn btn-default, href=7/pets/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state47",
+    "to" : "state72",
+    "text" : "Edit                  Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit                  Pet, attributes={href=6/pets/8/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state38",
+    "to" : "state74",
+    "text" : "Add                  Visit",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add                  Visit, attributes={href=5/pets/6/visits/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state22",
+    "to" : "state76",
+    "text" : "Add                  Visit",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[2]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add                  Visit, attributes={href=3/pets/3/visits/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state11",
+    "to" : "state78",
+    "text" : "David Schroeder",
+    "id" : "xpath //TABLE[@id = 'owners']/TBODY[1]/TR[9]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=David Schroeder, attributes={href=/owners/9}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state78",
+    "to" : "state79",
+    "text" : "Edit      Owner",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit      Owner, attributes={class=btn btn-default, href=9/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state67",
+    "to" : "state81",
+    "text" : "Add      New Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+    "element" : "Element{node=[A: null], tag=A, text=Add      New Pet, attributes={class=btn btn-default, href=8/pets/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state56",
+    "to" : "state83",
+    "text" : "Edit                  Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit                  Pet, attributes={href=7/pets/9/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state47",
+    "to" : "state85",
+    "text" : "Add                  Visit",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[3]/TD[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add                  Visit, attributes={href=6/pets/8/visits/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state11",
+    "to" : "state87",
+    "text" : "Carlos Estaban",
+    "id" : "xpath //TABLE[@id = 'owners']/TBODY[1]/TR[10]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Carlos Estaban, attributes={href=/owners/10}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state87",
+    "to" : "state88",
+    "text" : "Edit      Owner",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit      Owner, attributes={class=btn btn-default, href=10/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state78",
+    "to" : "state90",
+    "text" : "Add      New Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+    "element" : "Element{node=[A: null], tag=A, text=Add      New Pet, attributes={class=btn btn-default, href=9/pets/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state67",
+    "to" : "state92",
+    "text" : "Edit                  Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit                  Pet, attributes={href=8/pets/10/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state56",
+    "to" : "state94",
+    "text" : "Add                  Visit",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add                  Visit, attributes={href=7/pets/9/visits/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state47",
+    "to" : "state96",
+    "text" : "Edit                  Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[2]/TD[2]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit                  Pet, attributes={href=6/pets/7/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state87",
+    "to" : "state98",
+    "text" : "Add      New Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+    "element" : "Element{node=[A: null], tag=A, text=Add      New Pet, attributes={class=btn btn-default, href=10/pets/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state78",
+    "to" : "state100",
+    "text" : "Edit                  Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit                  Pet, attributes={href=9/pets/11/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state67",
+    "to" : "state102",
+    "text" : "Add                  Visit",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add                  Visit, attributes={href=8/pets/10/visits/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state47",
+    "to" : "state104",
+    "text" : "Add                  Visit",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[2]/TD[2]/TABLE[1]/TBODY[1]/TR[3]/TD[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add                  Visit, attributes={href=6/pets/7/visits/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state87",
+    "to" : "state106",
+    "text" : "Edit                  Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit                  Pet, attributes={href=10/pets/12/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state78",
+    "to" : "state108",
+    "text" : "Add                  Visit",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add                  Visit, attributes={href=9/pets/11/visits/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state87",
+    "to" : "state110",
+    "text" : "Add                  Visit",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add                  Visit, attributes={href=10/pets/12/visits/new}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state87",
+    "to" : "state112",
+    "text" : "Edit                  Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[2]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit                  Pet, attributes={href=10/pets/13/edit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state87",
+    "to" : "state114",
+    "text" : "Add                  Visit",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[2]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add                  Visit, attributes={href=10/pets/13/visits/new}}",
+    "eventType" : "click"
+  } ],
+  "statistics" : {
+    "duration" : "4 minutes 34 seconds",
+    "crawlPaths" : 48,
+    "averageDomSize" : "5.412 kB",
+    "edges" : 62,
+    "startDate" : "2019-07-01 10:29:16 CST",
+    "stateStats" : {
+      "leastFanOut" : {
+        "id" : "state92",
+        "count" : 0
+      },
+      "leastFanIn" : {
+        "id" : "index",
+        "count" : 0
+      },
+      "mostFanOut" : {
+        "id" : "state11",
+        "count" : 10
+      },
+      "mostFanIn" : {
+        "id" : "state92",
+        "count" : 1
+      },
+      "totalNumberOfStates" : 63,
+      "urls" : {
+        "http://localhost:8080/owners/8/pets/10/edit" : [ "state92" ],
+        "http://localhost:8080/owners/9/pets/new" : [ "state90" ],
+        "http://localhost:8080/owners/4/pets/5/edit" : [ "state52" ],
+        "http://localhost:8080/vets.html" : [ "state9" ],
+        "http://localhost:8080/owners/6/pets/7/edit" : [ "state96" ],
+        "http://localhost:8080/owners/5/pets/new" : [ "state50" ],
+        "http://localhost:8080/owners/7/pets/9/visits/new" : [ "state94" ],
+        "http://localhost:8080/owners/new" : [ "state6", "state7" ],
+        "http://localhost:8080/owners/find" : [ "state5" ],
+        "http://localhost:8080/owners/1/pets/new" : [ "state19", "state20" ],
+        "http://localhost:8080/owners/7/edit" : [ "state57" ],
+        "http://localhost:8080/owners/1/edit" : [ "state13" ],
+        "http://localhost:8080/owners/7" : [ "state56" ],
+        "http://localhost:8080/owners/1" : [ "state12" ],
+        "http://localhost:8080/owners?lastName=" : [ "state11" ],
+        "http://localhost:8080/owners/3/pets/4/visits/new" : [ "state54" ],
+        "http://localhost:8080/owners/10/pets/new" : [ "state98" ],
+        "http://localhost:8080/owners/2/edit" : [ "state17" ],
+        "http://localhost:8080/owners/2" : [ "state16" ],
+        "http://localhost:8080/owners/6/pets/new" : [ "state59" ],
+        "http://localhost:8080/owners/8/pets/new" : [ "state81" ],
+        "http://localhost:8080/owners/4/pets/new" : [ "state41" ],
+        "http://localhost:8080/owners/6/pets/8/visits/new" : [ "state85" ],
+        "http://localhost:8080/owners/7/pets/9/edit" : [ "state83" ],
+        "http://localhost:8080/" : [ "index" ],
+        "http://localhost:8080/owners/2/pets/2/visits/new" : [ "state45" ],
+        "http://localhost:8080/owners/10/edit" : [ "state88" ],
+        "http://localhost:8080/owners/3/pets/4/edit" : [ "state43" ],
+        "http://localhost:8080/owners/10" : [ "state87" ],
+        "http://localhost:8080/owners/6/edit" : [ "state48" ],
+        "http://localhost:8080/owners/6" : [ "state47" ],
+        "http://localhost:8080/owners/7/pets/new" : [ "state70" ],
+        "http://localhost:8080/owners/4/edit" : [ "state30" ],
+        "http://localhost:8080/owners/5/pets/6/visits/new" : [ "state74" ],
+        "http://localhost:8080/owners/6/pets/8/edit" : [ "state72" ],
+        "http://localhost:8080/owners/10/pets/12/visits/new" : [ "state110" ],
+        "http://localhost:8080/owners/9/pets/11/edit" : [ "state100" ],
+        "http://localhost:8080/owners/8/pets/10/visits/new" : [ "state102" ],
+        "http://localhost:8080/owners/6/pets/7/visits/new" : [ "state104" ],
+        "http://localhost:8080/owners/10/pets/12/edit" : [ "state106" ],
+        "http://localhost:8080/owners/9/edit" : [ "state79" ],
+        "http://localhost:8080/owners/2/pets/2/edit" : [ "state34" ],
+        "http://localhost:8080/owners/9" : [ "state78" ],
+        "http://localhost:8080/owners/9/pets/11/visits/new" : [ "state108" ],
+        "http://localhost:8080/owners/3/pets/new" : [ "state32" ],
+        "http://localhost:8080/owners/3/pets/3/visits/new" : [ "state76" ],
+        "http://localhost:8080/owners/5/edit" : [ "state39" ],
+        "http://localhost:8080/owners/5" : [ "state38" ],
+        "http://localhost:8080/owners/1/pets/1/visits/new" : [ "state36" ],
+        "http://localhost:8080/owners/4/pets/5/visits/new" : [ "state63" ],
+        "http://localhost:8080/owners/5/pets/6/edit" : [ "state61" ],
+        "http://localhost:8080/owners/10/pets/13/edit" : [ "state112" ],
+        "http://localhost:8080/owners/10/pets/13/visits/new" : [ "state114" ],
+        "http://localhost:8080/owners/4" : [ "state29" ],
+        "http://localhost:8080/owners/8/edit" : [ "state68" ],
+        "http://localhost:8080/owners/3/edit" : [ "state23" ],
+        "http://localhost:8080/owners/8" : [ "state67" ],
+        "http://localhost:8080/owners/3" : [ "state22" ],
+        "http://localhost:8080/owners/3/pets/3/edit" : [ "state65" ],
+        "http://localhost:8080/owners/1/pets/1/edit" : [ "state27" ],
+        "http://localhost:8080/owners/2/pets/new" : [ "state25" ]
+      }
+    },
+    "failedEvents" : 1
+  },
+  "exitStatus" : "EXHAUSTED"
+}

@@ -1,0 +1,207 @@
+<html><head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/resources/images/favicon.png">
+
+    <title>PetClinic :: a Spring Framework demonstration</title>
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="/resources/css/petclinic.css">
+
+  </head>
+
+<body>
+
+  <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="/"><span></span></a>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+                  <span class="sr-only"><os-p>Toggle navigation</os-p></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          </div>
+          <div class="navbar-collapse collapse" id="main-navbar">
+              <ul class="nav navbar-nav navbar-right">
+  
+                  <li>
+                      <a href="">
+                        <span class="glyphicon  glyphicon-null" aria-hidden="true"></span>
+                        <span></span>
+                      </a>
+                  </li>
+  
+                  <li>
+                      <a href="/" title="home page">
+                        <span class="glyphicon  glyphicon-home" aria-hidden="true"></span>
+                        <span>Home</span>
+                      </a>
+                  </li>
+  
+                  <li class="active">
+                      <a href="/owners/find" title="find owners">
+                        <span class="glyphicon  glyphicon-search" aria-hidden="true"></span>
+                        <span>Find owners</span>
+                      </a>
+                  </li>
+  
+                  <li>
+                      <a href="/vets.html" title="veterinarians">
+                        <span class="glyphicon  glyphicon-th-list" aria-hidden="true"></span>
+                        <span>Veterinarians</span>
+                      </a>
+                  </li>
+  
+                  <li>
+                      <a href="/oups" title="trigger a RuntimeException to see how it is handled">
+                        <span class="glyphicon  glyphicon-warning-sign" aria-hidden="true"></span>
+                        <span>Error</span>
+                      </a>
+                  </li>
+  
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <div class="container-fluid">
+      <div class="container xd-container">
+  
+          
+
+    <h2>Owners</h2>
+
+    <table id="owners" class="table table-striped">
+        <thead>
+        <tr>
+            <th style="width: 150px;">Name</th>
+            <th style="width: 200px;">Address</th>
+            <th>City</th>
+            <th style="width: 120px">Telephone</th>
+            <th>Pets</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>
+                  <a href="/owners/1">George Franklin</a>
+              </td>
+              <td>110 W. Liberty St.</td>
+              <td>Madison</td>
+              <td>6085551023</td>
+              <td><span>Leo</span></td>
+          </tr>
+          <tr>
+              <td>
+                  <a href="/owners/2">Betty Davis</a>
+              </td>
+              <td>638 Cardinal Ave.</td>
+              <td>Sun Prairie</td>
+              <td>6085551749</td>
+              <td><span>Basil</span></td>
+          </tr>
+          <tr>
+              <td>
+                  <a href="/owners/3">Eduardo Rodriquez</a>
+              </td>
+              <td>2693 Commerce St.</td>
+              <td>McFarland</td>
+              <td>6085558763</td>
+              <td><span>Jewel</span><span>Rosy</span></td>
+          </tr>
+          <tr>
+              <td>
+                  <a href="/owners/4">Harold Davis</a>
+              </td>
+              <td>563 Friendly St.</td>
+              <td>Windsor</td>
+              <td>6085553198</td>
+              <td><span>Iggy</span></td>
+          </tr>
+          <tr>
+              <td>
+                  <a href="/owners/5">Peter McTavish</a>
+              </td>
+              <td>2387 S. Fair Way</td>
+              <td>Madison</td>
+              <td>6085552765</td>
+              <td><span>George</span></td>
+          </tr>
+          <tr>
+              <td>
+                  <a href="/owners/6">Jean Coleman</a>
+              </td>
+              <td>105 N. Lake St.</td>
+              <td>Monona</td>
+              <td>6085552654</td>
+              <td><span>Max</span><span>Samantha</span></td>
+          </tr>
+          <tr>
+              <td>
+                  <a href="/owners/7">Jeff Black</a>
+              </td>
+              <td>1450 Oak Blvd.</td>
+              <td>Monona</td>
+              <td>6085555387</td>
+              <td><span>Lucky</span></td>
+          </tr>
+          <tr>
+              <td>
+                  <a href="/owners/8">Maria Escobito</a>
+              </td>
+              <td>345 Maple St.</td>
+              <td>Madison</td>
+              <td>6085557683</td>
+              <td><span>Mulligan</span></td>
+          </tr>
+          <tr>
+              <td>
+                  <a href="/owners/9">David Schroeder</a>
+              </td>
+              <td>2749 Blackhawk Trail</td>
+              <td>Madison</td>
+              <td>6085559435</td>
+              <td><span>Freddy</span></td>
+          </tr>
+          <tr>
+              <td>
+                  <a href="/owners/10">Carlos Estaban</a>
+              </td>
+              <td>2335 Independence La.</td>
+              <td>Waunakee</td>
+              <td>6085555487</td>
+              <td><span>Lucky</span><span>Sly</span></td>
+          </tr>
+        </tbody>
+    </table>
+
+  
+
+        <br>
+        <br>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <img src="/resources/images/spring-pivotal-logo.png" alt="Sponsored by Pivotal"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <script src="/webjars/jquery/2.2.4/jquery.min.js"></script>
+  <script src="/webjars/jquery-ui/1.11.4/jquery-ui.min.js"></script>
+  <script src="/webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+
+</body></html>

@@ -12,7 +12,7 @@ import os
 def delete(filepath):
     f=open(filepath)
     path = 'D:\code\python\PageOs\POparse\cluster'
-    f_new = open(os.path.join(path,'new.txt'), 'w')
+    f_new = open(os.path.join(path,'new_index.html'), 'w')
     for line in f.readlines():
         data = line.strip()
         if len(data) != 0:
@@ -24,4 +24,5 @@ def delete(filepath):
 
 if __name__ == '__main__':
 
-    delete( 'D:\code\python\PageOs\POparse\cluster\stopwords.txt')
+    # delete( 'D:\code\python\PageOs\POparse\cluster\stopwords.txt')
+    delete('D:\code\python\PageOs\POparse\doms\index.html')
