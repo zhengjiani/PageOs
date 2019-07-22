@@ -112,3 +112,10 @@ python运行命令行命令，我用来调用jar包</br>
 python按行读取文件：<br>
 
     https://www.cnblogs.com/xuxn/archive/2011/07/27/read-a-file-with-python.html
+    
+数据集网址：https://pythonprogramming.net/static/downloads/machine-learning-data/titanic.xls
+新的模块sklearn.model_selection，将以前的sklearn.cross_validation, sklearn.grid_search 和 sklearn.learning_curve模块组合到一起<br>
+
+通过指定标签名称和相应的轴，或直接指定索引或列名称来删除行或列。 使用多索引时，可以通过指定级别来删除不同级别上的标签。<br>
+
+    X = np.array(df.drop([''],1).astype(float))
