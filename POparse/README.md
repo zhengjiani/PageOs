@@ -21,3 +21,15 @@ all the menu bar links in the page -> navigational methods
         {% endfor %}
     {%-  endblock %}
    
+# pandas聚合、分组、统计操作
+删除字典中重复值对应的键
+
+    func = lambda z:dict([(x, y) for y, x in z.items()])
+    print(len(func(func(res1))))
+    上述方法等同于
+    lis =set()
+    for k,v1 in res1.items():
+        for k2,v2 in res1.items():
+            if v1 == v2:
+                lis.add(v1)
+    print(len(lis))
