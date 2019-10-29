@@ -2,46 +2,195 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e10a1b4-98d6-489c-b6c6-1c3cbd2436c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pro_one/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pro_one/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pro_one/data_pool.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pro_one/edx_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pro_one/failed_screenshots/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pro_one/github_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pro_one/parse_pagefile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pro_one/source_html/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pro_one/test_edx.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pro_one/test_github.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pro_one/util/prac.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/common/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/common/getPath.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/common/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/route/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/route/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/route/po.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/service/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/service/dashboard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/service/dot_graph/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/service/dot_graph/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/service/dot_graph/petclinic.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/service/po_parse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/static/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/static/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/templates/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/templates/auth/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/templates/auth/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/templates/po/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/templates/po/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/templates/po/update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/templates/upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prac300.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/confest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2019年1月blog汇总.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CUT.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Check.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UpLoad.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pro_one/Dynamically_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes_Pyreverse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/decorator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dfs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dom_parser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/draw_graph.dot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hidden_handle.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/make_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navgraph.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pagev1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pro_one/pages/DirectWeightGraph.py" beforeDir="false" afterPath="$PROJECT_DIR$/pro_one/util/DirectWeightGraph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/test-table.gv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/test-table.gv.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_ajax.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DOMparse/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/MANIFEST.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/algorithm/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/Demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/Demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/Demo1.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/Demo1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/RTED.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/RTED.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/alchemyGraph.json" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/alchemyGraph.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/dom_distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/dom_distance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/dom_string.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/dom_string.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/frequency_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/frequency_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/hierarchical_cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/hierarchical_cluster.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/info_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/info_tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/new.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/new.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/new_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/new_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/remove_blank.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/remove_blank.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/tag_frequency.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/tag_frequency.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/tf.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/tf.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/tf_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/tf_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/url.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/url.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/url_distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/url_distance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/wf1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/wf1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/wf2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/wf2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/cluster/word_frequency.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/word_frequency.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state100.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state100.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state102.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state102.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state104.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state104.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state106.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state106.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state108.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state108.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state11.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state110.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state110.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state112.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state112.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state114.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state114.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state12.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state13.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state16.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state16.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state17.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state17.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state19.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state19.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state20.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state20.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state22.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state22.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state23.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state23.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state25.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state25.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state27.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state27.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state29.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state29.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state30.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state30.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state32.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state32.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state34.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state34.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state36.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state36.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state38.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state38.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state39.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state39.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state41.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state41.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state43.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state43.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state45.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state45.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state47.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state47.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state48.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state48.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state5.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state50.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state50.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state52.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state52.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state54.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state54.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state56.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state56.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state57.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state57.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state59.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state59.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state6.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state61.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state61.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state63.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state63.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state65.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state65.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state67.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state67.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state68.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state68.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state7.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state70.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state70.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state72.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state72.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state74.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state74.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state76.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state76.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state78.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state78.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state79.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state79.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state81.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state81.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state83.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state83.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state85.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state85.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state87.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state87.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state88.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state88.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state9.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state90.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state90.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state92.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state92.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state94.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state94.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state96.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state96.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/doms/state98.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state98.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/findpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/findpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/parse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/parse_html.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/parse_html.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/result.json" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/result.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/templates/base.j2" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/templates/base.j2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/templates/locators.j2" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/templates/locators.j2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/templates/page.j2" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/templates/page.j2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POparse/test_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/test_demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokchoy_pages/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/bokchoy_pages/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokchoy_pages/address_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/bokchoy_pages/address_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokchoy_pages/github_api_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/bokchoy_pages/github_api_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokchoy_pages/github_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/bokchoy_pages/github_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokchoy_pages/litemll_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/bokchoy_pages/litemll_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokchoy_pages/pet1_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/bokchoy_pages/pet1_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokchoy_pages/pet_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/bokchoy_pages/pet_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokchoy_pages/test_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/bokchoy_pages/test_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokchoy_pages/test_pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/bokchoy_pages/test_pet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dot_graph/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dot_graph/graph_visual.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/dot_graph/graph_visual.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dot_graph/page.dot" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/dot_graph/page.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dot_graph/parse_pagefile.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/dot_graph/parse_pagefile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dot_graph/test-output/round-table.gv" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/dot_graph/test-output/round-table.gv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dot_graph/test-output/round-table.gv.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/dot_graph/test-output/round-table.gv.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/Layer.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/Layer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/selenium_ori/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/selenium_ori/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/selenium_ori/element.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/selenium_ori/element.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/selenium_ori/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/selenium_ori/locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/selenium_ori/page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/selenium_ori/page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/selenium_ori/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/selenium_ori/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/templates/base.j2" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/templates/base.j2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/templates/testcase.j2" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/templates/testcase.j2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poium_demos/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poium_demos/baidu_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/poium_demos/baidu_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poium_demos/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/poium_demos/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poium_demos/test_badu.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/poium_demos/test_badu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poium_demos/test_parallel.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/poium_demos/test_parallel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poium_demos/test_rerunfailures.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/poium_demos/test_rerunfailures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poium_demos/test_sub.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/poium_demos/test_sub.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/DirectWeightGraph.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/DirectWeightGraph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/UpLoad.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/UpLoad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/poium_demos/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/find_path.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/find_path.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/make_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/make_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/parse_pagefile.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/parse_pagefile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/readfile/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/readfile/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/readfile/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/readfile/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/readfile/data_file/user_info" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/readfile/data_file/user_info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/readfile/data_file/user_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/readfile/data_file/user_info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/readfile/read_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/readfile/read_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/readfile/read_txt.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/readfile/read_txt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/tree_eta.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/tree_eta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/tree_visual.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/tree_visual.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,145 +214,24 @@
     <SUITE FILE_PATH="coverage/PageOs$Unittests_in_test_py.coverage" NAME="Unittests in test.py Coverage Results" MODIFIED="1553860457817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PageOs$parse_pagefile.coverage" NAME="parse_pagefile Coverage Results" MODIFIED="1554089075694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pro_one" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/pro_one/util/DirectWeightGraph.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="415">
-                    <caret line="144" column="5" selection-start-line="135" selection-start-column="26" selection-end-line="144" selection-end-column="5" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1477768670">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="-739583010">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.12" value="2" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="9" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="README" value="1" />
-          <entry key="graphml" value="1" />
-          <entry key="html" value="1" />
-          <entry key="log" value="1" />
-          <entry key="png" value="5" />
-          <entry key="py" value="69" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="HTML" value="1" />
-          <entry key="Image" value="5" />
-          <entry key="Log" value="1" />
-          <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="69" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="14" />
-          <entry key="py" value="13249" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PLAIN_TEXT" value="14" />
-          <entry key="Python" value="13249" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pro_one/litemll_page.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="600" lean-forward="true" selection-start-line="600" selection-end-line="600" />
-              <folding>
-                <element signature="e#24#37#0" expanded="true" />
-                <marker date="1554083330656" expanded="true" signature="367:469" ph="..." />
-                <marker date="1554083330656" expanded="true" signature="1575:3423" ph="..." />
-                <marker date="1554083330656" expanded="true" signature="1647:1795" ph="..." />
-                <marker date="1554083330656" expanded="true" signature="3755:3978" ph="..." />
-                <marker date="1554083330656" expanded="true" signature="9367:9385" ph="..." />
-                <marker date="1554083330656" expanded="true" signature="11737:12198" ph="..." />
-                <marker date="1554083330656" expanded="true" signature="11815:11907" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pro_one/parse_pagefile.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="57" column="16" lean-forward="true" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <marker date="1554089203693" expanded="true" signature="1803:2173" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pro_one/util/prac.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pro_one/data_pool.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-              <folding>
-                <marker date="1553850346724" expanded="true" signature="23:28" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -219,87 +247,34 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/pro_one/pages/prac.py" />
-        <option value="$PROJECT_DIR$/pro_one/pages/pagev1.py" />
-        <option value="$PROJECT_DIR$/pro_one/test/test1.py" />
-        <option value="$PROJECT_DIR$/pro_one/pages/github_page.py" />
-        <option value="$PROJECT_DIR$/pro_one/__init__.py" />
-        <option value="$PROJECT_DIR$/pro_one/edx_page.py" />
-        <option value="$PROJECT_DIR$/pro_one/test_edx.py" />
-        <option value="$PROJECT_DIR$/pro_one/test_github.py" />
-        <option value="$PROJECT_DIR$/pro_one/github_page.py" />
-        <option value="$PROJECT_DIR$/pro_one/prac.py" />
-        <option value="$PROJECT_DIR$/pro_one/conftest.py" />
-        <option value="$PROJECT_DIR$/venv/Lib/site-packages/bok_choy/browser.py" />
-        <option value="$PROJECT_DIR$/venv/Lib/site-packages/bok_choy/web_app_test.py" />
-        <option value="$PROJECT_DIR$/pro_one/data_pool.py" />
-        <option value="$PROJECT_DIR$/pro_one/test.py" />
-        <option value="$PROJECT_DIR$/pro_one/Dynamically_test.py" />
-        <option value="$PROJECT_DIR$/pro_one/litemll_page.py" />
-        <option value="$PROJECT_DIR$/pro_one/util/prac.py" />
-        <option value="$PROJECT_DIR$/pro_one/parse_pagefile.py" />
-      </list>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1358" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-  </component>
+  <component name="ProjectId" id="1RERm2nFP8SuTcmSVlqTLM7fgaT" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="PageOs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PageOs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PageOs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PageOs" type="462c0819:PsiDirectoryNode" />
-              <item name="pro_one" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PageOs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PageOs" type="462c0819:PsiDirectoryNode" />
-              <item name="pro_one" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../bok-choy-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pograph/common" />
+      <recent name="$PROJECT_DIR$/pograph/route" />
+      <recent name="$PROJECT_DIR$/pograph/service" />
+      <recent name="$PROJECT_DIR$/pograph" />
       <recent name="D:\code\python\PageOs\pro_one" />
-      <recent name="D:\code\python\PageOs\pro_one\util" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -314,117 +289,131 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.parse_pagefile">
-    <configuration name="litemll_page" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.po_parse">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pro_one" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pro_one/litemll_page.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="parse_pagefile" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="demo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pro_one" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pro_one/parse_pagefile.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="prac" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="demo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pro_one/util" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pro_one/util/prac.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for Dynamically_test.Test.test_search" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pro_one" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Dynamically_test.Test.test_search&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/pro_one/test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/setup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="frequency_process" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/POparse/cluster" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/POparse/cluster/frequency_process.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="getPath" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pograph/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pograph/common/getPath.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="page" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pograph/service/pages" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pograph/service/pages/page.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="po_parse" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pograph/service" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pograph/service/po_parse.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests in test.py" />
-      <item itemvalue="Python tests.Unittests for Dynamically_test.Test.test_search" />
-      <item itemvalue="Python.prac" />
-      <item itemvalue="Python.parse_pagefile" />
-      <item itemvalue="Python.litemll_page" />
+      <item itemvalue="Python.frequency_process" />
+      <item itemvalue="Python.app" />
+      <item itemvalue="Python.getPath" />
+      <item itemvalue="Python.page" />
+      <item itemvalue="Python.po_parse" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.parse_pagefile" />
-        <item itemvalue="Python.prac" />
-        <item itemvalue="Python.litemll_page" />
-        <item itemvalue="Python tests.Unittests for Dynamically_test.Test.test_search" />
-        <item itemvalue="Python tests.Unittests in test.py" />
+        <item itemvalue="Python.po_parse" />
+        <item itemvalue="Python.page" />
+        <item itemvalue="Python.getPath" />
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python.frequency_process" />
       </list>
     </recent_temporary>
   </component>
@@ -438,6 +427,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545920048878</updated>
+      <workItem from="1569230424508" duration="1244000" />
+      <workItem from="1569287203407" duration="1858000" />
+      <workItem from="1569485367784" duration="885000" />
+      <workItem from="1570088618403" duration="212000" />
+      <workItem from="1570089333936" duration="13000" />
+      <workItem from="1570089429397" duration="588000" />
+      <workItem from="1570532977898" duration="79000" />
+      <workItem from="1571128417981" duration="1189000" />
+      <workItem from="1571533216802" duration="31000" />
+      <workItem from="1571794698748" duration="16124000" />
+      <workItem from="1572225214317" duration="8738000" />
+      <workItem from="1572251659288" duration="15326000" />
     </task>
     <servers />
   </component>
@@ -473,245 +474,45 @@
       <configuration name="Unittests for Dynamically_test.Test.test_search" configurationId="tests" />
     </history-entry>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15085287" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.13028954" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" weight="0.47440273" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.3993174" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.36636972" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info anchor="right" id="SciView" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/2019年1月blog汇总.md" />
-    <entry file="file://$PROJECT_DIR$/pro_one/run_model.py" />
-    <entry file="file://$PROJECT_DIR$/pro_one/README" />
-    <entry file="file://$PROJECT_DIR$/pro_one/MBT_base.py" />
-    <entry file="file://$PROJECT_DIR$/pro_one/helper.py" />
-    <entry file="file://$PROJECT_DIR$/pro_one/model/example.graphml" />
-    <entry file="file://$PROJECT_DIR$/pro_one/pages/prac.py" />
-    <entry file="file://$PROJECT_DIR$/pro_one/pages/pagev2.py" />
-    <entry file="file://$PROJECT_DIR$/pro_one/test/test1.py" />
-    <entry file="file://$PROJECT_DIR$/pro_one/confest.py" />
-    <entry file="file://$PROJECT_DIR$/pro_one/util/UpLoad.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Check.py" />
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DOMparse/pages.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DOMparse/litemallParse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-729" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DOMparse/geckodriver.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DOMparse/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro_one/screenshots/edx_logo_header.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro_one/screenshots/baseline/edx_logo_header.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro_one/edx_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro_one/test_edx.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/bok_choy/page_object.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="479" column="8" selection-start-line="479" selection-start-column="8" selection-end-line="479" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search.png" />
-    <entry file="file://$PROJECT_DIR$/pro_one/failed_screenshots/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro_one/failed_screenshots/search.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro_one/source_html/search_html.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4293">
-          <caret line="138" column="25" lean-forward="true" selection-start-line="138" selection-start-column="25" selection-end-line="138" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro_one/github_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro_one/pro_one/failed_screenshots/search.png" />
-    <entry file="file://$PROJECT_DIR$/pro_one/test_github.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro_one/prac.py" />
-    <entry file="file://$PROJECT_DIR$/pro_one/conftest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/needle/cases.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/bok_choy/web_app_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/bok_choy/browser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1782">
-          <caret line="253" column="62" selection-start-line="253" selection-start-column="62" selection-end-line="253" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro_one/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro_one/data_pool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding>
-            <marker date="1553850346724" expanded="true" signature="23:28" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro_one/Dynamically_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#24#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro_one/util/generator.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro_one/util/graph.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro_one/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding>
-            <element signature="e#24#62#0" expanded="true" />
-            <marker date="1553850438722" expanded="true" signature="361:366" ph="..." />
-            <marker date="1553850438722" expanded="true" signature="395:396" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro_one/util/make_data.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro_one/util/prac.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro_one/litemll_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="600" lean-forward="true" selection-start-line="600" selection-end-line="600" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-            <marker date="1554083330656" expanded="true" signature="367:469" ph="..." />
-            <marker date="1554083330656" expanded="true" signature="1575:3423" ph="..." />
-            <marker date="1554083330656" expanded="true" signature="1647:1795" ph="..." />
-            <marker date="1554083330656" expanded="true" signature="3755:3978" ph="..." />
-            <marker date="1554083330656" expanded="true" signature="9367:9385" ph="..." />
-            <marker date="1554083330656" expanded="true" signature="11737:12198" ph="..." />
-            <marker date="1554083330656" expanded="true" signature="11815:11907" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro_one/util/DirectWeightGraph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="144" column="5" selection-start-line="135" selection-start-column="26" selection-end-line="144" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro_one/parse_pagefile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="57" column="16" lean-forward="true" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1554089203693" expanded="true" signature="1803:2173" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/prac300.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/prac300.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PageOs_latest$app.coverage" NAME="app Coverage Results" MODIFIED="1571800731002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PageOs_latest$po_parse.coverage" NAME="po_parse Coverage Results" MODIFIED="1572272343063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service" />
+    <SUITE FILE_PATH="coverage/PageOs_latest$prac300.coverage" NAME="prac300 Coverage Results" MODIFIED="1570089453250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PageOs_latest$page.coverage" NAME="page Coverage Results" MODIFIED="1572261564711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service/pages" />
+    <SUITE FILE_PATH="coverage/PageOs_latest$getPath.coverage" NAME="getPath Coverage Results" MODIFIED="1572253497079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/common" />
+    <SUITE FILE_PATH="coverage/PageOs_latest$tf_process.coverage" NAME="tf_process Coverage Results" MODIFIED="1571128539645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/POparse/cluster" />
+    <SUITE FILE_PATH="coverage/PageOs_latest$frequency_process.coverage" NAME="frequency_process Coverage Results" MODIFIED="1571128556636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/POparse/cluster" />
   </component>
 </project>
