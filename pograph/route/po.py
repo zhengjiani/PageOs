@@ -40,6 +40,10 @@ def upload_file():
             return redirect(url_for('po.uploaded_file',filename=filename))
     return render_template('upload.html')
 
+# 导航图详情页
+@bp.route('/pos/<name>',methods=['GET'])
+def pos(name):
+    pass
 # # 创建
 # @bp.route('/create',methods=('GET','POST'))
 # @login_required

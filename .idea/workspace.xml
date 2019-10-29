@@ -2,195 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e10a1b4-98d6-489c-b6c6-1c3cbd2436c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/common/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/common/getPath.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/common/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/route/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/route/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/route/po.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/service/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/service/dashboard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/service/dot_graph/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/service/dot_graph/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/service/dot_graph/petclinic.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/service/po_parse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/static/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/static/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/templates/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/templates/auth/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/templates/auth/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/templates/po/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/templates/po/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/templates/po/update.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/templates/upload.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prac300.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/confest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DOMparse/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/MANIFEST.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/algorithm/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/Demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/Demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/Demo1.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/Demo1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/RTED.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/RTED.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/alchemyGraph.json" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/alchemyGraph.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/dom_distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/dom_distance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/dom_string.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/dom_string.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/frequency_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/frequency_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/hierarchical_cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/hierarchical_cluster.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/info_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/info_tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/new.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/new.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/new_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/new_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/remove_blank.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/remove_blank.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/tag_frequency.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/tag_frequency.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/tf.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/tf.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/tf_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/tf_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/url.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/url.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/url_distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/url_distance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/wf1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/wf1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/wf2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/wf2.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/cluster/word_frequency.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/word_frequency.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state100.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state100.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state102.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state102.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state104.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state104.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state106.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state106.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state108.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state108.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state11.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state110.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state110.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state112.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state112.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state114.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state114.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state12.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state13.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state16.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state16.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state17.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state17.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state19.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state19.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state20.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state20.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state22.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state22.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state23.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state23.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state25.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state25.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state27.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state27.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state29.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state29.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state30.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state30.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state32.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state32.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state34.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state34.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state36.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state36.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state38.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state38.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state39.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state39.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state41.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state41.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state43.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state43.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state45.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state45.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state47.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state47.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state48.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state48.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state5.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state50.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state50.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state52.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state52.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state54.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state54.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state56.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state56.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state57.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state57.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state59.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state59.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state6.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state61.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state61.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state63.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state63.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state65.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state65.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state67.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state67.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state68.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state68.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state7.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state70.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state70.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state72.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state72.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state74.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state74.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state76.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state76.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state78.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state78.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state79.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state79.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state81.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state81.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state83.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state83.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state85.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state85.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state87.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state87.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state88.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state88.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state9.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state90.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state90.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state92.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state92.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state94.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state94.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state96.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state96.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/doms/state98.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/doms/state98.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/findpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/findpage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/parse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/parse_html.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/parse_html.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/result.json" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/result.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/templates/base.j2" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/templates/base.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/templates/locators.j2" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/templates/locators.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/templates/page.j2" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/templates/page.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POparse/test_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/test_demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokchoy_pages/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/bokchoy_pages/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokchoy_pages/address_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/bokchoy_pages/address_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokchoy_pages/github_api_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/bokchoy_pages/github_api_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokchoy_pages/github_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/bokchoy_pages/github_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokchoy_pages/litemll_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/bokchoy_pages/litemll_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokchoy_pages/pet1_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/bokchoy_pages/pet1_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokchoy_pages/pet_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/bokchoy_pages/pet_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokchoy_pages/test_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/bokchoy_pages/test_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokchoy_pages/test_pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/bokchoy_pages/test_pet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dot_graph/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dot_graph/graph_visual.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/dot_graph/graph_visual.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dot_graph/page.dot" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/dot_graph/page.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dot_graph/parse_pagefile.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/dot_graph/parse_pagefile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dot_graph/test-output/round-table.gv" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/dot_graph/test-output/round-table.gv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dot_graph/test-output/round-table.gv.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/dot_graph/test-output/round-table.gv.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/Layer.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/Layer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/selenium_ori/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/selenium_ori/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/selenium_ori/element.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/selenium_ori/element.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/selenium_ori/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/selenium_ori/locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/selenium_ori/page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/selenium_ori/page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/selenium_ori/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/selenium_ori/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/templates/base.j2" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/templates/base.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/templates/testcase.j2" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/templates/testcase.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/petclinic/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poium_demos/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poium_demos/baidu_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/poium_demos/baidu_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poium_demos/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/poium_demos/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poium_demos/test_badu.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/poium_demos/test_badu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poium_demos/test_parallel.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/poium_demos/test_parallel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poium_demos/test_rerunfailures.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/poium_demos/test_rerunfailures.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poium_demos/test_sub.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/poium_demos/test_sub.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/DirectWeightGraph.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/DirectWeightGraph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/UpLoad.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/UpLoad.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/poium_demos/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/find_path.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/find_path.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/make_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/make_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/parse_pagefile.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/parse_pagefile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/readfile/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/readfile/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/readfile/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/readfile/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/readfile/data_file/user_info" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/readfile/data_file/user_info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/readfile/data_file/user_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/readfile/data_file/user_info.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/readfile/read_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/readfile/read_csv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/readfile/read_txt.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/readfile/read_txt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/tree_eta.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/tree_eta.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/tree_visual.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/util/tree_visual.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pograph/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pograph/route/po.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/route/po.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pograph/service/dot_graph/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pograph/service/dot_graph/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pograph/service/dot_graph/graph_visual.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pograph/service/dot_graph/page.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pograph/service/dot_graph/parse_pagefile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pograph/service/dot_graph/petclinic.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pograph/service/dot_graph/test-output/round-table.gv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pograph/service/dot_graph/test-output/round-table.gv.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pograph/service/po_parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/po_parse.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -312,28 +135,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="frequency_process" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="demo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/POparse/cluster" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/POparse/cluster/frequency_process.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="getPath" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -348,6 +149,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pograph/common/getPath.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="graph_visual" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pograph/service/dot_graph" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pograph/service/dot_graph/graph_visual.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -401,19 +224,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.frequency_process" />
       <item itemvalue="Python.app" />
       <item itemvalue="Python.getPath" />
       <item itemvalue="Python.page" />
       <item itemvalue="Python.po_parse" />
+      <item itemvalue="Python.graph_visual" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.po_parse" />
+        <item itemvalue="Python.graph_visual" />
         <item itemvalue="Python.page" />
         <item itemvalue="Python.getPath" />
         <item itemvalue="Python.app" />
-        <item itemvalue="Python.frequency_process" />
       </list>
     </recent_temporary>
   </component>
@@ -439,6 +262,8 @@
       <workItem from="1571794698748" duration="16124000" />
       <workItem from="1572225214317" duration="8738000" />
       <workItem from="1572251659288" duration="15326000" />
+      <workItem from="1572336881797" duration="5853000" />
+      <workItem from="1572356108018" duration="134000" />
     </task>
     <servers />
   </component>
@@ -508,7 +333,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PageOs_latest$app.coverage" NAME="app Coverage Results" MODIFIED="1571800731002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PageOs_latest$po_parse.coverage" NAME="po_parse Coverage Results" MODIFIED="1572272343063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service" />
+    <SUITE FILE_PATH="coverage/PageOs_latest$po_parse.coverage" NAME="po_parse Coverage Results" MODIFIED="1572341518389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service" />
+    <SUITE FILE_PATH="coverage/PageOs_latest$graph_visual.coverage" NAME="graph_visual Coverage Results" MODIFIED="1572341501578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service/dot_graph" />
     <SUITE FILE_PATH="coverage/PageOs_latest$prac300.coverage" NAME="prac300 Coverage Results" MODIFIED="1570089453250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PageOs_latest$page.coverage" NAME="page Coverage Results" MODIFIED="1572261564711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service/pages" />
     <SUITE FILE_PATH="coverage/PageOs_latest$getPath.coverage" NAME="getPath Coverage Results" MODIFIED="1572253497079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/common" />

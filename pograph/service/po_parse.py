@@ -8,7 +8,10 @@
 """
 import inspect
 import sys
-
+import re
+from graphviz import Digraph
+import string
+import random
 from pograph.service.pages import page
 class PageObjectOperate:
     # 获取po文件
@@ -36,17 +39,44 @@ class PageObjectOperate:
         elif name == 'get_po_param':
             return dic_param
         elif name == 'get_po_nav':
-            list_class = []
-            class_info = inspect.getsource(page.FindOwnersPage).splitlines()
-            for line in class_info:
-                list_class.append(line.strip())
-            list_class.remove(line.startswith('self'))
-            return list_class
+            # 合并图字典
+            # for po in nodes:
+            class_info = []
+            dic_next_po = {}
+            # list_class = re.split(r'[\n]\s*', inspect.getsource(eval('page.{}'.format(po))))
+            list_class = re.split(r'[\n]\s*', inspect.getsource(page.FindOwnersPage))
+            for line in list_class:
+                if line.startswith('def') or line.startswith('return'):
+                    class_info.append(line)
+            for index, value in enumerate(class_info):
+                if value.startswith('def') and class_info[index + 1].startswith('return'):
+                    dic_next_po[value.split(' ')[1].split('(')[0]] = class_info[index + 1].split(' ')[1].split('(')[0]
+            return dic_next_po
         else:
             raise ValueError('输入参数有误，请选择-get_po/get_po_param')
+
+    # 导航图可视化
+    def visual_graph(self):
+        # 首先获取图字典
+        dic = {'LoginPage': {'login': 'HomePage'},
+               'HomePage': {'goto_user': 'UserPage', 'logout': 'LoginPage'},
+               'UserPage': {'add_user': 'UserListPage', 'remove_user': 'UserListPage', 'search_user': 'UserPage'}
+               }
+
+        dot = Digraph(comment='Page Object Graph')
+        # for i in string.ascii_letters:
+        for k, v in dic.items():
+            for k_val, v_val in v.items():
+                dot.node(k)
+                dot.node(v_val)
+                dot.edge(k, v_val, label=k_val)
+        print(dot.source)
+        dot.render('test-output/round-table.gv', view=True)  # doctest: +SKIP
+        return 'test-output/round-table.gv.pdf'
 
 
 if __name__ == '__main__':
     p = PageObjectOperate()
     # print(p.get_po('get_po'))
-    print(p.get_po('get_po_nav'))
+    # print(p.get_po('get_po_nav'))
+    print(p.visual_graph())
