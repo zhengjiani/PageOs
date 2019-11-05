@@ -1,28 +1,35 @@
-{% extends 'base.html' %}
-{% block header %}
-    <h1>{% block title %}Posts{% endblock %}</h1>
-    {% if g.user %}
-    <a class="action" href="{{ url_for('po.create') }}">New</a>
-    {% endif %}
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zhengjiani</title>
+</head>
+<body>
 
-{% block content %}
-    {% for post in posts %}
-        <article class="post">
-            <header>
-                <div>
-                    <h1>{{ post['title'] }}</h1>
-                    <div class="about">by {{ post['username'] }} on {{ post['created'].strftime('%Y-%m-%d') }}
-                    </div>
-                    {% if g.user['id'] == post['author_id'] %}
-                    <a class="action" href="{{ url_for('po.update',id=post['id']) }}">Edit</a>
-                    {% endif %}
-                </div>
-            </header>
-            <p class="body">{{ post['body'] }}</p>
-        </article>
-        {% if not loop.last %}
-        <hr>
-        {% endif %}
+<form method="post">
+    {{ form.csrf_token() }}
+    {{ form.tester.label }}{{ form.tester }}<br>
+    {{ form.po.label }}{{ form.po }}<br>
+    {{ form.submit }}
+    {# 显示消息闪现 #}
+    {% for message in get_flashed_messages() %}
+        {{ message }}
     {% endfor %}
-{% endblock %}
+</form>
+
+<hr>
+
+<ul>
+    {% for tester in testers %}
+        <li>{{ tester.name }}<a href="{{ url_for("po.delete_tester",tester_id=tester.id) }}">删除</a></li>
+        <ul>
+            {% for po in tester.pos %}
+                <li>{{ po.name }}<a href="{{ url_for("po.delete_po",po_id=po.id) }}">删除</a></li>
+            {% else %}
+                <li>无</li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+</ul>
+</body>
+</html>

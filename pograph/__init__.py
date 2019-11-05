@@ -10,19 +10,24 @@
 # __init__.py有两个作用：一是包含应用工厂，而是告诉py pograph应该视作一个包
 import os
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+
 
 def create_app(test_config=None):
     # 创建和配置app
     app = Flask(__name__,instance_relative_config=True)
     app.config.from_mapping(
         SECRET_KEY = 'dev',
-        DATABASE=os.path.join(app.instance_path,'/Users/zhengjiani/PycharmProjects/PageOs_latest/pograph/pograph.sqlite'),
-        UPLOAD_FOLDER='/Users/zhengjiani/PycharmProjects/PageOs_latest/pograph/service/pages'
+        # DATABASE=os.path.join(app.instance_path,'/Users/zhengjiani/PycharmProjects/PageOs_latest/pograph/pograph.sqlite'),
+        UPLOAD_FOLDER='/Users/zhengjiani/PycharmProjects/PageOs_latest/pograph/service/pages',
+        SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:Nicezheng_1995@127.0.0.1:3306/flask_pos',
+        SQLALCHEMY_TRACK_MODIFICATIONS = False
+
     )
 
-    # 在工厂中导入并调用这个函数
-    from . import db
+    from .common.model import db
     db.init_app(app)
+    app.secret_key = 'zhengjiani'
     # 导入并注册蓝图
     from pograph.route import auth
     app.register_blueprint(auth.bp)
@@ -41,3 +46,4 @@ def create_app(test_config=None):
         os.mkdirs(app.instance_path)
     except OSError:
         pass
+

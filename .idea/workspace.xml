@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e10a1b4-98d6-489c-b6c6-1c3cbd2436c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/litemall_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/litemall_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/common/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pograph/common/sql/pos_schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pograph/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pograph/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pograph/common/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/common/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pograph/route/po.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/route/po.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pograph/service/dot_graph/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pograph/service/dot_graph/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pograph/service/dot_graph/graph_visual.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pograph/service/dot_graph/page.dot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pograph/service/dot_graph/parse_pagefile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pograph/service/dot_graph/petclinic.dot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pograph/service/dot_graph/test-output/round-table.gv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pograph/service/dot_graph/test-output/round-table.gv.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pograph/service/po_parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/po_parse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pograph/templates/po/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/templates/po/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +49,30 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="flask_pos: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="flask_pos: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="pos: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -83,6 +107,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
@@ -112,8 +137,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.po_parse">
-    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.model">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -121,34 +146,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pograph" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/setup.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="getPath" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="demo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pograph/common" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pograph/common/getPath.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pograph/__init__.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -179,7 +182,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="page" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="litemall_page" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -187,12 +190,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pograph/service/pages" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pograph/service/pages/page.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/litemall_page.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pograph/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pograph/common/model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -224,21 +249,41 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.app" />
-      <item itemvalue="Python.getPath" />
-      <item itemvalue="Python.page" />
       <item itemvalue="Python.po_parse" />
       <item itemvalue="Python.graph_visual" />
+      <item itemvalue="Python.litemall_page" />
+      <item itemvalue="Python.model" />
+      <item itemvalue="Python.__init__" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.model" />
+        <item itemvalue="Python.__init__" />
+        <item itemvalue="Python.litemall_page" />
         <item itemvalue="Python.po_parse" />
         <item itemvalue="Python.graph_visual" />
-        <item itemvalue="Python.page" />
-        <item itemvalue="Python.getPath" />
-        <item itemvalue="Python.app" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f64d302d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f64d302d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@263d4c2c" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -264,6 +309,10 @@
       <workItem from="1572251659288" duration="15326000" />
       <workItem from="1572336881797" duration="5853000" />
       <workItem from="1572356108018" duration="134000" />
+      <workItem from="1572357039642" duration="354000" />
+      <workItem from="1572842456550" duration="25000" />
+      <workItem from="1572847455915" duration="12293000" />
+      <workItem from="1572945002784" duration="6803000" />
     </task>
     <servers />
   </component>
@@ -338,6 +387,9 @@
     <SUITE FILE_PATH="coverage/PageOs_latest$prac300.coverage" NAME="prac300 Coverage Results" MODIFIED="1570089453250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PageOs_latest$page.coverage" NAME="page Coverage Results" MODIFIED="1572261564711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service/pages" />
     <SUITE FILE_PATH="coverage/PageOs_latest$getPath.coverage" NAME="getPath Coverage Results" MODIFIED="1572253497079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/common" />
+    <SUITE FILE_PATH="coverage/PageOs_latest$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1572875990442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph" />
+    <SUITE FILE_PATH="coverage/PageOs_latest$litemall_page.coverage" NAME="litemall_page Coverage Results" MODIFIED="1572850488958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PageOs_latest$model.coverage" NAME="model Coverage Results" MODIFIED="1572877653223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/common" />
     <SUITE FILE_PATH="coverage/PageOs_latest$tf_process.coverage" NAME="tf_process Coverage Results" MODIFIED="1571128539645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/POparse/cluster" />
     <SUITE FILE_PATH="coverage/PageOs_latest$frequency_process.coverage" NAME="frequency_process Coverage Results" MODIFIED="1571128556636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/POparse/cluster" />
   </component>
