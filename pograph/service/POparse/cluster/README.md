@@ -119,3 +119,61 @@ python按行读取文件：<br>
 通过指定标签名称和相应的轴，或直接指定索引或列名称来删除行或列。 使用多索引时，可以通过指定级别来删除不同级别上的标签。<br>
 
     X = np.array(df.drop([''],1).astype(float))
+    
+矩阵输入模式
+Numpy.ndarray
+NumPy 最重要的一个特点是其 N 维数组对象 ndarray，它是一系列同类型数据的集合，以 0 下标为开始进行集合中元素的索引。
+ndarray 对象是用于存放同类型元素的多维数组。
+ndarray 中的每个元素在内存中都有相同存储大小的区域。
+
+    # print(np.ndarray)
+    1,2,3
+    (1, 2, 3)
+    [1,2],[3,4]
+    ([1, 2], [3, 4])
+    
+np.shape()
+shape函数的功能是读取矩阵的长度，比如shape[0]就是读取矩阵第一维度的长度,相当于行数。
+它的输入参数可以是一个整数表示维度，也可以是一个矩阵。shape函数返回的是一个元组，表示数组（矩阵）的维度
+当数组只有一个维度的时候
+
+    
+    >>> a=np.array([1,2])
+    >>> a
+    array([1, 2])
+    >>> a.shape
+    (2L,)
+    >>> a.shape[0]
+    2L
+    >>> a.shape[1]
+    Traceback (most recent call last):
+      File "<pyshell#63>", line 1, in <module>
+        a.shape[1]
+    IndexError: tuple index out of range   #最后报错是因为一维数组只有一个维度，可以用a.shape或a.shape[0]来访问
+    ————————————————
+    版权声明：本文为CSDN博主「雨落诗山山亦奇」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+    原文链接：https://blog.csdn.net/qq_38669138/article/details/79084275
+当数组有两个维度
+    
+    >>> a=np.array([[1,2],[3,4]])    #注意二维数组要用（）和[]一起包裹起来，键入print a 会得到一个用2个[]包裹的数组（矩阵）
+    >>> a
+    array([[1, 2],
+           [3, 4]])
+    >>> a.shape
+    (2L, 2L)
+    >>> b=np.array([[1,2,3],[4,5,6]])
+    >>> b
+    array([[1, 2, 3],
+           [4, 5, 6]])
+    >>> b.shape
+    (2L, 3L)
+
+字典中键：数组、字符串、元祖
+(stat1,stat2)
+(stat1,stat3)
+cluster = []
+if d[(stat1,stat2)] > d[(stat1,stat3)]:
+    new_vec = stat2
+    cluster.append(stat2)
+    del d[stat3]
+    
