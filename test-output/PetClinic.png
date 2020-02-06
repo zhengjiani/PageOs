@@ -1,0 +1,26 @@
+// POG
+digraph {
+	HomePage
+	FindPage
+	RegisterPage
+	DetailPage
+	EditOwnerPage
+	AddNewPetPage
+	PetPage
+	AddNewVisitPage
+	VeterPage
+	HomePage -> VeterPage [label=goto_Veter]
+	HomePage -> RegisterPage [label=goto_register]
+	HomePage -> FindPage [label=goto_search]
+	FindPage -> DetailPage [label=goto_detail_page]
+	RegisterPage -> FindPage [label=regist_owner]
+	DetailPage -> AddNewPetPage [label=goto_add_pet]
+	DetailPage -> EditOwnerPage [label=goto_edit]
+	DetailPage -> PetPage [label=goto_edit_pet]
+	DetailPage -> PetPage [label=goto_pet]
+	DetailPage -> AddNewVisitPage [label=goto_visit]
+	EditOwnerPage -> DetailPage [label=edit_info]
+	AddNewPetPage -> DetailPage [label=add_new_pet]
+	PetPage -> DetailPage [label=edit_pet]
+	AddNewVisitPage -> DetailPage [label=add_visit]
+}
