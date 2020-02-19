@@ -6,3 +6,6 @@
 @Email   : 936089353@qq.com
 @Software: PyCharm
 """
+from app import db
+db.drop_all()
+db.create_all()

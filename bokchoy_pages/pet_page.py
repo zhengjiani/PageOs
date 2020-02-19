@@ -3,11 +3,8 @@
 # @Author  : zhengjiani
 # @Software: PyCharm
 # @Blog    ：https://zhengjiani.github.io/
-import inspect
-import os
-import random
-import sys
 
+import os
 from bok_choy.page_object import PageObject, unguarded
 
 
