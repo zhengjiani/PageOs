@@ -2,55 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e10a1b4-98d6-489c-b6c6-1c3cbd2436c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/files.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/gentest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/menus.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pageos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pograph.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/users.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySite.py" beforeDir="false" afterPath="$PROJECT_DIR$/bokchoy_pages/MySite.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageKitTree.dot" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokchoy_pages/github_api_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokchoy_pages/litemll_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokchoy_pages/test_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokchoy_pages/test_pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_gen/test_pet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_db.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dom_rted.csv" beforeDir="false" afterPath="$PROJECT_DIR$/similar_analysis/csv_file/dom_rted.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/PageKitTree.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph_travel.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_gen/graph_travel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/litemall_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageKit.dot" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/pageKit.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageKit.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/pageKit.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/Layer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/demo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/locators.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/selenium_ori/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/selenium_ori/element.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/selenium_ori/locators.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/selenium_ori/page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/selenium_ori/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/templates/base.j2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/templates/testcase.j2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phone.dot" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/phone.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phonenix.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/phonenix.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/po_parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/bokchoy_pages/po_parse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree.png" beforeDir="false" afterPath="$PROJECT_DIR$/test_gen/tree.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_gen/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/petclinic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/petclinic.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/util.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -425,7 +377,7 @@
       <workItem from="1582887889063" duration="154000" />
       <workItem from="1582888060013" duration="1573000" />
       <workItem from="1582942874356" duration="103000" />
-      <workItem from="1582946047026" duration="3563000" />
+      <workItem from="1582946047026" duration="4335000" />
     </task>
     <task id="LOCAL-00001" summary="修改README">
       <created>1574259149571</created>
