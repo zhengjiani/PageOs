@@ -1,0 +1,45 @@
+// Page Object Graph
+digraph {
+	HomePage
+	" VeterPage"
+	HomePage -> " VeterPage" [label=goto_Veter]
+	HomePage
+	" RegisterPage"
+	HomePage -> " RegisterPage" [label=goto_register]
+	HomePage
+	" FindPage"
+	HomePage -> " FindPage" [label=goto_search]
+	FindPage
+	" DetailPage"
+	FindPage -> " DetailPage" [label=goto_detail_page]
+	RegisterPage
+	" FindPage"
+	RegisterPage -> " FindPage" [label=regist_owner]
+	DetailPage
+	" AddNewPetPage"
+	DetailPage -> " AddNewPetPage" [label=goto_add_pet]
+	DetailPage
+	" EditOwnerPage"
+	DetailPage -> " EditOwnerPage" [label=goto_edit]
+	DetailPage
+	" PetPage"
+	DetailPage -> " PetPage" [label=goto_edit_pet]
+	DetailPage
+	" PetPage"
+	DetailPage -> " PetPage" [label=goto_pet]
+	DetailPage
+	" AddNewVisitPage"
+	DetailPage -> " AddNewVisitPage" [label=goto_visit]
+	EditOwnerPage
+	" DetailPage"
+	EditOwnerPage -> " DetailPage" [label=edit_info]
+	AddNewPetPage
+	" DetailPage"
+	AddNewPetPage -> " DetailPage" [label=add_new_pet]
+	PetPage
+	" DetailPage"
+	PetPage -> " DetailPage" [label=edit_pet]
+	AddNewVisitPage
+	" DetailPage"
+	AddNewVisitPage -> " DetailPage" [label=add_visit]
+}

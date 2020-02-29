@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e10a1b4-98d6-489c-b6c6-1c3cbd2436c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/demo2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/hierarchical_den.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/hierarchical_stat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/demo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pograph/service/POparse/cluster/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pograph/service/POparse/cluster/dom_distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/dom_distance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pograph/service/POparse/cluster/dom_string.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pograph/service/POparse/cluster/dom_string.csv" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +57,7 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="flask_pos: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="pos: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="users: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -79,15 +70,12 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>Search</find>
-      <find>userPage</find>
-      <find>userpage</find>
-      <find>UserPage</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="graph" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IgnoredFileRootStore">
@@ -98,45 +86,56 @@
     </option>
   </component>
   <component name="ProjectId" id="1RERm2nFP8SuTcmSVlqTLM7fgaT" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pograph/service/POparse/cluster" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="demo" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="demo" />
+      </console-settings>
+    </option>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/similar_analysis/doms_test" />
+      <recent name="$PROJECT_DIR$/similar_analysis/csv_file" />
+      <recent name="$PROJECT_DIR$/pograph/service" />
       <recent name="$PROJECT_DIR$/pograph/service/POparse/cluster" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/pograph/service/POparse/cluster" />
-      <recent name="$PROJECT_DIR$/pograph/common" />
-      <recent name="$PROJECT_DIR$/pograph/route" />
-      <recent name="$PROJECT_DIR$/pograph/service" />
-      <recent name="$PROJECT_DIR$/pograph" />
+      <recent name="$PROJECT_DIR$/test_gen" />
+      <recent name="$PROJECT_DIR$/bokchoy_pages" />
+      <recent name="$PROJECT_DIR$/test-output" />
+      <recent name="$PROJECT_DIR$/similar_analysis/csv_file" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.demo2">
+  <component name="RunManager" selected="Python.petclinic">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,7 +143,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../PageOs/venv/bin/python" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -152,27 +151,27 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="demo2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pograph/service/POparse/cluster" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../PageOs/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pograph/service/POparse/cluster/demo2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -181,20 +180,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dom_distance" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dom_distance" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pograph/service/POparse/cluster" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../PageOs/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/similar_analysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pograph/service/POparse/cluster/dom_distance.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/similar_analysis/dom_distance.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -203,42 +202,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="hierarchical_den" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="petclinic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pograph/service/POparse/cluster" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../PageOs/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/faker_data" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pograph/service/POparse/cluster/hierarchical_den.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="hierarchical_stat" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="demo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pograph/service/POparse/cluster" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pograph/service/POparse/cluster/hierarchical_stat.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/faker_data/petclinic.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -247,20 +224,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="po_parse" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pograph/common" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../PageOs/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pograph/common/model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bokchoy_pages/po_parse.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="rted_distance" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../PageOs/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/similar_analysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/similar_analysis/rted_distance.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -270,40 +269,32 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.model" />
-      <item itemvalue="Python.hierarchical_den" />
-      <item itemvalue="Python.hierarchical_stat" />
       <item itemvalue="Python.dom_distance" />
-      <item itemvalue="Python.demo2" />
+      <item itemvalue="Python.rted_distance" />
+      <item itemvalue="Python.app" />
+      <item itemvalue="Python.po_parse" />
+      <item itemvalue="Python.petclinic" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.demo2" />
-        <item itemvalue="Python.hierarchical_stat" />
-        <item itemvalue="Python.hierarchical_den" />
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python.petclinic" />
+        <item itemvalue="Python.po_parse" />
         <item itemvalue="Python.dom_distance" />
-        <item itemvalue="Python.model" />
+        <item itemvalue="Python.rted_distance" />
       </list>
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f64d302d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f64d302d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@263d4c2c" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
-          <select />
-        </treeState>
-      </serviceView>
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -337,40 +328,66 @@
       <workItem from="1573141754155" duration="1172000" />
       <workItem from="1573222080497" duration="40290000" />
       <workItem from="1573475358085" duration="554000" />
+      <workItem from="1574081898634" duration="369000" />
+      <workItem from="1574084721559" duration="552000" />
+      <workItem from="1574086368665" duration="139000" />
+      <workItem from="1574086930443" duration="3000" />
+      <workItem from="1574086948055" duration="147000" />
+      <workItem from="1574087315848" duration="29000" />
+      <workItem from="1574172192696" duration="964000" />
+      <workItem from="1574256550960" duration="2377000" />
+      <workItem from="1574468720853" duration="1338000" />
+      <workItem from="1574470841520" duration="32000" />
+      <workItem from="1574470921878" duration="5147000" />
+      <workItem from="1574480242090" duration="14922000" />
+      <workItem from="1575800692171" duration="248000" />
+      <workItem from="1576586066341" duration="496000" />
+      <workItem from="1578113772574" duration="11049000" />
+      <workItem from="1578279718860" duration="149000" />
+      <workItem from="1578279899213" duration="613000" />
+      <workItem from="1578280533125" duration="193000" />
+      <workItem from="1578280746344" duration="62000" />
+      <workItem from="1578284390938" duration="67000" />
+      <workItem from="1578284468181" duration="859000" />
+      <workItem from="1578285330795" duration="1070000" />
+      <workItem from="1578312679222" duration="1168000" />
+      <workItem from="1578544753098" duration="422000" />
+      <workItem from="1578713047825" duration="7920000" />
+      <workItem from="1578732476559" duration="15718000" />
+      <workItem from="1580285820761" duration="1737000" />
+      <workItem from="1580604695363" duration="4673000" />
+      <workItem from="1580639048752" duration="292000" />
+      <workItem from="1580687660539" duration="19204000" />
+      <workItem from="1580774665430" duration="52350000" />
+      <workItem from="1581556078837" duration="27761000" />
+      <workItem from="1581733054609" duration="9334000" />
+      <workItem from="1581901973043" duration="7272000" />
+      <workItem from="1581995926030" duration="276000" />
+      <workItem from="1582008054779" duration="11000" />
+      <workItem from="1582012005026" duration="8383000" />
+      <workItem from="1582096498670" duration="4891000" />
+      <workItem from="1582249877638" duration="3853000" />
+      <workItem from="1582533697074" duration="889000" />
+      <workItem from="1582588542413" duration="3234000" />
+      <workItem from="1582617737990" duration="141000" />
+      <workItem from="1582680092521" duration="3000" />
+      <workItem from="1582680112354" duration="4000" />
+      <workItem from="1582681905100" duration="10696000" />
+      <workItem from="1582887748303" duration="75000" />
+      <workItem from="1582887889063" duration="154000" />
+      <workItem from="1582888060013" duration="1573000" />
+      <workItem from="1582942874356" duration="103000" />
+      <workItem from="1582946047026" duration="4335000" />
     </task>
+    <task id="LOCAL-00001" summary="修改README">
+      <created>1574259149571</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574259149571</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="Unittests_in_Dynamically_test_py - 2019.03.28 at 21h 16m 36s.xml">
-      <configuration name="Unittests in Dynamically_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Dynamically_test_py - 2019.03.28 at 21h 17m 24s.xml">
-      <configuration name="Unittests in Dynamically_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Dynamically_test_py - 2019.03.28 at 21h 24m 51s.xml">
-      <configuration name="Unittests in Dynamically_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Dynamically_test_py - 2019.03.28 at 21h 25m 34s.xml">
-      <configuration name="Unittests in Dynamically_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_Dynamically_test_Test_test_search - 2019.03.28 at 21h 42m 09s.xml">
-      <configuration name="Unittests for Dynamically_test.Test.test_search" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_py - 2019.03.29 at 19h 34m 57s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_py - 2019.03.29 at 19h 42m 00s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_py - 2019.03.29 at 19h 54m 35s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_Dynamically_test_Test_test_search - 2019.03.29 at 20h 18m 44s.xml">
-      <configuration name="Unittests for Dynamically_test.Test.test_search" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_Dynamically_test_Test_test_search - 2019.03.29 at 20h 19m 55s.xml">
-      <configuration name="Unittests for Dynamically_test.Test.test_search" configurationId="tests" />
-    </history-entry>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -388,35 +405,250 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/prac300.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/prac300.py</url>
-          <line>33</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/selene" />
+    </ignored-roots>
+    <MESSAGE value="修改README" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改README" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="190" key="#Inspections" timestamp="1580779076042">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="190" key="#Inspections/0.0.1680.1050@0.0.1680.1050" timestamp="1580779076042" />
+    <state x="330" y="198" width="1071" height="696" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581556218474">
+      <screen x="50" y="23" width="1630" height="1027" />
+    </state>
+    <state x="289" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580775287300" />
+    <state x="330" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/50.23.1630.1027@50.23.1630.1027" timestamp="1581556218474" />
+    <state x="335" y="198" width="1071" height="696" key="#com.intellij.execution.impl.EditConfigurationsDialog/55.23.1625.1027@55.23.1625.1027" timestamp="1580702973776" />
+    <state x="600" y="346" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582085186806">
+      <screen x="41" y="23" width="1639" height="1027" />
+    </state>
+    <state x="600" y="346" key="#com.intellij.fileTypes.FileTypeChooser/1680.23.1920.1057/41.23.1639.1027@41.23.1639.1027" timestamp="1582085186806" />
+    <state width="1638" height="318" key="GridCell.Tab.0.bottom" timestamp="1582873981555">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="634" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1581902361606" />
+    <state width="1638" height="318" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1582798018755" />
+    <state width="1564" height="362" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1582093703704" />
+    <state width="1638" height="318" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1582873981555" />
+    <state width="1564" height="362" key="GridCell.Tab.0.bottom/1680.23.1920.1057/42.23.1638.1027@42.23.1638.1027" timestamp="1582085289063" />
+    <state width="1358" height="563" key="GridCell.Tab.0.bottom/1680.23.1920.1057/43.23.1637.1027@43.23.1637.1027" timestamp="1578284924260" />
+    <state width="1830" height="232" key="GridCell.Tab.0.bottom/1680.23.1920.1057/47.23.1633.1027@1680.23.1920.1057" timestamp="1582267908478" />
+    <state width="1830" height="232" key="GridCell.Tab.0.bottom/1680.23.1920.1057/48.23.1632.1027@1680.23.1920.1057" timestamp="1582267773112" />
+    <state width="1830" height="399" key="GridCell.Tab.0.bottom/1680.23.1920.1057/51.23.1629.1027@1680.23.1920.1057" timestamp="1582256388794" />
+    <state width="1878" height="362" key="GridCell.Tab.0.bottom/1680.23.1920.1057/55.23.1625.1027@55.23.1625.1027" timestamp="1582097459782" />
+    <state width="1878" height="362" key="GridCell.Tab.0.bottom/1680.23.1920.1057/60.23.1620.1027@60.23.1620.1027" timestamp="1582097412400" />
+    <state width="1564" height="362" key="GridCell.Tab.0.bottom/1680.23.1920.1057/62.23.1618.1027@62.23.1618.1027" timestamp="1582012800925" />
+    <state width="1878" height="213" key="GridCell.Tab.0.bottom/1680.23.1920.1057/68.23.1612.1027@1680.23.1920.1057" timestamp="1582201094646" />
+    <state width="1564" height="492" key="GridCell.Tab.0.bottom/43.23.1637.1027@43.23.1637.1027" timestamp="1580881521424" />
+    <state width="343" height="341" key="GridCell.Tab.0.bottom/45.23.1635.1027@45.23.1635.1027" timestamp="1581573915279" />
+    <state width="688" height="193" key="GridCell.Tab.0.bottom/47.23.1633.1027@47.23.1633.1027" timestamp="1581577175541" />
+    <state width="1570" height="497" key="GridCell.Tab.0.bottom/48.23.1632.1027@48.23.1632.1027" timestamp="1581923639307" />
+    <state width="688" height="316" key="GridCell.Tab.0.bottom/50.23.1630.1027@50.23.1630.1027" timestamp="1581691033287" />
+    <state width="1570" height="497" key="GridCell.Tab.0.bottom/51.23.1629.1027@51.23.1629.1027" timestamp="1581918463913" />
+    <state width="1570" height="497" key="GridCell.Tab.0.bottom/53.23.1627.1027@53.23.1627.1027" timestamp="1581918468333" />
+    <state width="688" height="316" key="GridCell.Tab.0.bottom/55.23.1625.1027@55.23.1625.1027" timestamp="1581660361350" />
+    <state width="1570" height="2" key="GridCell.Tab.0.bottom/60.23.1620.1027@60.23.1620.1027" timestamp="1580724757093" />
+    <state width="1638" height="318" key="GridCell.Tab.0.center" timestamp="1582873981554">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="634" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1581902361604" />
+    <state width="1638" height="318" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1582798018754" />
+    <state width="1564" height="362" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1582093703703" />
+    <state width="1638" height="318" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1582873981554" />
+    <state width="1564" height="362" key="GridCell.Tab.0.center/1680.23.1920.1057/42.23.1638.1027@42.23.1638.1027" timestamp="1582085289062" />
+    <state width="1358" height="563" key="GridCell.Tab.0.center/1680.23.1920.1057/43.23.1637.1027@43.23.1637.1027" timestamp="1578284924259" />
+    <state width="1830" height="232" key="GridCell.Tab.0.center/1680.23.1920.1057/47.23.1633.1027@1680.23.1920.1057" timestamp="1582267908477" />
+    <state width="1830" height="232" key="GridCell.Tab.0.center/1680.23.1920.1057/48.23.1632.1027@1680.23.1920.1057" timestamp="1582267773111" />
+    <state width="1830" height="399" key="GridCell.Tab.0.center/1680.23.1920.1057/51.23.1629.1027@1680.23.1920.1057" timestamp="1582256388793" />
+    <state width="1878" height="362" key="GridCell.Tab.0.center/1680.23.1920.1057/55.23.1625.1027@55.23.1625.1027" timestamp="1582097459781" />
+    <state width="1878" height="362" key="GridCell.Tab.0.center/1680.23.1920.1057/60.23.1620.1027@60.23.1620.1027" timestamp="1582097412398" />
+    <state width="1564" height="362" key="GridCell.Tab.0.center/1680.23.1920.1057/62.23.1618.1027@62.23.1618.1027" timestamp="1582012800924" />
+    <state width="1878" height="213" key="GridCell.Tab.0.center/1680.23.1920.1057/68.23.1612.1027@1680.23.1920.1057" timestamp="1582201094645" />
+    <state width="1564" height="492" key="GridCell.Tab.0.center/43.23.1637.1027@43.23.1637.1027" timestamp="1580881521423" />
+    <state width="343" height="341" key="GridCell.Tab.0.center/45.23.1635.1027@45.23.1635.1027" timestamp="1581573915278" />
+    <state width="688" height="193" key="GridCell.Tab.0.center/47.23.1633.1027@47.23.1633.1027" timestamp="1581577175540" />
+    <state width="1570" height="497" key="GridCell.Tab.0.center/48.23.1632.1027@48.23.1632.1027" timestamp="1581923639307" />
+    <state width="688" height="316" key="GridCell.Tab.0.center/50.23.1630.1027@50.23.1630.1027" timestamp="1581691033287" />
+    <state width="1570" height="497" key="GridCell.Tab.0.center/51.23.1629.1027@51.23.1629.1027" timestamp="1581918463912" />
+    <state width="1570" height="497" key="GridCell.Tab.0.center/53.23.1627.1027@53.23.1627.1027" timestamp="1581918468332" />
+    <state width="688" height="316" key="GridCell.Tab.0.center/55.23.1625.1027@55.23.1625.1027" timestamp="1581660361349" />
+    <state width="1570" height="2" key="GridCell.Tab.0.center/60.23.1620.1027@60.23.1620.1027" timestamp="1580724757093" />
+    <state width="1638" height="318" key="GridCell.Tab.0.left" timestamp="1582873981553">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="634" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1581902361603" />
+    <state width="1638" height="318" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1582798018753" />
+    <state width="1564" height="362" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1582093703703" />
+    <state width="1638" height="318" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1582873981553" />
+    <state width="1564" height="362" key="GridCell.Tab.0.left/1680.23.1920.1057/42.23.1638.1027@42.23.1638.1027" timestamp="1582085289062" />
+    <state width="1358" height="563" key="GridCell.Tab.0.left/1680.23.1920.1057/43.23.1637.1027@43.23.1637.1027" timestamp="1578284924258" />
+    <state width="1830" height="232" key="GridCell.Tab.0.left/1680.23.1920.1057/47.23.1633.1027@1680.23.1920.1057" timestamp="1582267908477" />
+    <state width="1830" height="232" key="GridCell.Tab.0.left/1680.23.1920.1057/48.23.1632.1027@1680.23.1920.1057" timestamp="1582267773110" />
+    <state width="1830" height="399" key="GridCell.Tab.0.left/1680.23.1920.1057/51.23.1629.1027@1680.23.1920.1057" timestamp="1582256388792" />
+    <state width="1878" height="362" key="GridCell.Tab.0.left/1680.23.1920.1057/55.23.1625.1027@55.23.1625.1027" timestamp="1582097459781" />
+    <state width="1878" height="362" key="GridCell.Tab.0.left/1680.23.1920.1057/60.23.1620.1027@60.23.1620.1027" timestamp="1582097412398" />
+    <state width="1564" height="362" key="GridCell.Tab.0.left/1680.23.1920.1057/62.23.1618.1027@62.23.1618.1027" timestamp="1582012800923" />
+    <state width="1878" height="213" key="GridCell.Tab.0.left/1680.23.1920.1057/68.23.1612.1027@1680.23.1920.1057" timestamp="1582201094645" />
+    <state width="1564" height="492" key="GridCell.Tab.0.left/43.23.1637.1027@43.23.1637.1027" timestamp="1580881521422" />
+    <state width="343" height="341" key="GridCell.Tab.0.left/45.23.1635.1027@45.23.1635.1027" timestamp="1581573915278" />
+    <state width="688" height="193" key="GridCell.Tab.0.left/47.23.1633.1027@47.23.1633.1027" timestamp="1581577175539" />
+    <state width="1570" height="497" key="GridCell.Tab.0.left/48.23.1632.1027@48.23.1632.1027" timestamp="1581923639306" />
+    <state width="688" height="316" key="GridCell.Tab.0.left/50.23.1630.1027@50.23.1630.1027" timestamp="1581691033286" />
+    <state width="1570" height="497" key="GridCell.Tab.0.left/51.23.1629.1027@51.23.1629.1027" timestamp="1581918463912" />
+    <state width="1570" height="497" key="GridCell.Tab.0.left/53.23.1627.1027@53.23.1627.1027" timestamp="1581918468332" />
+    <state width="688" height="316" key="GridCell.Tab.0.left/55.23.1625.1027@55.23.1625.1027" timestamp="1581660361348" />
+    <state width="1570" height="2" key="GridCell.Tab.0.left/60.23.1620.1027@60.23.1620.1027" timestamp="1580724757093" />
+    <state width="1638" height="318" key="GridCell.Tab.0.right" timestamp="1582873981554">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="634" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1581902361605" />
+    <state width="1638" height="318" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1582798018755" />
+    <state width="1564" height="362" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1582093703704" />
+    <state width="1638" height="318" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1582873981554" />
+    <state width="1564" height="362" key="GridCell.Tab.0.right/1680.23.1920.1057/42.23.1638.1027@42.23.1638.1027" timestamp="1582085289063" />
+    <state width="1358" height="563" key="GridCell.Tab.0.right/1680.23.1920.1057/43.23.1637.1027@43.23.1637.1027" timestamp="1578284924259" />
+    <state width="1830" height="232" key="GridCell.Tab.0.right/1680.23.1920.1057/47.23.1633.1027@1680.23.1920.1057" timestamp="1582267908478" />
+    <state width="1830" height="232" key="GridCell.Tab.0.right/1680.23.1920.1057/48.23.1632.1027@1680.23.1920.1057" timestamp="1582267773112" />
+    <state width="1830" height="399" key="GridCell.Tab.0.right/1680.23.1920.1057/51.23.1629.1027@1680.23.1920.1057" timestamp="1582256388793" />
+    <state width="1878" height="362" key="GridCell.Tab.0.right/1680.23.1920.1057/55.23.1625.1027@55.23.1625.1027" timestamp="1582097459782" />
+    <state width="1878" height="362" key="GridCell.Tab.0.right/1680.23.1920.1057/60.23.1620.1027@60.23.1620.1027" timestamp="1582097412399" />
+    <state width="1564" height="362" key="GridCell.Tab.0.right/1680.23.1920.1057/62.23.1618.1027@62.23.1618.1027" timestamp="1582012800924" />
+    <state width="1878" height="213" key="GridCell.Tab.0.right/1680.23.1920.1057/68.23.1612.1027@1680.23.1920.1057" timestamp="1582201094646" />
+    <state width="1564" height="492" key="GridCell.Tab.0.right/43.23.1637.1027@43.23.1637.1027" timestamp="1580881521424" />
+    <state width="343" height="341" key="GridCell.Tab.0.right/45.23.1635.1027@45.23.1635.1027" timestamp="1581573915279" />
+    <state width="688" height="193" key="GridCell.Tab.0.right/47.23.1633.1027@47.23.1633.1027" timestamp="1581577175540" />
+    <state width="1570" height="497" key="GridCell.Tab.0.right/48.23.1632.1027@48.23.1632.1027" timestamp="1581923639307" />
+    <state width="688" height="316" key="GridCell.Tab.0.right/50.23.1630.1027@50.23.1630.1027" timestamp="1581691033287" />
+    <state width="1570" height="497" key="GridCell.Tab.0.right/51.23.1629.1027@51.23.1629.1027" timestamp="1581918463913" />
+    <state width="1570" height="497" key="GridCell.Tab.0.right/53.23.1627.1027@53.23.1627.1027" timestamp="1581918468333" />
+    <state width="688" height="316" key="GridCell.Tab.0.right/55.23.1625.1027@55.23.1625.1027" timestamp="1581660361349" />
+    <state width="1570" height="2" key="GridCell.Tab.0.right/60.23.1620.1027@60.23.1620.1027" timestamp="1580724757093" />
+    <state width="1564" height="337" key="GridCell.Tab.1.bottom" timestamp="1582012760680">
+      <screen x="62" y="23" width="1618" height="1027" />
+    </state>
+    <state width="1638" height="236" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1580953532347" />
+    <state width="1358" height="563" key="GridCell.Tab.1.bottom/1680.23.1920.1057/42.23.1638.1027@42.23.1638.1027" timestamp="1578285328254" />
+    <state width="1358" height="563" key="GridCell.Tab.1.bottom/1680.23.1920.1057/43.23.1637.1027@43.23.1637.1027" timestamp="1578284924262" />
+    <state width="1564" height="337" key="GridCell.Tab.1.bottom/1680.23.1920.1057/62.23.1618.1027@62.23.1618.1027" timestamp="1582012760680" />
+    <state width="1564" height="337" key="GridCell.Tab.1.bottom/47.23.1633.1027@47.23.1633.1027" timestamp="1580958963579" />
+    <state width="1564" height="337" key="GridCell.Tab.1.bottom/48.23.1632.1027@48.23.1632.1027" timestamp="1580957475114" />
+    <state width="1564" height="337" key="GridCell.Tab.1.center" timestamp="1582012760680">
+      <screen x="62" y="23" width="1618" height="1027" />
+    </state>
+    <state width="1638" height="236" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1580953532346" />
+    <state width="1358" height="563" key="GridCell.Tab.1.center/1680.23.1920.1057/42.23.1638.1027@42.23.1638.1027" timestamp="1578285328253" />
+    <state width="1358" height="563" key="GridCell.Tab.1.center/1680.23.1920.1057/43.23.1637.1027@43.23.1637.1027" timestamp="1578284924261" />
+    <state width="1564" height="337" key="GridCell.Tab.1.center/1680.23.1920.1057/62.23.1618.1027@62.23.1618.1027" timestamp="1582012760680" />
+    <state width="1564" height="337" key="GridCell.Tab.1.center/47.23.1633.1027@47.23.1633.1027" timestamp="1580958963579" />
+    <state width="1564" height="337" key="GridCell.Tab.1.center/48.23.1632.1027@48.23.1632.1027" timestamp="1580957475113" />
+    <state width="1564" height="337" key="GridCell.Tab.1.left" timestamp="1582012760680">
+      <screen x="62" y="23" width="1618" height="1027" />
+    </state>
+    <state width="1638" height="236" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1580953532345" />
+    <state width="1358" height="563" key="GridCell.Tab.1.left/1680.23.1920.1057/42.23.1638.1027@42.23.1638.1027" timestamp="1578285328253" />
+    <state width="1358" height="563" key="GridCell.Tab.1.left/1680.23.1920.1057/43.23.1637.1027@43.23.1637.1027" timestamp="1578284924260" />
+    <state width="1564" height="337" key="GridCell.Tab.1.left/1680.23.1920.1057/62.23.1618.1027@62.23.1618.1027" timestamp="1582012760680" />
+    <state width="1564" height="337" key="GridCell.Tab.1.left/47.23.1633.1027@47.23.1633.1027" timestamp="1580958963578" />
+    <state width="1564" height="337" key="GridCell.Tab.1.left/48.23.1632.1027@48.23.1632.1027" timestamp="1580957475113" />
+    <state width="1564" height="337" key="GridCell.Tab.1.right" timestamp="1582012760680">
+      <screen x="62" y="23" width="1618" height="1027" />
+    </state>
+    <state width="1638" height="236" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1580953532346" />
+    <state width="1358" height="563" key="GridCell.Tab.1.right/1680.23.1920.1057/42.23.1638.1027@42.23.1638.1027" timestamp="1578285328253" />
+    <state width="1358" height="563" key="GridCell.Tab.1.right/1680.23.1920.1057/43.23.1637.1027@43.23.1637.1027" timestamp="1578284924261" />
+    <state width="1564" height="337" key="GridCell.Tab.1.right/1680.23.1920.1057/62.23.1618.1027@62.23.1618.1027" timestamp="1582012760680" />
+    <state width="1564" height="337" key="GridCell.Tab.1.right/47.23.1633.1027@47.23.1633.1027" timestamp="1580958963579" />
+    <state width="1564" height="337" key="GridCell.Tab.1.right/48.23.1632.1027@48.23.1632.1027" timestamp="1580957475114" />
+    <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1581556250635">
+      <screen x="50" y="23" width="1630" height="1027" />
+    </state>
+    <state width="239" height="457" key="HiddenNamespacesPopup/50.23.1630.1027@50.23.1630.1027" timestamp="1581556250635" />
+    <state x="2057" y="160" key="SettingsEditor" timestamp="1582087067962">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2057" y="160" key="SettingsEditor/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1582087067962" />
+    <state x="363" y="175" key="SettingsEditor/1680.23.1920.1057/43.23.1637.1027@43.23.1637.1027" timestamp="1578284817493" />
+    <state x="368" y="175" key="SettingsEditor/48.23.1632.1027@48.23.1632.1027" timestamp="1580972952873" />
+    <state x="370" y="175" key="SettingsEditor/50.23.1630.1027@50.23.1630.1027" timestamp="1581556091536" />
+    <state x="370" y="175" key="SettingsEditor/51.23.1629.1027@51.23.1629.1027" timestamp="1580695928603" />
+    <state x="377" y="175" key="SettingsEditor/55.23.1625.1027@55.23.1625.1027" timestamp="1580693783636" />
+    <state x="377" y="175" key="SettingsEditor/60.23.1620.1027@60.23.1620.1027" timestamp="1580694516461" />
+    <state x="761" y="413" width="350" height="246" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1581556358656">
+      <screen x="50" y="23" width="1630" height="1027" />
+    </state>
+    <state x="761" y="413" width="350" height="246" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/50.23.1630.1027@50.23.1630.1027" timestamp="1581556358656" />
+    <state x="171" y="123" width="1409" height="827" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1580639133654">
+      <screen x="71" y="23" width="1609" height="1027" />
+    </state>
+    <state x="171" y="123" width="1409" height="827" key="com.intellij.history.integration.ui.views.FileHistoryDialog/71.23.1609.1027@71.23.1609.1027" timestamp="1580639133654" />
+    <state x="328" y="715" key="com.intellij.ide.util.TipDialog" timestamp="1582946100041">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="328" y="707" key="com.intellij.ide.util.TipDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1582888061455" />
+    <state x="328" y="707" key="com.intellij.ide.util.TipDialog/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1582681905433" />
+    <state x="2050" y="735" key="com.intellij.ide.util.TipDialog/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1578713052597" />
+    <state x="328" y="715" key="com.intellij.ide.util.TipDialog/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1582946100041" />
+    <state x="359" y="791" key="com.intellij.ide.util.TipDialog/1680.23.1920.1057/43.23.1637.1027@43.23.1637.1027" timestamp="1578284592397" />
+    <state x="2050" y="735" key="com.intellij.ide.util.TipDialog/1680.23.1920.1057/60.23.1620.1027@1680.23.1920.1057" timestamp="1582250607203" />
+    <state x="378" y="715" key="com.intellij.ide.util.TipDialog/1680.23.1920.1057/62.23.1618.1027@62.23.1618.1027" timestamp="1582012006281" />
+    <state x="379" y="715" key="com.intellij.ide.util.TipDialog/1680.23.1920.1057/68.23.1612.1027@68.23.1612.1027" timestamp="1578544848989" />
+    <state x="385" y="715" key="com.intellij.ide.util.TipDialog/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1582008058742" />
+    <state x="388" y="715" key="com.intellij.ide.util.TipDialog/1680.23.1920.1057/74.23.1606.1027@74.23.1606.1027" timestamp="1581995930225" />
+    <state x="359" y="715" key="com.intellij.ide.util.TipDialog/45.23.1635.1027@45.23.1635.1027" timestamp="1580285823443" />
+    <state x="373" y="715" key="com.intellij.ide.util.TipDialog/60.23.1620.1027@60.23.1620.1027" timestamp="1580604699762" />
+    <state x="380" y="715" key="com.intellij.ide.util.TipDialog/68.23.1612.1027@68.23.1612.1027" timestamp="1580687661216" />
+    <state x="385" y="715" key="com.intellij.ide.util.TipDialog/71.23.1609.1027@71.23.1609.1027" timestamp="1580774686632" />
+    <state x="2086" y="48" width="1161" height="1007" key="dock-window-1" timestamp="1582092098638">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1680" y="0" width="1920" height="1080" key="dock-window-1/1680.0.1920.1080/39.23.1641.1027@39.23.1641.1027" timestamp="1582091265523" />
+    <state x="2086" y="48" width="1161" height="1007" key="dock-window-1/1680.23.1920.1057/38.23.1642.1027@38.23.1642.1027" timestamp="1582092098638" />
+    <state x="2086" y="48" width="1161" height="1007" key="dock-window-1/1680.23.1920.1057/39.23.1641.1027@39.23.1641.1027" timestamp="1582092034405" />
+    <state x="1936" y="17" width="1411" height="1063" key="dock-window-2" timestamp="1582096508922">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1936" y="17" width="1411" height="1063" key="dock-window-2/1680.0.1920.1080/47.23.1633.1027@1680.0.1920.1080" timestamp="1582096508922" />
+    <state x="1936" y="40" width="1411" height="1040" key="dock-window-2/1680.23.1920.1057/38.23.1642.1027@38.23.1642.1027" timestamp="1582092633014" />
+    <state x="547" y="252" width="692" height="643" key="search.everywhere.popup" timestamp="1582946685963">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="2305" y="241" width="670" height="676" key="search.everywhere.popup/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1578815076933" />
+    <state x="547" y="252" width="692" height="643" key="search.everywhere.popup/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1582946685963" />
+    <state x="583" y="252" width="670" height="643" key="search.everywhere.popup/53.23.1627.1027@53.23.1627.1027" timestamp="1580622726514" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PageOs_latest$graph_visual.coverage" NAME="graph_visual Coverage Results" MODIFIED="1572341501578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service/dot_graph" />
-    <SUITE FILE_PATH="coverage/PageOs_latest$page.coverage" NAME="page Coverage Results" MODIFIED="1572261564711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service/pages" />
+    <SUITE FILE_PATH="coverage/PageOs_v0_1$Unittests_in_litemall_test_py.coverage" NAME="Unittests in litemall_test.py Coverage Results" MODIFIED="1574473102692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selene/tests/examples/litemall/straightforward_approach" />
+    <SUITE FILE_PATH="coverage/PageOs_v0_1$test.coverage" NAME="test Coverage Results" MODIFIED="1580954167339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/similar_analysis" />
+    <SUITE FILE_PATH="coverage/PageOs_v0_1$petclinic.coverage" NAME="petclinic Coverage Results" MODIFIED="1582776526609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/faker_data" />
+    <SUITE FILE_PATH="coverage/PageOs_v0_1$Unittests_for_bokchoy_pages_test_pet_TestPet_test_add_Owner.coverage" NAME="Unittests for bokchoy_pages.test_pet.TestPet.test_add_Owner Coverage Results" MODIFIED="1574502122239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service" />
+    <SUITE FILE_PATH="coverage/PageOs_v0_1$hierarchical_clustring.coverage" NAME="hierarchical clustring Coverage Results" MODIFIED="1580885727024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/similar_analysis" />
     <SUITE FILE_PATH="coverage/PageOs_latest$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1572875990442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph" />
-    <SUITE FILE_PATH="coverage/PageOs_latest$litemall_page.coverage" NAME="litemall_page Coverage Results" MODIFIED="1572850488958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PageOs_latest$model.coverage" NAME="model Coverage Results" MODIFIED="1572877653223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/common" />
-    <SUITE FILE_PATH="coverage/PageOs_latest$tf_process.coverage" NAME="tf_process Coverage Results" MODIFIED="1571128539645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/POparse/cluster" />
-    <SUITE FILE_PATH="coverage/PageOs_latest$hierarchical_stat.coverage" NAME="hierarchical_stat Coverage Results" MODIFIED="1573303138338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service/POparse/cluster" />
-    <SUITE FILE_PATH="coverage/PageOs_latest$app.coverage" NAME="app Coverage Results" MODIFIED="1571800731002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PageOs_latest$po_parse.coverage" NAME="po_parse Coverage Results" MODIFIED="1572341518389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service" />
-    <SUITE FILE_PATH="coverage/PageOs_latest$prac300.coverage" NAME="prac300 Coverage Results" MODIFIED="1570089453250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PageOs_latest$getPath.coverage" NAME="getPath Coverage Results" MODIFIED="1572253497079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/common" />
-    <SUITE FILE_PATH="coverage/PageOs_latest$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1573475795902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service/POparse/cluster" />
+    <SUITE FILE_PATH="coverage/PageOs_v0_1$Unittests_for_bokchoy_pages_test_page_TestLitemall.coverage" NAME="Unittests for bokchoy_pages.test_page.TestLitemall Coverage Results" MODIFIED="1574501518615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service" />
+    <SUITE FILE_PATH="coverage/PageOs_latest$litemall_page.coverage" NAME="litemall_page Coverage Results" MODIFIED="1572850488958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PageOs_v0_1$remove_blank.coverage" NAME="remove_blank Coverage Results" MODIFIED="1580776555782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/similar_analysis" />
     <SUITE FILE_PATH="coverage/PageOs_latest$frequency_process.coverage" NAME="frequency_process Coverage Results" MODIFIED="1571128556636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/POparse/cluster" />
+    <SUITE FILE_PATH="coverage/PageOs_latest$page.coverage" NAME="page Coverage Results" MODIFIED="1572261564711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service/pages" />
+    <SUITE FILE_PATH="coverage/PageOs_v0_1$Unittests_in_test_pet_py.coverage" NAME="Unittests in test_pet.py Coverage Results" MODIFIED="1574505777647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service" />
+    <SUITE FILE_PATH="coverage/PageOs_latest$prac300.coverage" NAME="prac300 Coverage Results" MODIFIED="1570089453250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PageOs_v0_1$topk.coverage" NAME="topk Coverage Results" MODIFIED="1580958963561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/similar_analysis" />
+    <SUITE FILE_PATH="coverage/PageOs_v0_1$dom_distance.coverage" NAME="dom_distance Coverage Results" MODIFIED="1580972894373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/similar_analysis" />
+    <SUITE FILE_PATH="coverage/PageOs_latest$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1573475795902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service/POparse/cluster" />
+    <SUITE FILE_PATH="coverage/PageOs_latest$graph_visual.coverage" NAME="graph_visual Coverage Results" MODIFIED="1572341501578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service/dot_graph" />
+    <SUITE FILE_PATH="coverage/PageOs_latest$hierarchical_stat.coverage" NAME="hierarchical_stat Coverage Results" MODIFIED="1573303138338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service/POparse/cluster" />
+    <SUITE FILE_PATH="coverage/PageOs_v0_1$pet_page.coverage" NAME="pet_page Coverage Results" MODIFIED="1580713649761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bokchoy_pages" />
+    <SUITE FILE_PATH="coverage/PageOs_v0_1$tag_frequency.coverage" NAME="tag_frequency Coverage Results" MODIFIED="1580876062423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/similar_analysis" />
+    <SUITE FILE_PATH="coverage/PageOs_v0_1$po_parse.coverage" NAME="po_parse Coverage Results" MODIFIED="1581918463905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PageOs_latest$app.coverage" NAME="app Coverage Results" MODIFIED="1571800731002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PageOs_v0_1$app.coverage" NAME="app Coverage Results" MODIFIED="1582798018744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PageOs_latest$model.coverage" NAME="model Coverage Results" MODIFIED="1572877653223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/common" />
+    <SUITE FILE_PATH="coverage/PageOs_v0_1$rted_distance.coverage" NAME="rted_distance Coverage Results" MODIFIED="1580969045955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/similar_analysis" />
+    <SUITE FILE_PATH="coverage/PageOs_latest$getPath.coverage" NAME="getPath Coverage Results" MODIFIED="1572253497079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/common" />
+    <SUITE FILE_PATH="coverage/PageOs_v0_1$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1574257484796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service/POparse/cluster" />
+    <SUITE FILE_PATH="coverage/PageOs_latest$tf_process.coverage" NAME="tf_process Coverage Results" MODIFIED="1571128539645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/POparse/cluster" />
   </component>
 </project>
