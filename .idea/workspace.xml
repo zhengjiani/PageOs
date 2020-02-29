@@ -2,25 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e10a1b4-98d6-489c-b6c6-1c3cbd2436c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MySite.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PageKitTree.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/faker_data/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/faker_data/petclinic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pageKit.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phone.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/petclinic_POG.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/gentest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/menus.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pageos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pograph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/users.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite.py" beforeDir="false" afterPath="$PROJECT_DIR$/bokchoy_pages/MySite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageKitTree.dot" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokchoy_pages/pagekit_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/bokchoy_pages/pagekit_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokchoy_pages/pet1_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokchoy_pages/pet_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/bokchoy_pages/pet_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/similar_analysis/doms/state114.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/PetClinic.png.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/PetClinic.png.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokchoy_pages/github_api_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokchoy_pages/litemll_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokchoy_pages/test_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokchoy_pages/test_pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_gen/test_pet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_db.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dom_rted.csv" beforeDir="false" afterPath="$PROJECT_DIR$/similar_analysis/csv_file/dom_rted.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/PageKitTree.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph_travel.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_gen/graph_travel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/litemall_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageKit.dot" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/pageKit.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageKit.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/pageKit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/Layer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/locators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/selenium_ori/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/selenium_ori/element.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/selenium_ori/locators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/selenium_ori/page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/selenium_ori/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/templates/base.j2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/templates/testcase.j2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/petclinic/selenium_approach/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phone.dot" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/phone.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phonenix.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/phonenix.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/po_parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/bokchoy_pages/po_parse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree.png" beforeDir="false" afterPath="$PROJECT_DIR$/test_gen/tree.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_gen/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/petclinic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/petclinic.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/util.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +146,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
@@ -137,13 +168,6 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/test-output" />
-      <recent name="$PROJECT_DIR$/similar_analysis/csv_file" />
-      <recent name="$PROJECT_DIR$/similar_analysis" />
-      <recent name="$PROJECT_DIR$/similar_analysis/cluster/csv_file" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/similar_analysis/doms_test" />
@@ -151,8 +175,15 @@
       <recent name="$PROJECT_DIR$/pograph/service" />
       <recent name="$PROJECT_DIR$/pograph/service/POparse/cluster" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test_gen" />
+      <recent name="$PROJECT_DIR$/bokchoy_pages" />
+      <recent name="$PROJECT_DIR$/test-output" />
+      <recent name="$PROJECT_DIR$/similar_analysis/csv_file" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.app">
+  <component name="RunManager" selected="Python.petclinic">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -254,7 +285,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/po_parse.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bokchoy_pages/po_parse.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -382,7 +413,19 @@
       <workItem from="1581995926030" duration="276000" />
       <workItem from="1582008054779" duration="11000" />
       <workItem from="1582012005026" duration="8383000" />
-      <workItem from="1582096498670" duration="4667000" />
+      <workItem from="1582096498670" duration="4891000" />
+      <workItem from="1582249877638" duration="3853000" />
+      <workItem from="1582533697074" duration="889000" />
+      <workItem from="1582588542413" duration="3234000" />
+      <workItem from="1582617737990" duration="141000" />
+      <workItem from="1582680092521" duration="3000" />
+      <workItem from="1582680112354" duration="4000" />
+      <workItem from="1582681905100" duration="10696000" />
+      <workItem from="1582887748303" duration="75000" />
+      <workItem from="1582887889063" duration="154000" />
+      <workItem from="1582888060013" duration="1573000" />
+      <workItem from="1582942874356" duration="103000" />
+      <workItem from="1582946047026" duration="3563000" />
     </task>
     <task id="LOCAL-00001" summary="修改README">
       <created>1574259149571</created>
@@ -432,16 +475,22 @@
       <screen x="41" y="23" width="1639" height="1027" />
     </state>
     <state x="600" y="346" key="#com.intellij.fileTypes.FileTypeChooser/1680.23.1920.1057/41.23.1639.1027@41.23.1639.1027" timestamp="1582085186806" />
-    <state width="1878" height="362" key="GridCell.Tab.0.bottom" timestamp="1582097459782">
-      <screen x="55" y="23" width="1625" height="1027" />
+    <state width="1638" height="318" key="GridCell.Tab.0.bottom" timestamp="1582873981555">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="634" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1581902361606" />
+    <state width="1638" height="318" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1582798018755" />
     <state width="1564" height="362" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1582093703704" />
+    <state width="1638" height="318" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1582873981555" />
     <state width="1564" height="362" key="GridCell.Tab.0.bottom/1680.23.1920.1057/42.23.1638.1027@42.23.1638.1027" timestamp="1582085289063" />
     <state width="1358" height="563" key="GridCell.Tab.0.bottom/1680.23.1920.1057/43.23.1637.1027@43.23.1637.1027" timestamp="1578284924260" />
+    <state width="1830" height="232" key="GridCell.Tab.0.bottom/1680.23.1920.1057/47.23.1633.1027@1680.23.1920.1057" timestamp="1582267908478" />
+    <state width="1830" height="232" key="GridCell.Tab.0.bottom/1680.23.1920.1057/48.23.1632.1027@1680.23.1920.1057" timestamp="1582267773112" />
+    <state width="1830" height="399" key="GridCell.Tab.0.bottom/1680.23.1920.1057/51.23.1629.1027@1680.23.1920.1057" timestamp="1582256388794" />
     <state width="1878" height="362" key="GridCell.Tab.0.bottom/1680.23.1920.1057/55.23.1625.1027@55.23.1625.1027" timestamp="1582097459782" />
     <state width="1878" height="362" key="GridCell.Tab.0.bottom/1680.23.1920.1057/60.23.1620.1027@60.23.1620.1027" timestamp="1582097412400" />
     <state width="1564" height="362" key="GridCell.Tab.0.bottom/1680.23.1920.1057/62.23.1618.1027@62.23.1618.1027" timestamp="1582012800925" />
+    <state width="1878" height="213" key="GridCell.Tab.0.bottom/1680.23.1920.1057/68.23.1612.1027@1680.23.1920.1057" timestamp="1582201094646" />
     <state width="1564" height="492" key="GridCell.Tab.0.bottom/43.23.1637.1027@43.23.1637.1027" timestamp="1580881521424" />
     <state width="343" height="341" key="GridCell.Tab.0.bottom/45.23.1635.1027@45.23.1635.1027" timestamp="1581573915279" />
     <state width="688" height="193" key="GridCell.Tab.0.bottom/47.23.1633.1027@47.23.1633.1027" timestamp="1581577175541" />
@@ -451,16 +500,22 @@
     <state width="1570" height="497" key="GridCell.Tab.0.bottom/53.23.1627.1027@53.23.1627.1027" timestamp="1581918468333" />
     <state width="688" height="316" key="GridCell.Tab.0.bottom/55.23.1625.1027@55.23.1625.1027" timestamp="1581660361350" />
     <state width="1570" height="2" key="GridCell.Tab.0.bottom/60.23.1620.1027@60.23.1620.1027" timestamp="1580724757093" />
-    <state width="1878" height="362" key="GridCell.Tab.0.center" timestamp="1582097459781">
-      <screen x="55" y="23" width="1625" height="1027" />
+    <state width="1638" height="318" key="GridCell.Tab.0.center" timestamp="1582873981554">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="634" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1581902361604" />
+    <state width="1638" height="318" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1582798018754" />
     <state width="1564" height="362" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1582093703703" />
+    <state width="1638" height="318" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1582873981554" />
     <state width="1564" height="362" key="GridCell.Tab.0.center/1680.23.1920.1057/42.23.1638.1027@42.23.1638.1027" timestamp="1582085289062" />
     <state width="1358" height="563" key="GridCell.Tab.0.center/1680.23.1920.1057/43.23.1637.1027@43.23.1637.1027" timestamp="1578284924259" />
+    <state width="1830" height="232" key="GridCell.Tab.0.center/1680.23.1920.1057/47.23.1633.1027@1680.23.1920.1057" timestamp="1582267908477" />
+    <state width="1830" height="232" key="GridCell.Tab.0.center/1680.23.1920.1057/48.23.1632.1027@1680.23.1920.1057" timestamp="1582267773111" />
+    <state width="1830" height="399" key="GridCell.Tab.0.center/1680.23.1920.1057/51.23.1629.1027@1680.23.1920.1057" timestamp="1582256388793" />
     <state width="1878" height="362" key="GridCell.Tab.0.center/1680.23.1920.1057/55.23.1625.1027@55.23.1625.1027" timestamp="1582097459781" />
     <state width="1878" height="362" key="GridCell.Tab.0.center/1680.23.1920.1057/60.23.1620.1027@60.23.1620.1027" timestamp="1582097412398" />
     <state width="1564" height="362" key="GridCell.Tab.0.center/1680.23.1920.1057/62.23.1618.1027@62.23.1618.1027" timestamp="1582012800924" />
+    <state width="1878" height="213" key="GridCell.Tab.0.center/1680.23.1920.1057/68.23.1612.1027@1680.23.1920.1057" timestamp="1582201094645" />
     <state width="1564" height="492" key="GridCell.Tab.0.center/43.23.1637.1027@43.23.1637.1027" timestamp="1580881521423" />
     <state width="343" height="341" key="GridCell.Tab.0.center/45.23.1635.1027@45.23.1635.1027" timestamp="1581573915278" />
     <state width="688" height="193" key="GridCell.Tab.0.center/47.23.1633.1027@47.23.1633.1027" timestamp="1581577175540" />
@@ -470,16 +525,22 @@
     <state width="1570" height="497" key="GridCell.Tab.0.center/53.23.1627.1027@53.23.1627.1027" timestamp="1581918468332" />
     <state width="688" height="316" key="GridCell.Tab.0.center/55.23.1625.1027@55.23.1625.1027" timestamp="1581660361349" />
     <state width="1570" height="2" key="GridCell.Tab.0.center/60.23.1620.1027@60.23.1620.1027" timestamp="1580724757093" />
-    <state width="1878" height="362" key="GridCell.Tab.0.left" timestamp="1582097459781">
-      <screen x="55" y="23" width="1625" height="1027" />
+    <state width="1638" height="318" key="GridCell.Tab.0.left" timestamp="1582873981553">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="634" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1581902361603" />
+    <state width="1638" height="318" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1582798018753" />
     <state width="1564" height="362" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1582093703703" />
+    <state width="1638" height="318" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1582873981553" />
     <state width="1564" height="362" key="GridCell.Tab.0.left/1680.23.1920.1057/42.23.1638.1027@42.23.1638.1027" timestamp="1582085289062" />
     <state width="1358" height="563" key="GridCell.Tab.0.left/1680.23.1920.1057/43.23.1637.1027@43.23.1637.1027" timestamp="1578284924258" />
+    <state width="1830" height="232" key="GridCell.Tab.0.left/1680.23.1920.1057/47.23.1633.1027@1680.23.1920.1057" timestamp="1582267908477" />
+    <state width="1830" height="232" key="GridCell.Tab.0.left/1680.23.1920.1057/48.23.1632.1027@1680.23.1920.1057" timestamp="1582267773110" />
+    <state width="1830" height="399" key="GridCell.Tab.0.left/1680.23.1920.1057/51.23.1629.1027@1680.23.1920.1057" timestamp="1582256388792" />
     <state width="1878" height="362" key="GridCell.Tab.0.left/1680.23.1920.1057/55.23.1625.1027@55.23.1625.1027" timestamp="1582097459781" />
     <state width="1878" height="362" key="GridCell.Tab.0.left/1680.23.1920.1057/60.23.1620.1027@60.23.1620.1027" timestamp="1582097412398" />
     <state width="1564" height="362" key="GridCell.Tab.0.left/1680.23.1920.1057/62.23.1618.1027@62.23.1618.1027" timestamp="1582012800923" />
+    <state width="1878" height="213" key="GridCell.Tab.0.left/1680.23.1920.1057/68.23.1612.1027@1680.23.1920.1057" timestamp="1582201094645" />
     <state width="1564" height="492" key="GridCell.Tab.0.left/43.23.1637.1027@43.23.1637.1027" timestamp="1580881521422" />
     <state width="343" height="341" key="GridCell.Tab.0.left/45.23.1635.1027@45.23.1635.1027" timestamp="1581573915278" />
     <state width="688" height="193" key="GridCell.Tab.0.left/47.23.1633.1027@47.23.1633.1027" timestamp="1581577175539" />
@@ -489,16 +550,22 @@
     <state width="1570" height="497" key="GridCell.Tab.0.left/53.23.1627.1027@53.23.1627.1027" timestamp="1581918468332" />
     <state width="688" height="316" key="GridCell.Tab.0.left/55.23.1625.1027@55.23.1625.1027" timestamp="1581660361348" />
     <state width="1570" height="2" key="GridCell.Tab.0.left/60.23.1620.1027@60.23.1620.1027" timestamp="1580724757093" />
-    <state width="1878" height="362" key="GridCell.Tab.0.right" timestamp="1582097459782">
-      <screen x="55" y="23" width="1625" height="1027" />
+    <state width="1638" height="318" key="GridCell.Tab.0.right" timestamp="1582873981554">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="634" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1581902361605" />
+    <state width="1638" height="318" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1582798018755" />
     <state width="1564" height="362" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1582093703704" />
+    <state width="1638" height="318" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1582873981554" />
     <state width="1564" height="362" key="GridCell.Tab.0.right/1680.23.1920.1057/42.23.1638.1027@42.23.1638.1027" timestamp="1582085289063" />
     <state width="1358" height="563" key="GridCell.Tab.0.right/1680.23.1920.1057/43.23.1637.1027@43.23.1637.1027" timestamp="1578284924259" />
+    <state width="1830" height="232" key="GridCell.Tab.0.right/1680.23.1920.1057/47.23.1633.1027@1680.23.1920.1057" timestamp="1582267908478" />
+    <state width="1830" height="232" key="GridCell.Tab.0.right/1680.23.1920.1057/48.23.1632.1027@1680.23.1920.1057" timestamp="1582267773112" />
+    <state width="1830" height="399" key="GridCell.Tab.0.right/1680.23.1920.1057/51.23.1629.1027@1680.23.1920.1057" timestamp="1582256388793" />
     <state width="1878" height="362" key="GridCell.Tab.0.right/1680.23.1920.1057/55.23.1625.1027@55.23.1625.1027" timestamp="1582097459782" />
     <state width="1878" height="362" key="GridCell.Tab.0.right/1680.23.1920.1057/60.23.1620.1027@60.23.1620.1027" timestamp="1582097412399" />
     <state width="1564" height="362" key="GridCell.Tab.0.right/1680.23.1920.1057/62.23.1618.1027@62.23.1618.1027" timestamp="1582012800924" />
+    <state width="1878" height="213" key="GridCell.Tab.0.right/1680.23.1920.1057/68.23.1612.1027@1680.23.1920.1057" timestamp="1582201094646" />
     <state width="1564" height="492" key="GridCell.Tab.0.right/43.23.1637.1027@43.23.1637.1027" timestamp="1580881521424" />
     <state width="343" height="341" key="GridCell.Tab.0.right/45.23.1635.1027@45.23.1635.1027" timestamp="1581573915279" />
     <state width="688" height="193" key="GridCell.Tab.0.right/47.23.1633.1027@47.23.1633.1027" timestamp="1581577175540" />
@@ -566,12 +633,15 @@
       <screen x="71" y="23" width="1609" height="1027" />
     </state>
     <state x="171" y="123" width="1409" height="827" key="com.intellij.history.integration.ui.views.FileHistoryDialog/71.23.1609.1027@71.23.1609.1027" timestamp="1580639133654" />
-    <state x="378" y="715" key="com.intellij.ide.util.TipDialog" timestamp="1582012006281">
-      <screen x="62" y="23" width="1618" height="1027" />
+    <state x="328" y="715" key="com.intellij.ide.util.TipDialog" timestamp="1582946100041">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="328" y="707" key="com.intellij.ide.util.TipDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1581901986373" />
+    <state x="328" y="707" key="com.intellij.ide.util.TipDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1582888061455" />
+    <state x="328" y="707" key="com.intellij.ide.util.TipDialog/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1582681905433" />
     <state x="2050" y="735" key="com.intellij.ide.util.TipDialog/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1578713052597" />
+    <state x="328" y="715" key="com.intellij.ide.util.TipDialog/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1582946100041" />
     <state x="359" y="791" key="com.intellij.ide.util.TipDialog/1680.23.1920.1057/43.23.1637.1027@43.23.1637.1027" timestamp="1578284592397" />
+    <state x="2050" y="735" key="com.intellij.ide.util.TipDialog/1680.23.1920.1057/60.23.1620.1027@1680.23.1920.1057" timestamp="1582250607203" />
     <state x="378" y="715" key="com.intellij.ide.util.TipDialog/1680.23.1920.1057/62.23.1618.1027@62.23.1618.1027" timestamp="1582012006281" />
     <state x="379" y="715" key="com.intellij.ide.util.TipDialog/1680.23.1920.1057/68.23.1612.1027@68.23.1612.1027" timestamp="1578544848989" />
     <state x="385" y="715" key="com.intellij.ide.util.TipDialog/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1582008058742" />
@@ -591,16 +661,17 @@
     </state>
     <state x="1936" y="17" width="1411" height="1063" key="dock-window-2/1680.0.1920.1080/47.23.1633.1027@1680.0.1920.1080" timestamp="1582096508922" />
     <state x="1936" y="40" width="1411" height="1040" key="dock-window-2/1680.23.1920.1057/38.23.1642.1027@38.23.1642.1027" timestamp="1582092633014" />
-    <state x="583" y="252" width="670" height="643" key="search.everywhere.popup" timestamp="1580622726514">
-      <screen x="53" y="23" width="1627" height="1027" />
+    <state x="547" y="252" width="692" height="643" key="search.everywhere.popup" timestamp="1582946685963">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="2305" y="241" width="670" height="676" key="search.everywhere.popup/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1578815076933" />
+    <state x="547" y="252" width="692" height="643" key="search.everywhere.popup/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1582946685963" />
     <state x="583" y="252" width="670" height="643" key="search.everywhere.popup/53.23.1627.1027@53.23.1627.1027" timestamp="1580622726514" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PageOs_v0_1$Unittests_in_litemall_test_py.coverage" NAME="Unittests in litemall_test.py Coverage Results" MODIFIED="1574473102692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selene/tests/examples/litemall/straightforward_approach" />
     <SUITE FILE_PATH="coverage/PageOs_v0_1$test.coverage" NAME="test Coverage Results" MODIFIED="1580954167339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/similar_analysis" />
-    <SUITE FILE_PATH="coverage/PageOs_v0_1$petclinic.coverage" NAME="petclinic Coverage Results" MODIFIED="1582012800917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/faker_data" />
+    <SUITE FILE_PATH="coverage/PageOs_v0_1$petclinic.coverage" NAME="petclinic Coverage Results" MODIFIED="1582776526609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/faker_data" />
     <SUITE FILE_PATH="coverage/PageOs_v0_1$Unittests_for_bokchoy_pages_test_pet_TestPet_test_add_Owner.coverage" NAME="Unittests for bokchoy_pages.test_pet.TestPet.test_add_Owner Coverage Results" MODIFIED="1574502122239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service" />
     <SUITE FILE_PATH="coverage/PageOs_v0_1$hierarchical_clustring.coverage" NAME="hierarchical clustring Coverage Results" MODIFIED="1580885727024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/similar_analysis" />
     <SUITE FILE_PATH="coverage/PageOs_latest$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1572875990442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph" />
@@ -621,7 +692,7 @@
     <SUITE FILE_PATH="coverage/PageOs_v0_1$tag_frequency.coverage" NAME="tag_frequency Coverage Results" MODIFIED="1580876062423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/similar_analysis" />
     <SUITE FILE_PATH="coverage/PageOs_v0_1$po_parse.coverage" NAME="po_parse Coverage Results" MODIFIED="1581918463905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PageOs_latest$app.coverage" NAME="app Coverage Results" MODIFIED="1571800731002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PageOs_v0_1$app.coverage" NAME="app Coverage Results" MODIFIED="1582097459773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PageOs_v0_1$app.coverage" NAME="app Coverage Results" MODIFIED="1582798018744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PageOs_latest$model.coverage" NAME="model Coverage Results" MODIFIED="1572877653223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/common" />
     <SUITE FILE_PATH="coverage/PageOs_v0_1$rted_distance.coverage" NAME="rted_distance Coverage Results" MODIFIED="1580969045955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/similar_analysis" />
     <SUITE FILE_PATH="coverage/PageOs_latest$getPath.coverage" NAME="getPath Coverage Results" MODIFIED="1572253497079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/common" />
