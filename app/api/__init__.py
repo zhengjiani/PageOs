@@ -6,3 +6,8 @@
 @Email   : 936089353@qq.com
 @Software: PyCharm
 """
+from flask import Blueprint
+
+api = Blueprint('api',__name__)
+
+from . import files,gentest,menus,pageos,pograph,users

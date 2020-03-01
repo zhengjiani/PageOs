@@ -7,10 +7,9 @@
 @Software: PyCharm
 """
 from flask import jsonify, Blueprint, Response, request
+from . import api
 
-pageos = Blueprint('pageos',__name__)
-
-@pageos.route('/polists',methods=['GET'])
+@api.route('/polists',methods=['GET'])
 def get_po_files():
     res_dict = {
         "data":

@@ -8,20 +8,20 @@
 """
 import os
 
-from flask import jsonify, Blueprint, Response, request, send_from_directory
+from flask import jsonify,request, send_from_directory,current_app
 from werkzeug.utils import secure_filename
+from . import api
 
-files = Blueprint('files',__name__)
-@files.route('/upload',methods=['POST'])
+@api.route('/upload',methods=['POST'])
 def upload_file():
     if request.method == 'POST':
         file = request.files['file']
         print(file.filename)
         filename = secure_filename(file.filename)
-        file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+        file.save(os.path.join(current_app.config['UPLOAD_FOLDER'], filename))
         return {"status": 201, "msg": "upload success"}
 
-@files.route('/download/<filename>',methods=['GET'])
+@api.route('/download/<filename>',methods=['GET'])
 def download_file(filename):
     directory = os.getcwd()
     return send_from_directory(directory,filename,as_attachment=True)

@@ -1,4 +1,0 @@
-include pograph/schema.sql
-graft pograph/static
-graft pograph/templates
-global-exclude *.pyc

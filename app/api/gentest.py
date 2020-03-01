@@ -8,11 +8,11 @@
 """
 import os
 
-from flask import jsonify, Blueprint, Response, request, send_from_directory
+from flask import jsonify, send_from_directory
+from . import api
 
-gentest = Blueprint('gentest',__name__)
 
-@gentest.route('/pathlists',methods=['GET'])
+@api.route('/pathlists',methods=['GET'])
 def get_paths():
     res_dict = {
         "data":
@@ -53,17 +53,17 @@ def get_paths():
         }}
     return jsonify(res_dict)
 
-@gentest.route('/pagefiles',methods=['POST'])
+@api.route('/pagefiles',methods=['POST'])
 def add_pos():
     pass
 
-@gentest.route('/makedata',methods=['GET','POST'])
+@api.route('/makedata',methods=['GET','POST'])
 def make_data():
     res_dict = {'first_name': 'Isabella', 'last_name': 'Holmes', 'address': '3119 Alvarez Overpass Suite 542',
                 'city': 'bury', 'telephone': '751-416-7438x05474'}
     return jsonify({'data':res_dict})
 
-@gentest.route('/testfile/<filename>',methods=['GET'])
+@api.route('/testfile/<filename>',methods=['GET'])
 def get_test_file(filename):
     directory = os.getcwd()
     file_path=os.path.join(directory,'bokchoy_pages')

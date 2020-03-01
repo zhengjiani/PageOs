@@ -7,10 +7,10 @@
 @Software: PyCharm
 """
 from flask import jsonify, Blueprint, Response, request
+from . import api
 
-menus = Blueprint('menus',__name__)
 
-@menus.route('/menus',methods=['GET'])
+@api.route('/menus',methods=['GET'])
 def get_menus():
     res_dict ={
             "data": [

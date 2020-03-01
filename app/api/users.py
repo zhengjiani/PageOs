@@ -6,15 +6,22 @@
 @Email   : 936089353@qq.com
 @Software: PyCharm
 """
-
-import os
+import datetime
+import json,uuid,jwt
 from functools import wraps
+from flask import jsonify, Blueprint, request,current_app
+from flask_cors import CORS
+from werkzeug.security import generate_password_hash
+from . import api
+from ..models import db,User
 
-from flask import jsonify, Blueprint, Response, request, send_from_directory
-from jwt import jwt
-
-
-users = Blueprint('users',__name__)
+CORS(current_app, supports_credentials=True)
+class MyEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, bytes):
+            return str(obj, encoding='utf-8')
+        return json.JSONEncoder.default(self, obj)
+current_app.json_encoder = MyEncoder
 
 def token_required(f):
     @wraps(f)
@@ -28,7 +35,7 @@ def token_required(f):
             return jsonify({'msg':'Token is missing'}),401
 
         try:
-            data = jwt.decode(token,app.config['SECRET_KEY'])
+            data = jwt.decode(token,current_app.config['SECRET_KEY'])
             current_user = User.query.filter_by(public_id=data['public_id']).first()
         except:
             return jsonify({'msg':'Token is invalid'}),401
@@ -37,7 +44,7 @@ def token_required(f):
     return decorated
 
 
-@app.route('/user', methods=['GET'])
+@api.route('/user', methods=['GET'])
 def get_all_users():
 
     users = User.query.all()
@@ -54,7 +61,7 @@ def get_all_users():
     return jsonify({'users': output})
 
 
-@app.route('/user/<public_id>', methods=['GET'])
+@api.route('/user/<public_id>', methods=['GET'])
 def get_one_user(public_id):
     user = User.query.filter_by(public_id=public_id).first()
 
@@ -70,9 +77,8 @@ def get_one_user(public_id):
     return jsonify({'user': user_data})
 
 
-@app.route('/user', methods=['POST'])
+@api.route('/user', methods=['POST'])
 def create_user():
-
     data = request.get_json()
     hashed_password = generate_password_hash(data['password'], method='sha256')
     new_user = User(public_id=str(uuid.uuid4()), username=data['username'], password=hashed_password,admin=False)
@@ -80,7 +86,7 @@ def create_user():
     db.session.commit()
     return jsonify({"msg": "新用户创建成功"})
 
-@app.route('/user/<public_id>', methods=['PUT'])
+@api.route('/user/<public_id>', methods=['PUT'])
 def promote_user(public_id):
     """
     提升用户权限
@@ -99,13 +105,13 @@ def promote_user(public_id):
 
 
 
-@app.route('/login',methods=['POST'])
+@api.route('/login',methods=['POST'])
 def login():
     data = request.get_json()
     user = User.query.filter_by(username=data['username']).first()
     token = jwt.encode(
             {'public_id': user.public_id, 'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=30)},
-            app.config['SECRET_KEY'])
+            current_app.config['SECRET_KEY'])
     user_data = {}
     user_data['username'] = user.username
     user_data['password'] = user.password
