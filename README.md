@@ -54,3 +54,11 @@ python manage.py db history
 
 # 回滚到某个 history
 python manage.py db downgrade <history_id>
+
+# 获取列表中重复元素索引值
+    ans = np.where(np.array(po_queue) == item)
+    
+    deque(['AddNewPetPage', 'EditOwnerPage', 'PetPage', 'PetPage', 'AddNewVisitPage', 'DetailPage', 'DetailPage', 'DetailPage'])
+    (array([2, 3]),)
+    
+

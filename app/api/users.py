@@ -10,12 +10,11 @@ import datetime
 import json,uuid,jwt
 from functools import wraps
 from flask import jsonify, Blueprint, request,current_app
-from flask_cors import CORS
 from werkzeug.security import generate_password_hash
 from . import api
 from ..models import db,User
 
-CORS(current_app, supports_credentials=True)
+
 class MyEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, bytes):
