@@ -64,3 +64,144 @@ python manage.py db downgrade <history_id>
 ### Flask阿里云部署启动方式
 
     gunicorn -w 4 -b 0.0.0.0:5000 manage:app
+
+#Jinja2模版写法
+
+执行for循环和打印结果
+```jinja2
+{% for item in navigation %}
+        <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
+{% endfor %}
+```
+变量
+```jinja2
+{{ foo.bar }}
+{{ foo['bar'] }}
+```
+过滤器
+```jinja2
+{{ name|striptags|title }} # 移除 name 中的所有 HTML 标签并且改写 为标题样式的大小写格式。
+{{ list|join(', ') }} # 把一个列表用逗号连接起来
+```
+判断一个值是否定义过
+```jinja2
+{{name is defined }} # 根据返回true/false
+```
+空白控制，移除前/后空格
+```jinja2
+{% for item in seq -%}
+    {{ item }}
+{%- endfor %}
+```
+转义/展示Jinja2语法
+```jinja2
+{{ '{{' }}
+{% raw %}
+    <ul>
+    {% for item in seq %}
+        <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
+{% endraw %}
+```
+行语句
+```jinja2
+# for item in seq:
+    ...
+# endfor
+```
+模版继承
+base.html
+```jinja2
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    {% block head %}
+    <link rel="stylesheet" href="style.css" />
+    <title>{% block title %}{% endblock %} - My Webpage</title>
+    {% endblock %}
+</head>
+<body>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <div id="footer">
+        {% block footer %}
+        &copy; Copyright 2008 by <a href="http://domain.invalid/">you</a>.
+        {% endblock %}
+    </div>
+</body>
+```
+子模版
+```jinja2
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+    <h1>Index</h1>
+    <p class="important">
+      Welcome on my awesome homepage.
+    </p>
+{% endblock %}
+```
+控制结构
+```jinja2
+{% for user in users %}
+  <li>{{ user.username|e }}</li>
+{% endfor %}
+{% for key, value in my_dict.iteritems() %}
+    <dt>{{ key|e }}</dt>
+    <dd>{{ value|e }}</dd>
+{% endfor %}
+```
+特殊变量
+```jinja2
+变量	描述
+loop.index	当前循环迭代的次数（从 1 开始）
+loop.index0	当前循环迭代的次数（从 0 开始）
+loop.revindex	到循环结束需要迭代的次数（从 1 开始）
+loop.revindex0	到循环结束需要迭代的次数（从 0 开始）
+loop.first	如果是第一次迭代，为 True 。
+loop.last	如果是最后一次迭代，为 True 。
+loop.length	序列中的项目数。
+loop.cycle	在一串序列间期取值的辅助函数。见下面的解释。
+```
+列表中选择取值
+```jinja2
+{% for row in rows %}
+    <li class="{{ loop.cycle('odd', 'even') }}">{{ row }}</li>
+{% endfor %}
+```
+如果因序列是空或者过滤移除了序列中的所有项目而没有执行循环，你可以使用 else 渲染一个用于替换的块:
+```jinja2
+<ul>
+{% for user in users %}
+    <li>{{ user.username|e }}</li>
+{% else %}
+    <li><em>no users found</em></li>
+{% endfor %}
+</ul>
+```
+递归数据
+```jinja2
+<ul class="sitemap">
+{%- for item in sitemap recursive %}
+    <li><a href="{{ item.href|e }}">{{ item.title }}</a>
+    {%- if item.children -%}
+        <ul class="submenu">{{ loop(item.children) }}</ul>
+    {%- endif %}</li>
+{%- endfor %}
+</ul>
+```
+宏，把常用行为作为可重用函数，取代手动重复工作
+```jinja2
+{% macro input(name, value='', type='text', size=20) -%}
+    <input type="{{ type }}" name="{{ name }}" value="{{
+        value|e }}" size="{{ size }}">
+{%- endmacro %}
+<p>{{ input('password', type='password') }}</p>
+```
