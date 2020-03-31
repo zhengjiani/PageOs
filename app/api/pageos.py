@@ -8,9 +8,13 @@
 """
 from flask import jsonify, Blueprint, Response, request
 from . import api
+from ..code import ResponseCode
+from ..response import ResMsg
+from ..util import route
 
-@api.route('/polists',methods=['GET'])
+@route(api,'/polists',methods=['GET'])
 def get_po_files():
+    res = ResMsg()
     res_dict = {
         "data":
             {
@@ -28,4 +32,5 @@ def get_po_files():
             "status": 200
         }
     }
-    return jsonify(res_dict)
+    res.update(code=ResponseCode.SUCCESS,data=res_dict)
+    return res.data

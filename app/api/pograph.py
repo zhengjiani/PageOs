@@ -8,13 +8,17 @@
 """
 from flask import jsonify, request
 
-from models import Page,db
+from app.models import Page,db
 from . import api
 from bokchoy_pages import po_parse
+from ..code import ResponseCode
+from ..response import ResMsg
+from ..util import route
 
 
-@api.route('/pog/<int:page_id>',methods=['GET'])
+@route(api,'/pog/<int:page_id>',methods=['GET'])
 def get_pog(page_id):
+    res = ResMsg()
     page = Page.query.filter_by(id=page_id).first()
     page_data = {}
     page_data['pagename'] = page.pagename
@@ -23,9 +27,9 @@ def get_pog(page_id):
     page_data['pog_dic'] = pog_dic
     pog_graph = "/Users/zhengjiani/PycharmProjects/PageOs_v0.1/graph.png"
     page_data['pog_graph'] = pog_graph
-    return jsonify({'page':page_data,"msg":"页面对象图字典生成成功"})
+    res.update(code=ResponseCode.SUCCESS,data=page_data)
 
-@api.route('/pog', methods=['POST'])
+@route(api,'/pog', methods=['POST'])
 def create_pog():
     data = request.get_json()
     new_page = Page(pagename=data['pagename'],file_path=data['filepath'])
@@ -33,8 +37,9 @@ def create_pog():
     db.session.commit()
     return jsonify({"msg": "新页面对象文件创建成功"})
 
-@api.route('/pog',methods=['GET'])
+@route(api,'/pog',methods=['GET'])
 def get_all_pogs():
+    res = ResMsg()
     pages = Page.query.all()
     output = []
     for page in pages:
@@ -43,9 +48,9 @@ def get_all_pogs():
         page_data['pagename'] = page.pagename
         page_data['filepath'] = page.file_path
         output.append(page_data)
-    return jsonify({'pages':output})
+    res.update(code=ResponseCode.SUCCESS,data=output)
 
-@api.route('/pog/<int:page_id>',methods=['DELETE'])
+@route(api,'/pog/<int:page_id>',methods=['DELETE'])
 def delete_page(page_id):
     page = Page.query.filter_by(id=page_id).first()
     db.session.delete(page)

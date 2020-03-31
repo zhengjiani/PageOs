@@ -19,3 +19,12 @@ class User(db.Model):
 
     def __repr__(self):
         return '<User {}>'.format(self.username)
+
+class Page(db.Model):
+    __tablename__ = 'pages'
+    id = db.Column(db.Integer, primary_key=True)
+    pagename = db.Column(db.String(32), index=True)
+    file_path = db.Column(db.String(128))
+
+    def __repr__(self):
+        return '<Page {}>'.format(self.pagename)

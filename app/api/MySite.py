@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
-
 from bok_choy.page_object import PageObject
+
+
 class state5Page(PageObject):
     """state5页"""
     url = "http://localhost:3000/#!/welcome"

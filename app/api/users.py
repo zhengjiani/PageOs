@@ -9,10 +9,14 @@
 import datetime
 import json,uuid,jwt
 from functools import wraps
-from flask import jsonify, Blueprint, request,current_app
+from flask import jsonify, Blueprint, request, current_app, make_response
 from werkzeug.security import generate_password_hash
 from . import api
+from ..code import ResponseCode, ResponseMessage
 from ..models import db,User
+from ..response import ResMsg
+from ..util import route
+from .. import dao
 
 
 class MyEncoder(json.JSONEncoder):
@@ -42,50 +46,43 @@ def token_required(f):
         return f(current_user,*args,**kwargs)
     return decorated
 
-
-@api.route('/user', methods=['GET'])
+@route(api,'/user', methods=['GET'])
 def get_all_users():
-
-    users = User.query.all()
-    output = []
-    for user in users:
-        user_data = {}
-        user_data['public_id'] = user.public_id
-        user_data['username'] = user.username
-        user_data['password'] = user.password
-        user_data['admin'] = user.admin
-
-        output.append(user_data)
-
-    return jsonify({'users': output})
+    res = ResMsg()
+    res_list = dao.get_users()
+    res.update(code=ResponseCode.SUCCESS,data=res_list)
+    return res.data
 
 
-@api.route('/user/<public_id>', methods=['GET'])
+@route(api,'/user/<public_id>', methods=['GET'])
 def get_one_user(public_id):
-    user = User.query.filter_by(public_id=public_id).first()
-
-    if not user:
-        return jsonify({'msg': 'No user found!'})
-
-    user_data = {}
-    user_data['public_id'] = user.public_id
-    user_data['username'] = user.username
-    user_data['password'] = user.password
-    user_data['admin'] = user.admin
-
-    return jsonify({'user': user_data})
+    res = ResMsg()
+    output = dao.get_user(public_id)
+    res.update(code=ResponseCode.SUCCESS, data=output)
+    return res.data
 
 
-@api.route('/user', methods=['POST'])
+
+@route(api,'/user', methods=['POST'])
 def create_user():
-    data = request.get_json()
-    hashed_password = generate_password_hash(data['password'], method='sha256')
-    new_user = User(public_id=str(uuid.uuid4()), username=data['username'], password=hashed_password,admin=False)
-    db.session.add(new_user)
-    db.session.commit()
-    return jsonify({"msg": "新用户创建成功"})
+    res = ResMsg()
+    req = request.get_json()
+    hashed_password = generate_password_hash(req['password'], method='sha256')
+    data = {
+        'public_id': str(uuid.uuid4()),
+        'username': req['username'],
+        'password': hashed_password,
+        'admin': False
+    }
+    output = dao.add_user(data)
+    if output is 'error':
+        res.update(code=ResponseCode.FAIL, data=output, msg=ResponseMessage.FAIL)
+    else:
+        res.update(code=ResponseCode.SUCCESS, data=output)
+    return res.data
 
-@api.route('/user/<public_id>', methods=['PUT'])
+
+@route(api,'/user/<public_id>', methods=['PUT'])
 def promote_user(public_id):
     """
     提升用户权限
@@ -104,8 +101,9 @@ def promote_user(public_id):
 
 
 
-@api.route('/login',methods=['POST'])
+@route(api,'/login',methods=['POST'])
 def login():
+    res = ResMsg()
     data = request.get_json()
     user = User.query.filter_by(username=data['username']).first()
     token = jwt.encode(
@@ -116,8 +114,5 @@ def login():
     user_data['password'] = user.password
     user_data['token'] = token
 
-    return jsonify(
-        {"data": user_data,
-         "meta": {"msg": "登录成功",
-                  "status": 200}
-         })
+    res.update(code=ResponseCode.SUCCESS,data=user_data)
+

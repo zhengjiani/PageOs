@@ -11,7 +11,10 @@ import sys
 
 from flask import jsonify, send_from_directory
 from . import api
-from test_gen.generate_tree import Trans_tree
+from gen_test.generate_tree import Trans_tree
+from ..code import ResponseCode
+from ..response import ResMsg
+from ..util import route
 
 
 def get_key(dict,node,child):
@@ -21,8 +24,10 @@ def get_key(dict,node,child):
                 return k
 
 
-@api.route('/transtree',methods=['GET'])
+@route(api,'/transtree',methods=['GET'])
 def trans_tree():
+    """返回页面对象迁移树"""
+    res = ResMsg()
     pog_dic = {
         "AddNewPetPage": {
             "add_new_pet": "DetailPage"
@@ -79,24 +84,20 @@ def trans_tree():
                 i = i + 1
         methods.append(method)
     res_dict = {
-        "data":
-            {
                 "tree_dic": tree.to_json(with_data=True),
                 "tree_visual": tree_txt,
                 "pathlists": path,
                 "methods":methods
-            },
-        "meta":
-            {
-                "msg":"广度优先遍历树构建成功",
-                "status": 200
-            }
+
     }
-    return jsonify(res_dict)
+    res.update(code=ResponseCode.SUCCESS,data=res_dict)
+    return res.data
 
 
-@api.route('/pathlists',methods=['GET'])
+@route(api,'/pathlists',methods=['GET'])
 def get_paths():
+    """返回路径"""
+    res = ResMsg()
     pathlists = [
         '<\HomePage:goto_search,FindPage:goto_detail_page,DetailPage>',
         '<\HomePage:goto_search,FindPage:goto_detail_page,DetailPage>',
@@ -114,29 +115,28 @@ def get_paths():
         dic['pathname'] = i
         paths.append(dic)
     res_dict = {
-        "data":
-        {
         "totalpage": 5,
         "pagenum": 4,
         "total":8,
         "paths": paths
-        },
-        "meta": {
-            "msg": "获取成功",
-            "status": 200
-        }}
-    return jsonify(res_dict)
+        }
+    res.update(code=ResponseCode.SUCCESS, data=res_dict)
+    return res.data
 
 
 
-@api.route('/makedata',methods=['GET','POST'])
+@route(api,'/makedata',methods=['GET','POST'])
 def make_data():
+    """生成模拟数据"""
+    res = ResMsg()
     res_dict = {'first_name': 'Isabella', 'last_name': 'Holmes', 'address': '3119 Alvarez Overpass Suite 542',
                 'city': 'bury', 'telephone': '751-416-7438x05474'}
-    return jsonify({'data':res_dict})
+    res.update(code=ResponseCode.SUCCESS, data=res_dict)
+    return res.data
 
-@api.route('/testfile/<filename>',methods=['GET'])
+@route(api,'/testfile/<filename>',methods=['GET'])
 def get_test_file(filename):
+    """获取文件路径及文件"""
     directory = os.getcwd()
     file_path=os.path.join(directory,'bokchoy_pages')
     return send_from_directory(file_path, filename, as_attachment=True)

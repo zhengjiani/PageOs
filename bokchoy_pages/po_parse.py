@@ -76,8 +76,8 @@ class PageObjectOperate:
                 for k_val, v_val in v.items():
                     dot.edge(k, v_val, label=k_val)
             print(dot.source)
-            dot.render('test-output/PetClinic.png', view=True)  # doctest: +SKIP
-            return 'test-output/PetClinic.gv.pdf'
+            dot.render('output/PetClinic.png', view=True)  # doctest: +SKIP
+            return 'output/PetClinic.gv.pdf'
         else:
             raise ValueError('输入参数有误，请选择-get_po/get_po_param')
 
@@ -102,8 +102,8 @@ def visual_graph():
         for k_val, v_val in v.items():
             dot.edge(k, v_val, label=k_val)
     print(dot.source)
-    dot.render('test-output/PetClinic.png', view=True)  # doctest: +SKIP
-    return 'test-output/PetClinic.gv.pdf'
+    dot.render('output/PetClinic.png', view=True)  # doctest: +SKIP
+    return 'output/PetClinic.gv.pdf'
 
 
 if __name__ == '__main__':

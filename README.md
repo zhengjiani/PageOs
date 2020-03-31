@@ -61,4 +61,6 @@ python manage.py db downgrade <history_id>
     deque(['AddNewPetPage', 'EditOwnerPage', 'PetPage', 'PetPage', 'AddNewVisitPage', 'DetailPage', 'DetailPage', 'DetailPage'])
     (array([2, 3]),)
     
+### Flask阿里云部署启动方式
 
+    gunicorn -w 4 -b 0.0.0.0:5000 manage:app

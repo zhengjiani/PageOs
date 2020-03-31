@@ -9,6 +9,8 @@
 from flask import Flask,current_app
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
+
+from app.core import JSONEncoder
 from config import config
 db = SQLAlchemy()
 
@@ -18,6 +20,8 @@ def create_app(config_name):
         app.config.from_object(config[config_name])
         config[config_name].init_app(app)
         db.init_app(app)
+        # 返回json格式转换
+        app.json_encoder = JSONEncoder
         CORS(app, supports_credentials=True)
 
         from app.api import api as api_blueprint
