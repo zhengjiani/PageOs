@@ -9,12 +9,13 @@
 import os
 import sys
 
-from flask import jsonify, send_from_directory
+from flask import jsonify, send_from_directory, request
 from . import api
 from gen_test.generate_tree import Trans_tree
 from ..code import ResponseCode
 from ..response import ResMsg
 from ..util import route
+from gen_test.gen_testcase import gen_test
 
 
 def get_key(dict,node,child):
@@ -90,7 +91,7 @@ def trans_tree():
                 "methods":methods
 
     }
-    res.update(code=ResponseCode.SUCCESS,data=res_dict)
+    res.update(code=ResponseCode.SUCCESS,data=res_dict,msg="页面对象迁移树转换成功")
     return res.data
 
 
@@ -140,3 +141,17 @@ def get_test_file(filename):
     directory = os.getcwd()
     file_path=os.path.join(directory,'bokchoy_pages')
     return send_from_directory(file_path, filename, as_attachment=True)
+
+@route(api,'/gentests',methods=['POST'])
+def get_testcases():
+    """根据测试路径集生成测试用例，获取测试用例"""
+    res = ResMsg()
+    req = request.get_json()
+    pathlists = req["pathlists"]
+    print(pathlists)
+    gen_test().generate(pathlists)
+    file = '/Users/zhengjiani/PycharmProjects/PageOs_v0.1/gen_test/path_test.py'
+    if os.path.exists(file):
+        res.update(code=ResponseCode.SUCCESS, data={'file_path':file}, msg="测试用例文件生成成功")
+    return res.data
+

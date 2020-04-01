@@ -104,15 +104,17 @@ def promote_user(public_id):
 @route(api,'/login',methods=['POST'])
 def login():
     res = ResMsg()
-    data = request.get_json()
-    user = User.query.filter_by(username=data['username']).first()
+    req = request.get_json()
+    username = req.get('username')
+    user = dao.get_user_by_name(username)
     token = jwt.encode(
-            {'public_id': user.public_id, 'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=30)},
+            {'public_id': user["public_id"], 'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=30)},
             current_app.config['SECRET_KEY'])
     user_data = {}
-    user_data['username'] = user.username
-    user_data['password'] = user.password
+    user_data['username'] = user["username"]
+    user_data['password'] = user["password"]
     user_data['token'] = token
 
-    res.update(code=ResponseCode.SUCCESS,data=user_data)
+    res.update(code=ResponseCode.SUCCESS,data=user_data,msg="登录成功")
+    return res.data
 

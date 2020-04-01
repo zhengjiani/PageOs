@@ -22,6 +22,14 @@ def mapping(output):
     a = map(lambda x: {'id': x[0], 'username': x[1], 'password': x[2], 'public_id': x[3], 'admin': x[4]},output)
     return a
 
+def map_user(x):
+    a =  {'id': x[0], 'username': x[1], 'password': x[2], 'public_id': x[3], 'admin': x[4]}
+    return a
+
+def map_pog(x):
+    a = {'id':x[0],'pagename':x[1],'file_path':x[2]}
+    return a
+
 def get_users():
     cursor = CONN.cursor()
     sql = 'SELECT * from users ORDER BY id desc'
@@ -29,20 +37,26 @@ def get_users():
     output = cursor.fetchall()
     return list(mapping(output))
 
-def check_existence(cursor,user_id):
+def check_id_existence(cursor,user_id):
     sql = 'SELECT * FROM users WHERE public_id = %s'
     cursor.execute(sql,[user_id,])
     result = cursor.fetchall()
     if len(result) == 0:
         raise Exception('user not exist')
-
-def get_user(user_id):
+def get_user_by_id(user_id):
     cursor = CONN.cursor()
-    check_existence(cursor,user_id)
+    check_id_existence(cursor,user_id)
     sql = 'SELECT * FROM users WHERE public_id = %s'
     cursor.execute(sql,[user_id,])
     user = cursor.fetchone()
     return user
+
+def get_user_by_name(name):
+    cursor = CONN.cursor()
+    sql = 'SELECT * FROM users WHERE username = %s'
+    cursor.execute(sql,[name,])
+    user = cursor.fetchone()
+    return map_user(user)
 
 def add_user(data):
     try:
@@ -54,4 +68,16 @@ def add_user(data):
     except Exception as e:
         output = "error"
     return output
+
+def get_pog_by_id(pog_id):
+    cursor = CONN.cursor()
+    sql = 'SELECT * FROM pages WHERE id = %s'
+    cursor.execute(sql, [pog_id, ])
+    pog = cursor.fetchone()
+    return map_pog(pog)
+
+if __name__ == '__main__':
+    # print(get_user_by_id('04bcac0d-5180-48e5-8a08-575054e3ecc2'))
+    # print(get_user_by_name('admin1'))
+    print(get_pog_by_id(2))
 

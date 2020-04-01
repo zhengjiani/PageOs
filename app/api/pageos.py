@@ -16,8 +16,6 @@ from ..util import route
 def get_po_files():
     res = ResMsg()
     res_dict = {
-        "data":
-            {
                 "totalpage": 5,
                 "pagenum": 4,
                 "total": 8,
@@ -26,11 +24,7 @@ def get_po_files():
                     {'poname':'pageKit_page'},
                     {'poname':'phoneix_page'}
                 ]
-            },
-        "meta":{
-            "msg": "获取成功",
-            "status": 200
         }
-    }
+
     res.update(code=ResponseCode.SUCCESS,data=res_dict)
     return res.data

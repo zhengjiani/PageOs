@@ -11,6 +11,7 @@ from flask import jsonify, request
 from app.models import Page,db
 from . import api
 from bokchoy_pages import po_parse
+from .. import dao
 from ..code import ResponseCode
 from ..response import ResMsg
 from ..util import route
@@ -19,15 +20,16 @@ from ..util import route
 @route(api,'/pog/<int:page_id>',methods=['GET'])
 def get_pog(page_id):
     res = ResMsg()
-    page = Page.query.filter_by(id=page_id).first()
+    page = dao.get_pog_by_id(page_id)
     page_data = {}
-    page_data['pagename'] = page.pagename
-    page_data['filepath'] = page.file_path
+    page_data['pagename'] = page["pagename"]
+    page_data['filepath'] = page["file_path"]
     pog_dic = po_parse.PageObjectOperate().get_po('get_po_dic')
     page_data['pog_dic'] = pog_dic
     pog_graph = "/Users/zhengjiani/PycharmProjects/PageOs_v0.1/graph.png"
     page_data['pog_graph'] = pog_graph
-    res.update(code=ResponseCode.SUCCESS,data=page_data)
+    res.update(code=ResponseCode.SUCCESS,data=page_data,msg="Web应用导航图生成成功")
+    return res.data
 
 @route(api,'/pog', methods=['POST'])
 def create_pog():
