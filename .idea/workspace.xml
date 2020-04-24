@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e10a1b4-98d6-489c-b6c6-1c3cbd2436c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bokchoy_pages/pageKit/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bokchoy_pages/pageKit/auto_po/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bokchoy_pages/pageKit/po/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bokchoy_pages/pageKit/po/pageKit_po_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bokchoy_pages/phoenix/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bokchoy_pages/phoenix/phoenix_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/MySite.py" beforeDir="false" afterPath="$PROJECT_DIR$/download/MySite.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/files.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/files.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/pageos.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/pageos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/pograph.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/pograph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dao.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokchoy_pages/po_parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/bokchoy_pages/po_parse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/pageKit.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/pageKit.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/state5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -433,7 +417,7 @@
       <workItem from="1587022227340" duration="3167000" />
       <workItem from="1587452029349" duration="428000" />
       <workItem from="1587532680553" duration="6413000" />
-      <workItem from="1587710115226" duration="8653000" />
+      <workItem from="1587710115226" duration="9062000" />
     </task>
     <task id="LOCAL-00001" summary="修改README">
       <created>1574259149571</created>
