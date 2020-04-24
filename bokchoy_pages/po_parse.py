@@ -8,31 +8,26 @@
 """
 from graphviz import Digraph
 from bokchoy_pages import pet_page
+from bokchoy_pages.phoenix import phoenix_page
+from bokchoy_pages.pageKit.po import pageKit_po_page
 class PageObjectOperate:
     # 获取po文件
-    def get_po(self, name):
-        # clsmembers = inspect.getmembers(sys.modules[page.__name__], inspect.isclass)
-        # nodes = []
-        # for class_name in clsmembers:
-        #     if class_name[0] == 'BasePage':
-        #         nodes.append(class_name[0])
-        # dic = {}
-        # dic_param = {}
-        # for po in nodes:
-        #     funmembers = inspect.getmembers(eval('page.{}'.format(po)), inspect.isfunction)
-        #     edges = []
-        #     for func in funmembers:
-        #         if func[0] != '__init__':
-        #             edges.append(func[0])
-        #             params = inspect.getfullargspec(getattr(eval('page.{}'.format(po)), func[0]))
-        #             list = params[0][1:]
-        #             dic_param[func[0]] = list
-        #             dic[po] = edges
+    def get_po(self, cmd_name, page_name):
         all_subclasses = []
-        for subclass in pet_page.BasePage.__subclasses__():
+        dic = {
+            'PetClinic_page': pet_page,
+            'pageKit_page': pageKit_po_page,
+            'phoenix_page': phoenix_page
+        }
+        for subclass in dic[page_name].BasePage.__subclasses__():
             all_subclasses.append(subclass.__name__)
         # print(all_subclasses)
         cls = {}
+        page_dic = {
+            'PetClinic_page': 'pet_page.',
+            'pageKit_page': 'pageKit_po_page.',
+            'phoenix_page': 'phoenix_page.'
+        }
         for page in all_subclasses:
             pmethods = ['q', 'is_browser_on_page', 'validate_url', 'visit', 'wait_for', 'wait_for_ajax',
                         'wait_for_element_absence', 'wait_for_element_invisibility',
@@ -40,34 +35,21 @@ class PageObjectOperate:
                         'warning', 'handle_alert', 'scroll_to_element']
             methods = list(filter(lambda m: not m in pmethods and not m.startswith("__") \
                                             and not m.startswith("_") and not m.endswith("__") \
-                                            and callable(getattr(eval('pet_page.'+page), m)), dir(eval('pet_page.'+page))))
+                                            and callable(getattr(eval(page_dic[page_name]+page), m)), dir(eval(page_dic[page_name]+page))))
             cls[page] = methods
         # print(cls)
         pog = {}
         for key, value in cls.items():
             pog[key] = {}
             for val in value:
-                po = eval('pet_page.' + key + '.' + val).__doc__
+                po = eval(page_dic[page_name] + key + '.' + val).__doc__
                 if po is not None:
                     pog[key][val] = po.split(':')[-1].strip()
                     # print(key + '->'+ po.split(':')[-1])
         # print(next_po)
-        if name == 'get_po_dic':
+        if cmd_name == 'get_po_dic':
             return pog
-        elif name == 'get_po_nav':
-            # # 合并图字典
-            # # for po in nodes:
-            # class_info = []
-            # dic_next_po = {}
-            # # list_class = re.split(r'[\n]\s*', inspect.getsource(eval('page.{}'.format(po))))
-            # list_class = re.split(r'[\n]\s*', inspect.getsource(page.FindOwnersPage))
-            # for line in list_class:
-            #     if line.startswith('def') or line.startswith('return'):
-            #         class_info.append(line)
-            # for index, value in enumerate(class_info):
-            #     if value.startswith('def') and class_info[index + 1].startswith('return'):
-            #         dic_next_po[value.split(' ')[1].split('(')[0]] = class_info[index + 1].split(' ')[1].split('(')[0]
-            # return dic_next_po
+        elif cmd_name == 'get_po_nav':
             # 图可视化
             dot = Digraph(comment='POG')
             for node in list(pog.keys()):
@@ -94,7 +76,6 @@ def visual_graph():
                           'goto_pet': 'PetPage', 'goto_visit': 'AddNewVisitPage'},
            'EditOwnerPage': {'edit_info': 'DetailPage'}, 'AddNewPetPage': {'add_new_pet': 'DetailPage'},
            'PetPage': {'edit_pet': 'DetailPage'}, 'AddNewVisitPage': {'add_visit': 'DetailPage'}, 'VeterPage': {}}
-
     dot = Digraph(comment='POG')
     for node in list(dic.keys()):
         dot.node(node)
@@ -107,8 +88,10 @@ def visual_graph():
 
 
 if __name__ == '__main__':
+    # p = PageObjectOperate()
+    # print(p.get_po('get_po_dic'))
     p = PageObjectOperate()
-    print(p.get_po('get_po_dic'))
-    print(p.get_po('get_po_nav'))
+    print(p.get_po('get_po_dic','pageKit_page'))
+    # print(p.get_po('get_po_nav'))
     # print(p.visual_graph())
     # visual_graph()

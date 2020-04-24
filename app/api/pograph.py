@@ -24,12 +24,29 @@ def get_pog(page_id):
     page_data = {}
     page_data['pagename'] = page["pagename"]
     page_data['filepath'] = page["file_path"]
-    pog_dic = po_parse.PageObjectOperate().get_po('get_po_dic')
+    pog_dic = po_parse.PageObjectOperate().get_po('get_po_dic',page["pagename"])
     page_data['pog_dic'] = pog_dic
     pog_graph = "/Users/zhengjiani/PycharmProjects/PageOs_v0.1/graph.png"
     page_data['pog_graph'] = pog_graph
     res.update(code=ResponseCode.SUCCESS,data=page_data,msg="Web应用导航图生成成功")
     return res.data
+
+@route(api,'/pog',methods=['GET','POST'])
+def get_pog_by_name():
+    res = ResMsg()
+    data = request.get_json()
+    page = dao.get_pog_by_name(data['pagename'])
+    page_data = {}
+    page_data['pagename'] = page["pagename"]
+    page_data['filepath'] = page["file_path"]
+    pog_dic = po_parse.PageObjectOperate().get_po('get_po_dic', data['pagename'])
+    print(pog_dic)
+    page_data['pog_dic'] = pog_dic
+    pog_graph = page["graph_path"]
+    page_data['pog_graph'] = pog_graph
+    res.update(code=ResponseCode.SUCCESS, data=page_data, msg="Web应用导航图生成成功")
+    return res.data
+
 
 @route(api,'/pog', methods=['POST'])
 def create_pog():

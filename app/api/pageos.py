@@ -20,9 +20,18 @@ def get_po_files():
                 "pagenum": 4,
                 "total": 8,
                 "pos": [
-                    {'poname':'PetClinic_page'},
-                    {'poname':'pageKit_page'},
-                    {'poname':'phoneix_page'}
+                    {'poname':'PetClinic_page',
+                     'file_path':'/Users/zhengjiani/PycharmProjects/PageOs_v0.1/bokchoy_pages/pet_page.py',
+                     'graph_path':'/Users/zhengjiani/PycharmProjects/PageOs_v0.1/graph.png'
+                     },
+                    {'poname':'pageKit_page',
+                     'file_path':'/Users/zhengjiani/PycharmProjects/PageOs_v0.1/bokchoy_pages/pageKit/po/pageKit_po_page.py',
+                     'graph_path':'/Users/zhengjiani/PycharmProjects/PageOs_v0.1/output/PageKit.png'
+                     },
+                    {'poname':'phoneix_page',
+                     'file_path':'/Users/zhengjiani/PycharmProjects/PageOs_v0.1/bokchoy_pages/phoenix/phoenix_page.py',
+                     'graph_path':'/Users/zhengjiani/PycharmProjects/PageOs_v0.1/output/phoenix.png'
+                     }
                 ]
         }
 

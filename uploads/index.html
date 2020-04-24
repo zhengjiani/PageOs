@@ -1,0 +1,108 @@
+<html ng-app="petClinicApp" class="ng-scope"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimal-ui">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon-ca31b78daf0dd9a106bbf3c6d87d4ec7.png">
+
+    <title>PetClinic :: a Spring Framework demonstration</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min-ec3bb52a00e176a7181d454dffaea219.css">
+    <link rel="stylesheet" href="/css/petclinic-0b5b27f7468bd086efbb16114dd9d226.css">
+
+    <script src="/jquery/jquery.min-c9f5aeeca3ad37bf2aa006139b935f0a.js"></script>
+    <script src="/bootstrap/js/bootstrap.min-5869c96cc8f19086aee625d670d741f9.js"></script>
+
+    <script src="/angular/angular-0d8982e44cf5c11acbdade3de33691be.js"></script>
+    <script src="/angular-ui-router/release/angular-ui-router.min-0403fffd357fc79901ef819a1d1eb29e.js"></script>
+
+    <script src="/scripts/app-802edf46c54953cb49e8cd187af26be8.js"></script>
+
+    <script src="/scripts/owner-list/owner-list-8b7e62215b39cb6e0300e4f30864e401.js"></script>
+    <script src="/scripts/owner-list/owner-list.controller-310984038c8cbe90a08ddd68a075d5dd.js"></script>
+    <script src="/scripts/owner-list/owner-list.component-419c106504d4c8009fc0fa1497dd69f4.js"></script>
+
+    <script src="/scripts/owner-details/owner-details-9f386b6ae09e97f70e9ea0653e5c58e0.js"></script>
+    <script src="/scripts/owner-details/owner-details.controller-4f5d20929d09804c3a59f9a16bae66d9.js"></script>
+    <script src="/scripts/owner-details/owner-details.component-32aa666446704d8b442163b6f2a4736c.js"></script>
+
+    <script src="/scripts/owner-form/owner-form-226f889b6f0d75872d0b43f02d1f7d4c.js"></script>
+    <script src="/scripts/owner-form/owner-form.controller-bccaf6f89be19fe65a4e9cc101c12887.js"></script>
+    <script src="/scripts/owner-form/owner-form.component-5d2fbf220adc1100eb8a4a9837ee828b.js"></script>
+
+    <script src="/scripts/pet-form/pet-form-d4d7e2264740504c7522e685784e0a62.js"></script>
+    <script src="/scripts/pet-form/pet-form.controller-c46481efceb34f95a56c754519573acc.js"></script>
+    <script src="/scripts/pet-form/pet-form.component-453d7f22ca5412aeffddd371043b992f.js"></script>
+
+    <script src="/scripts/visits/visits-0e7bc77a574ccd04e837397eda186697.js"></script>
+    <script src="/scripts/visits/visits.controller-d6c2573ca94679b1246f22bbd84116e4.js"></script>
+    <script src="/scripts/visits/visits.component-96564e5631e52f74d8a012257eba0d54.js"></script>
+
+    <script src="/scripts/vet-list/vet-list-12d49fe58f2a5ee5c196ff7c415631fa.js"></script>
+    <script src="/scripts/vet-list/vet-list.controller-fa9204477ba187c8430c79c620ded683.js"></script>
+    <script src="/scripts/vet-list/vet-list.component-6914c291232440024b4cddb5a428f5e4.js"></script>
+
+    <script src="/scripts/infrastructure/infrastructure-5152dbf682472c7460f3bdb942dde810.js"></script>
+    <script src="/scripts/infrastructure/httpErrorHandlingInterceptor-3cbe786f71c96c8e907cf5deefcb7291.js"></script>
+</head>
+
+<body class="container">
+<layout-nav class="ng-isolate-scope"><nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"><span></span></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+                <span class="sr-only"><os-p>Toggle navigation</os-p></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="main-navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li ui-sref-active="active" class="active">
+                    <a ui-sref="welcome" title="home page" href="#!/welcome">
+                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li ui-sref-active="active" class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Owners<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a ui-sref="owners" href="#!/owners"><span class="glyphicon glyphicon-search" aria-hidden="true"></span><span> All</span></a></li>
+                        <li><a ui-sref="ownerNew" href="#!/owners/new"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span><span> Register</span></a></li>
+                    </ul>
+                </li>
+
+                <li ui-sref-active="active">
+                    <a ui-sref="vets" title="veterinarians" href="#!/vets">
+                        <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                        <span>Veterinarians</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+</nav>
+</layout-nav>
+<div class="container-fluid">
+    <div class="container xd-container">
+        <!-- uiView: --><div ui-view="" class="ng-scope"><!-- uiView: --><ui-view class="ng-scope"><layout-welcome class="ng-scope ng-isolate-scope"> <h1>Welcome to Petclinic</h1>
+
+ <div class="row">
+  <div class="col-md-12">
+   <img class="img-responsive" src="images/pets.png" alt="pets logo">
+  </div>
+ </div></layout-welcome></ui-view></div>
+    </div>
+</div>
+<layout-footer class="ng-isolate-scope"><div class="container">
+    <div class="row">
+        <div class="col-12 text-center"><img src="/images/spring-pivotal-logo.png" alt="Sponsored by Pivotal"></div>
+    </div>
+</div></layout-footer>
+
+
+
+</body></html>

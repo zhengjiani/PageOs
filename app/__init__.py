@@ -22,7 +22,7 @@ def create_app(config_name):
         db.init_app(app)
         # 返回json格式转换
         app.json_encoder = JSONEncoder
-        CORS(app, supports_credentials=True)
+        CORS(app, supports_credentials=True,resources=r'/*')
 
         from app.api import api as api_blueprint
         app.register_blueprint(api_blueprint,url_prefix='/api/v1')

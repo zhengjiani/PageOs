@@ -8,7 +8,7 @@
 """
 import os
 
-from flask import jsonify,request, send_from_directory,current_app
+from flask import jsonify, request, send_from_directory, current_app, make_response
 from werkzeug.utils import secure_filename
 from . import api
 from ..util import route
@@ -22,7 +22,13 @@ def upload_file():
         file.save(os.path.join(current_app.config['UPLOAD_FOLDER'], filename))
         return {"status": 201, "msg": "upload success"}
 
+
 @route(api,'/download/<filename>',methods=['GET'])
 def download_file(filename):
     directory = os.getcwd()
-    return send_from_directory(directory,filename,as_attachment=True)
+    print(directory)
+    path = os.path.join(directory,'download/MySite.py')
+    # response = send_from_directory(path,filename,as_attachment=True)
+    f_content = open(path,'r',encoding='UTF-8').read()
+    # print(response)
+    return {"code": 0, "msg": "页面对象文件下载成功", "data":f_content}
