@@ -6,12 +6,14 @@
 @Email   : 936089353@qq.com
 @Software: PyCharm
 """
+import ast
 import os
 import sys
 
 from flask import jsonify, send_from_directory, request
 from . import api
 from gen_test.generate_tree import Trans_tree
+from .. import dao
 from ..code import ResponseCode
 from ..response import ResMsg
 from ..util import route
@@ -25,43 +27,14 @@ def get_key(dict,node,child):
                 return k
 
 
-@route(api,'/transtree',methods=['GET'])
+@route(api,'/transtree',methods=['GET','POST'])
 def trans_tree():
     """返回页面对象迁移树"""
     res = ResMsg()
-    pog_dic = {
-        "AddNewPetPage": {
-            "add_new_pet": "DetailPage"
-        },
-        "AddNewVisitPage": {
-            "add_visit": "DetailPage"
-        },
-        "DetailPage": {
-            "goto_add_pet": "AddNewPetPage",
-            "goto_edit": "EditOwnerPage",
-            "goto_edit_pet": "PetPage",
-            "goto_pet": "PetPage",
-            "goto_visit": "AddNewVisitPage"
-        },
-        "EditOwnerPage": {
-            "edit_info": "DetailPage"
-        },
-        "FindPage": {
-            "goto_detail_page": "DetailPage"
-        },
-        "HomePage": {
-            "goto_Veter": "VeterPage",
-            "goto_register": "RegisterPage",
-            "goto_search": "FindPage"
-        },
-        "PetPage": {
-            "edit_pet": "DetailPage"
-        },
-        "RegisterPage": {
-            "regist_owner": "FindPage"
-        },
-        "VeterPage": {},
-    }
+    data = request.get_json()
+    result = dao.get_dict_by_name(data["pagename"])
+    pog_dic = ast.literal_eval(result['pog'])
+    print(pog_dic)
     tree_dic,tree,po_hash = Trans_tree(pog_dic).tran_tree()
     tree.show()
     tree.save2file('tree.txt')
@@ -84,12 +57,18 @@ def trans_tree():
                 method.append(get_key(pog_dic, each[i], each[i+1]))
                 i = i + 1
         methods.append(method)
-    res_dict = {
+    pathList = []
+    res_pet = {
+                "pagename": "PetClinic_page",
                 "tree_dic": tree.to_json(with_data=True),
                 "tree_visual": tree_txt,
                 "pathlists": path,
                 "methods":methods
 
+    }
+    pathList.append(res_pet)
+    res_dict = {
+        "paths":pathList
     }
     res.update(code=ResponseCode.SUCCESS,data=res_dict,msg="页面对象迁移树转换成功")
     return res.data

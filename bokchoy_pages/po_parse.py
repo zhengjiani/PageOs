@@ -91,7 +91,7 @@ if __name__ == '__main__':
     # p = PageObjectOperate()
     # print(p.get_po('get_po_dic'))
     p = PageObjectOperate()
-    print(p.get_po('get_po_dic','pageKit_page'))
+    print(p.get_po('get_po_dic','phoenix_page'))
     # print(p.get_po('get_po_nav'))
     # print(p.visual_graph())
     # visual_graph()

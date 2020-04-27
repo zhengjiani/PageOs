@@ -28,3 +28,8 @@ class Page(db.Model):
     graph_path = db.Column(db.String(128))
     def __repr__(self):
         return '<Page {}>'.format(self.pagename)
+class Graph(db.Model):
+    __tablename__ = 'graphs'
+    id = db.Column(db.Integer, primary_key=True)
+    pagename = db.Column(db.String(32), index=True)
+    pog = db.Column(db.Text(length=(2**32)-1))

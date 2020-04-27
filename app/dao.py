@@ -30,6 +30,10 @@ def map_pog(x):
     a = {'id':x[0],'pagename':x[1],'file_path':x[2],'graph_path':x[3]}
     return a
 
+def map_dic(x):
+    a = {'id': x[0], 'pagename': x[1], 'pog': x[2]}
+    return a
+
 def get_users():
     cursor = CONN.cursor()
     sql = 'SELECT * from users ORDER BY id desc'
@@ -83,9 +87,17 @@ def get_pog_by_name(pog_name):
     pog = cursor.fetchone()
     return map_pog(pog)
 
+def get_dict_by_name(pog_name):
+    cursor = CONN.cursor()
+    sql = 'SELECT * FROM graphs WHERE pagename = %s'
+    cursor.execute(sql, [pog_name, ])
+    pog = cursor.fetchone()
+    return map_dic(pog)
+
 if __name__ == '__main__':
     # print(get_user_by_id('04bcac0d-5180-48e5-8a08-575054e3ecc2'))
-    print(get_user_by_name('admin1'))
+    # print(get_user_by_name('admin1'))
     # print(get_pog_by_id(2))
     # print(get_pog_by_name('pageKit_page'))
+    print(get_dict_by_name('pageKit_page'))
 
