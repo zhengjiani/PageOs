@@ -1,6 +1,6 @@
 import unittest
 from bok_choy.web_app_test import WebAppTest
-from bokchoy_pages.pet_page import DetailPage, EditOwnerPage, FindPage, HomePage, PetPage, VeterPage, AddNewVisitPage, RegisterPage
+from bokchoy_pages.pet_page import AddNewVisitPage, PetPage, VeterPage, DetailPage, EditOwnerPage, RegisterPage, FindPage, HomePage
 
 
 class Test(WebAppTest):

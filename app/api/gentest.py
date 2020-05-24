@@ -17,6 +17,7 @@ from .. import dao
 from ..code import ResponseCode
 from ..response import ResMsg
 from ..util import route
+from faker_data import mock_data
 from gen_test.gen_testcase import gen_test
 
 
@@ -133,4 +134,33 @@ def get_testcases():
     if os.path.exists(file):
         res.update(code=ResponseCode.SUCCESS, data={'file_path':file}, msg="测试用例文件生成成功")
     return res.data
+
+@route(api,'/mockdata',methods=['GET','POST'])
+def get_mockdata():
+    """
+    input:
+          [
+            "firstname,lastname"
+          ],
+          [
+            "firstname,lastname"
+          ]...]
+    :return:[{fistname:...,lastname:...}...]
+    """
+    res = ResMsg()
+    data = request.get_json()
+    params = data["params"]
+    ans = []
+    for param in params:
+        if "," in param:
+            ans += param.split(",")
+        else:
+            ans.append(param)
+    print(ans)
+    res_dict = {
+        "ans": mock_data.make_data(ans)
+    }
+    res.update(code=ResponseCode.SUCCESS, data=res_dict, msg="Mock数据构建成功")
+    return res.data
+
 

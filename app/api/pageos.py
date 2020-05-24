@@ -22,15 +22,15 @@ def get_po_files():
                 "pos": [
                     {'poname':'PetClinic_page',
                      'file_path':'/Users/zhengjiani/PycharmProjects/PageOs_v0.1/bokchoy_pages/pet_page.py',
-                     'graph_path':'/Users/zhengjiani/PycharmProjects/PageOs_v0.1/graph.png'
+                     'graph_path':'http://localhost:5000/static/PetClinic.png'
                      },
                     {'poname':'pageKit_page',
                      'file_path':'/Users/zhengjiani/PycharmProjects/PageOs_v0.1/bokchoy_pages/pageKit/po/pageKit_po_page.py',
-                     'graph_path':'/Users/zhengjiani/PycharmProjects/PageOs_v0.1/output/PageKit.png'
+                     'graph_path':'http://localhost:5000/static/pageKit.png'
                      },
                     {'poname':'phoneix_page',
                      'file_path':'/Users/zhengjiani/PycharmProjects/PageOs_v0.1/bokchoy_pages/phoenix/phoenix_page.py',
-                     'graph_path':'/Users/zhengjiani/PycharmProjects/PageOs_v0.1/output/phoenix.png'
+                     'graph_path':'http://localhost:5000/static/phonenix.png'
                      }
                 ]
         }

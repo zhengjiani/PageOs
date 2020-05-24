@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e10a1b4-98d6-489c-b6c6-1c3cbd2436c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/static/PetClinic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/pageKit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/faker_data/mock_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/api/gentest.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/gentest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dao.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokchoy_pages/po_parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/bokchoy_pages/po_parse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/pageos.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/pageos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_test/path_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen_test/path_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/phonenix.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/phonenix.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tree.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tree.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,13 +132,6 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/download" />
-      <recent name="$PROJECT_DIR$/similar_analysis/doms" />
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/app/api" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/similar_analysis/doms_test" />
@@ -143,8 +139,15 @@
       <recent name="$PROJECT_DIR$/pograph/service" />
       <recent name="$PROJECT_DIR$/pograph/service/POparse/cluster" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/static" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/download" />
+      <recent name="$PROJECT_DIR$/similar_analysis/doms" />
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.dao">
+  <component name="RunManager" selected="Python.mock_data">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -211,6 +214,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="mock_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../PageOs/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/faker_data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/faker_data/mock_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="po_parse" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -233,21 +258,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for path_test.Test.test_path6" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gen_test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;path_test.Test.test_path6&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Unittests in path_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -267,16 +277,16 @@
       <item itemvalue="Python.gen_testcase" />
       <item itemvalue="Python.dao" />
       <item itemvalue="Python.po_parse" />
-      <item itemvalue="Python tests.Unittests for path_test.Test.test_path6" />
+      <item itemvalue="Python.mock_data" />
       <item itemvalue="Python tests.Unittests in path_test.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mock_data" />
         <item itemvalue="Python.dao" />
         <item itemvalue="Python.po_parse" />
         <item itemvalue="Python.gen_testcase" />
         <item itemvalue="Python tests.Unittests in path_test.py" />
-        <item itemvalue="Python tests.Unittests for path_test.Test.test_path6" />
       </list>
     </recent_temporary>
   </component>
@@ -428,7 +438,11 @@
       <workItem from="1587738348392" duration="102000" />
       <workItem from="1587775744663" duration="46000" />
       <workItem from="1587777082849" duration="6155000" />
-      <workItem from="1587952565632" duration="581000" />
+      <workItem from="1587952565632" duration="1091000" />
+      <workItem from="1588232377768" duration="587000" />
+      <workItem from="1588640936169" duration="2234000" />
+      <workItem from="1588728312147" duration="6909000" />
+      <workItem from="1589869479093" duration="2699000" />
     </task>
     <task id="LOCAL-00001" summary="修改README">
       <created>1574259149571</created>
@@ -479,12 +493,12 @@
     </state>
     <state x="573" y="346" key="#com.intellij.fileTypes.FileTypeChooser/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1585566926227" />
     <state x="600" y="346" key="#com.intellij.fileTypes.FileTypeChooser/1680.23.1920.1057/41.23.1639.1027@41.23.1639.1027" timestamp="1582085186806" />
-    <state width="1638" height="266" key="GridCell.Tab.0.bottom" timestamp="1587799427726">
+    <state width="1638" height="266" key="GridCell.Tab.0.bottom" timestamp="1588834628065">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="266" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1587799427726" />
+    <state width="1638" height="266" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1588834628065" />
     <state width="1638" height="254" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1585656269781" />
-    <state width="1638" height="266" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1587784891593" />
+    <state width="1638" height="266" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1588731963669" />
     <state width="1564" height="362" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1582093703704" />
     <state width="1638" height="227" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1582981900344" />
     <state width="1638" height="253" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587737666718" />
@@ -505,12 +519,12 @@
     <state width="1570" height="497" key="GridCell.Tab.0.bottom/53.23.1627.1027@53.23.1627.1027" timestamp="1581918468333" />
     <state width="688" height="316" key="GridCell.Tab.0.bottom/55.23.1625.1027@55.23.1625.1027" timestamp="1581660361350" />
     <state width="1570" height="2" key="GridCell.Tab.0.bottom/60.23.1620.1027@60.23.1620.1027" timestamp="1580724757093" />
-    <state width="1638" height="266" key="GridCell.Tab.0.center" timestamp="1587799427725">
+    <state width="1638" height="266" key="GridCell.Tab.0.center" timestamp="1588834628065">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="266" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1587799427725" />
+    <state width="1638" height="266" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1588834628065" />
     <state width="1638" height="254" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1585656269781" />
-    <state width="1638" height="266" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1587784891591" />
+    <state width="1638" height="266" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1588731963667" />
     <state width="1564" height="362" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1582093703703" />
     <state width="1638" height="227" key="GridCell.Tab.0.center/1680.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1582981900343" />
     <state width="1638" height="253" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587737666717" />
@@ -531,12 +545,12 @@
     <state width="1570" height="497" key="GridCell.Tab.0.center/53.23.1627.1027@53.23.1627.1027" timestamp="1581918468332" />
     <state width="688" height="316" key="GridCell.Tab.0.center/55.23.1625.1027@55.23.1625.1027" timestamp="1581660361349" />
     <state width="1570" height="2" key="GridCell.Tab.0.center/60.23.1620.1027@60.23.1620.1027" timestamp="1580724757093" />
-    <state width="1638" height="266" key="GridCell.Tab.0.left" timestamp="1587799427725">
+    <state width="1638" height="266" key="GridCell.Tab.0.left" timestamp="1588834628064">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="266" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1587799427725" />
+    <state width="1638" height="266" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1588834628064" />
     <state width="1638" height="254" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1585656269780" />
-    <state width="1638" height="266" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1587784891589" />
+    <state width="1638" height="266" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1588731963666" />
     <state width="1564" height="362" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1582093703703" />
     <state width="1638" height="227" key="GridCell.Tab.0.left/1680.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1582981900342" />
     <state width="1638" height="253" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587737666716" />
@@ -557,12 +571,12 @@
     <state width="1570" height="497" key="GridCell.Tab.0.left/53.23.1627.1027@53.23.1627.1027" timestamp="1581918468332" />
     <state width="688" height="316" key="GridCell.Tab.0.left/55.23.1625.1027@55.23.1625.1027" timestamp="1581660361348" />
     <state width="1570" height="2" key="GridCell.Tab.0.left/60.23.1620.1027@60.23.1620.1027" timestamp="1580724757093" />
-    <state width="1638" height="266" key="GridCell.Tab.0.right" timestamp="1587799427726">
+    <state width="1638" height="266" key="GridCell.Tab.0.right" timestamp="1588834628065">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="266" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1587799427726" />
+    <state width="1638" height="266" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1588834628065" />
     <state width="1638" height="254" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1585656269781" />
-    <state width="1638" height="266" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1587784891592" />
+    <state width="1638" height="266" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1588731963668" />
     <state width="1564" height="362" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1582093703704" />
     <state width="1638" height="227" key="GridCell.Tab.0.right/1680.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1582981900343" />
     <state width="1638" height="253" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587737666717" />
@@ -706,6 +720,7 @@
     <SUITE FILE_PATH="coverage/PageOs_v0_1$topk.coverage" NAME="topk Coverage Results" MODIFIED="1580958963561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/similar_analysis" />
     <SUITE FILE_PATH="coverage/PageOs_v0_1$dom_distance.coverage" NAME="dom_distance Coverage Results" MODIFIED="1580972894373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/similar_analysis" />
     <SUITE FILE_PATH="coverage/PageOs_latest$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1573475795902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service/POparse/cluster" />
+    <SUITE FILE_PATH="coverage/PageOs_v0_1$mock_data.coverage" NAME="mock_data Coverage Results" MODIFIED="1588730966455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/faker_data" />
     <SUITE FILE_PATH="coverage/PageOs_latest$graph_visual.coverage" NAME="graph_visual Coverage Results" MODIFIED="1572341501578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service/dot_graph" />
     <SUITE FILE_PATH="coverage/PageOs_latest$hierarchical_stat.coverage" NAME="hierarchical_stat Coverage Results" MODIFIED="1573303138338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pograph/service/POparse/cluster" />
     <SUITE FILE_PATH="coverage/PageOs_v0_1$demo.coverage" NAME="demo Coverage Results" MODIFIED="1584433761757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/api" />
