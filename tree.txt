@@ -857,3 +857,13 @@ AddEditMenuPage
 ├── AddEditMenuPage
 ├── AddEditMenuPage
 └── AddEditMenuPage
+DetailPage
+├── AddNewPetPage
+├── AddNewVisitPage
+│   └── DetailPage
+│       └── DetailPage
+│           └── DetailPage
+│               └── DetailPage
+├── EditOwnerPage
+├── PetPage
+└── PetPage

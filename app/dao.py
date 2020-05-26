@@ -13,7 +13,7 @@ from app import db
 CONN = pymysql.connect(host='127.0.0.1',
                        port=3306,
                        user='root',
-                       password='',
+                       password='ZhengJiaNi@88',
                        database='flask_pos',
                        charset='utf8'
                        )
