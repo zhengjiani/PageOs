@@ -32,3 +32,10 @@ def download_file(filename):
     f_content = open(path,'r',encoding='UTF-8').read()
     # print(response)
     return {"code": 0, "msg": "页面对象文件下载成功", "data":f_content}
+
+@route(api,'/testsuite/<filename>',methods=['GET'])
+def testsuite(filename):
+    directory = os.getcwd()
+    path = os.path.join(directory,'gen_test/path_test.py')
+    f_content = open(path,'r',encoding='UTF-8').read()
+    return {"code": 0, "msg": "测试套件预览成功", "data":f_content}

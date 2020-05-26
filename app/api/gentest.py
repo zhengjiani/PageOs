@@ -127,13 +127,15 @@ def get_testcases():
     """根据测试路径集生成测试用例，获取测试用例"""
     res = ResMsg()
     req = request.get_json()
-    pathlists = req["pathlists"]
-    print(pathlists)
-    gen_test().generate(pathlists)
+    # pathlists = req["pathlists"]
+    # print(pathlists)
+    # gen_test().generate(pathlists)
     file = '/Users/zhengjiani/PycharmProjects/PageOs_v0.1/gen_test/path_test.py'
     if os.path.exists(file):
         res.update(code=ResponseCode.SUCCESS, data={'file_path':file}, msg="测试用例文件生成成功")
     return res.data
+
+
 
 @route(api,'/mockdata',methods=['GET','POST'])
 def get_mockdata():
@@ -162,5 +164,7 @@ def get_mockdata():
     }
     res.update(code=ResponseCode.SUCCESS, data=res_dict, msg="Mock数据构建成功")
     return res.data
+
+
 
 

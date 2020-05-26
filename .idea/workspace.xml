@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e10a1b4-98d6-489c-b6c6-1c3cbd2436c8" name="Default Changelist" comment="修改README">
+      <change afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vue-po" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dao.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tree.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/files.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/gentest.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/gentest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -438,6 +440,7 @@
       <workItem from="1589869479093" duration="2699000" />
       <workItem from="1590315293512" duration="1168000" />
       <workItem from="1590459609566" duration="546000" />
+      <workItem from="1590461704791" duration="2491000" />
     </task>
     <task id="LOCAL-00001" summary="修改README">
       <created>1574259149571</created>
