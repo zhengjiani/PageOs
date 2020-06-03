@@ -1,0 +1,5 @@
+INSERT INTO flask_pos.users (id, username, password, public_id) VALUES (1, 'admin1', 'sha256$bshdP8Bn$5bd825880d0cd1c32ed7f22636395044e3c884bc5849ef6ed7876274ab061265', '04bcac0d-5180-48e5-8a08-575054e3ecc2');
+INSERT INTO flask_pos.users (id, username, password, public_id) VALUES (11, '''admin2''', '''sha256$hZelIq22$ab9fd94c12e5da5bf78932a9148b39dec1b8cc286835f7fe2a7d8af430ae501a''', '''b829b686-c0ef-4415-abb6-5d6e38c109be''');
+INSERT INTO flask_pos.users (id, username, password, public_id) VALUES (12, 'admin11', 'sha256$BEJvxPHJ$dad41768aba2c7d0e8e65b21b0346c378c1e3ac7ff452cf2e2973a44be16063f', 'a6cc06a2-e2fb-437b-a85c-2cec82c0ee9d');
+INSERT INTO flask_pos.users (id, username, password, public_id) VALUES (13, 'admin34', 'sha256$OpKR1iLl$d28a1a695f28cd34d630b0f3d1b5bb05e3a857f4d397f2299a432f91b2f218cd', '5b59c56c-2b66-42d9-9dc8-d2f7e789e53e');
+INSERT INTO flask_pos.users (id, username, password, public_id) VALUES (19, 'zhengjiani', 'sha256$YMCdebIe$c38f8f354da3ce23f2436c7283ad47edb8c86174790cd293fa2b3f11e2b71510', '573c41c1-d30b-4450-95e1-198253f22bbb');

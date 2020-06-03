@@ -1,0 +1,1 @@
+INSERT INTO flask_pos.alembic_version (version_num) VALUES ('524836f59748');

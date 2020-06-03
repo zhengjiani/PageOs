@@ -1,0 +1,3 @@
+INSERT INTO flask_pos.pages (id, pagename, file_path, graph_path) VALUES (2, 'PetClinic_page', '/Users/zhengjiani/PycharmProjects/PageOs_v0.1/bokchoy_pages/pet_page.py', '"/Users/zhengjiani/PycharmProjects/PageOs_v0.1/graph.png"');
+INSERT INTO flask_pos.pages (id, pagename, file_path, graph_path) VALUES (3, 'pageKit_page', '/Users/zhengjiani/PycharmProjects/PageOs_v0.1/bokchoy_pages/pageKit/po/pageKit_po_page.py', '/Users/zhengjiani/PycharmProjects/PageOs_v0.1/output/PageKit.png');
+INSERT INTO flask_pos.pages (id, pagename, file_path, graph_path) VALUES (4, 'phoenix_page', '/Users/zhengjiani/PycharmProjects/PageOs_v0.1/bokchoy_pages/phoenix/phoenix_page.py', '/Users/zhengjiani/PycharmProjects/PageOs_v0.1/output/phoenix.png');
